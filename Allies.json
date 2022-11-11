@@ -11,10 +11,91 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1668137516,
-		"dateLastModified": 1668137516
+		"dateAdded": 1668171674,
+		"dateLastModified": 1668171674
 	},
 	"monster": [
+		{
+			"name": "Armored Saber-Toothed Tiger",
+			"source": "Allies",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "7d10 + 14"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"passive": 13,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The tiger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Armored Saber-Toothed Tiger.png",
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
 		{
 			"name": "Doru",
 			"source": "Allies",
@@ -115,6 +196,292 @@
 				"MW"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Ezmerelda d'Avenir",
+			"isNpc": true,
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item +1 studded leather armor}"
+					]
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 19,
+			"con": 16,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"save": {
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"arcana": "+6",
+				"deception": "+9",
+				"insight": "+3",
+				"medicine": "+3",
+				"perception": "+6",
+				"performance": "+6",
+				"sleight of hand": "+7",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Ezmerelda is a 7th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Ezmerelda has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell protection from evil and good}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell darkvision}",
+								"{@spell knock}",
+								"{@spell mirror image}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell clairvoyance}",
+								"{@spell lightning bolt}",
+								"{@spell magic circle}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell greater invisibility}"
+							]
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"In addition to her magic armor and weapons, Ezmerelda has two {@item potion of greater healing||potions of greater healing}, six {@item holy water (flask)|phb|vials of holy water}, and three wooden stakes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ezmerelda makes three attacks: two with her +1 rapier and one with her +1 handaxe or her silvered shortsword."
+					]
+				},
+				{
+					"name": "Rapier +1",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Handaxe +1",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Silvered Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Curse (Recharges after a Long Rest)",
+					"entries": [
+						"Ezmerelda targets one creature that she can see within 30 feet of her. The target must succeed on a {@dc 14} Wisdom saving throw or be cursed. While cursed, the target has vulnerability to one type of damage of Ezmerelda's choice. The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. When the curse ends, Ezmerelda takes {@dice 3d6} psychic damage."
+					]
+				},
+				{
+					"name": "Evil Eye (Recharges after a Short or Long Rest)",
+					"entries": [
+						"Ezmerelda targets one creature that she can see within 10 feet of her and casts one of the following spells on the target (save {@dc 14}), requiring neither somatic nor material components to do so: animal friendship, charm person, or hold person. If the target succeeds on the initial saving throw, Ezmerelda is {@condition blinded} until the end of her next turn. Once a target succeeds on a saving throw against this effect, it is immune to the Evil Eye power of all Vistani for 24 hours."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Ezmerelda d'Avenir",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Ezmerelda d'Avenir, a Vistana, is the protégé of Rudolph van Richten - despite the fact that her first encounter with the vampire hunter was anything but pleasant.",
+											{
+												"name": "Witness to Tragedy",
+												"type": "entries",
+												"entries": [
+													"When Ezmerelda was a little girl, her family kidnapped van Richten's teenage son, Erasmus, and delivered him into the clutches of a vampire. Even today, years later, she can still hear Erasmus's pleas for mercy. That event haunted her childhood.",
+													"Van Richten tracked down Ezmerelda's family soon after the kidnapping, but not before the Vistani had sold the boy. Though van Richten could have done them harm, he instead interrogated Ezmerelda's mother and father on the whereabouts of his missing son. Satisfied with their answers, he spared their lives before departing with the information they had given him. Ezmerelda witnessed van Richten's act of mercy and was deeply moved by it."
+												]
+											},
+											{
+												"name": "Van Richten's Tragic Tale",
+												"type": "entries",
+												"entries": [
+													"At the age of fifteen, Ezmerelda, still troubled by what her family had done to van Richten, ran away from home. After many harrowing adventures, she tracked down van Richten two years later. Thinking she was a Vistana assassin, he put a sword to her throat and threatened to spill her blood. Ezmerelda convinced him that she genuinely wanted to help him find his missing son, whereupon van Richten told her the saddest of tales. He had found his son, who had been transformed into a vampire spawn. When Erasmus pleaded to his father for salvation, van Richten granted his request by ending his existence."
+												]
+											},
+											{
+												"name": "Farewell",
+												"type": "entries",
+												"entries": [
+													"Ezmerelda remained by van Richten's side for two years, helping him track down and slay many creatures of the night. But because van Richten could never bring himself to fully trust a Vistana, he kept secrets from her. The two vampire hunters got on each other's nerves, and their arguments became more frequent. At last, Ezmerelda suggested that they part company with some shred of their friendship still intact, and van Richten agreed."
+												]
+											},
+											{
+												"name": "Ezmerelda's Secret",
+												"type": "entries",
+												"entries": [
+													"Since bidding farewell to van Richten, Ezmerelda has amassed a sizable personal fortune, some of which she used to buy a wagon to carry her vampire-slaying paraphernalia. On one of her less successful adventures, a werewolf bit off her right leg below the knee, and although she avoided being afflicted with lycanthropy, Ezmerelda was sidelined for months. She commissioned a master artisan to craft a prosthetic lower leg and foot. After several tries, he delivered a prosthesis that restored her mobility. She has since adapted well to the false appendage."
+												]
+											},
+											{
+												"name": "The Great Vampire Hunt",
+												"type": "entries",
+												"entries": [
+													"While in the company of a Vistani caravan, Ezmerelda heard a rumor that Rudolph van Richten had gone to Barovia to slay the most powerful vampire of them all. She decided that he might need help and traveled for months to reach Strahd's domain. She rode her wagon to Vallaki and learned about an old tower that seemed the sort of place van Richten would use as a base. When she arrived there, she found some of van Richten's belongings, but of the vampire hunter there was no sign. Although she is anxious to learn the whereabouts of her mentor, she is also eager to earn his trust and respect. To that end, she has been poring over van Richten's research and learning about Strahd and Castle Ravenloft, with every intention of dispatching the vampire herself."
+												]
+											},
+											{
+												"name": "Tarokka Deck",
+												"type": "entries",
+												"entries": [
+													"Ezmerelda keeps a deck of tarokka cards in her wagon (chapter 11, area V1). Although the cards aren't magical, Ezmerelda can use them to perform a card reading for the characters (see chapter 1), like the one that can be performed by Madam Eva."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Ezmerelda d'Avenir's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Evil that feeds on the innocent is the worst of all evils and must be destroyed.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"My mentor and teacher, Dr. Rudolph van Richten, is like a father to me.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I go where angels fear to tread.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Ezmerelda d'Avenir.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Ezmerelda d'Avenir.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Father Donavich",
@@ -351,6 +718,107 @@
 				"MW"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Fintir Haurach",
+			"shortName": "Fintir",
+			"isNamedCreature": true,
+			"source": "Allies",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 7",
+				"average": 45
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 13,
+			"int": 7,
+			"wis": 16,
+			"cha": 8,
+			"skill": {
+				"acrobatics": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"lightning",
+				"thunder"
+			],
+			"languages": [
+				"Understands Sylvan but can't speak"
+			],
+			"trait": [
+				{
+					"name": "Lightning Form",
+					"entries": [
+						"If Fintir is reduced to 0 hit points, she disappears into a crackle of energy. She can be resummoned by performing a ritual that takes 1 hour, or by casting the spell Find Steed."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If Fintir moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, Fintir can make another attack with her hooves against it as a bonus action."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"Fintir doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Thunderous Hooves",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) thunder damage."
+					]
+				},
+				{
+					"name": "Lightning Dash ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"Fintir transforms into a being of pure energy, causing her and her rider to become incorporeal, and can move 30 feet in addition to her normal movement. Every creature she passes through must make a {@dc 15} Dexterity saving throw, taking {@damage 8d6} lightning damage on a failure, or half as much on a success."
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"S"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
 		},
 		{
 			"name": "Gadof Blinsky",
@@ -1210,6 +1678,541 @@
 			"hasFluff": true
 		},
 		{
+			"name": "Pidlwick II",
+			"isNpc": true,
+			"source": "Allies",
+			"page": 236,
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 11,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"performance": "+2"
+			},
+			"passive": 11,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but doesn't speak and can't read or write"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"During the first round of combat, Pidlwick II has advantage on attack rolls against any creature that hasn't had a turn yet."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Pidlwick II",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"After her husband died in battle, Duchess Dorfniya Dilisnya set her sights on becoming Count Strahd von Zarovich's bride, but she failed to win his love. Her visits to the castle were nonetheless frequent, and she never traveled without her fool, the delightful Pidlwick. The little man was like a ray of sunshine in Castle Ravenloft, and though he failed to amuse Strahd, he delighted Tatyana and Sergei with his jokes and gambols. As a result, Strahd didn't object whenever Pidlwick and the duchess came to visit.",
+											"Eager to please and desiring to return the courtesy, the duchess commissioned the legendary toymaker Fritz von Weerg to build a clockwork effigy of Pidlwick as a gift for Strahd's family. Although the duchess's heart was in the right place, the effigy didn't have Pidlwick's abilities, and it failed to entertain anyone. Even though Pidlwick himself had spent months training it, the effigy couldn't speak, and its movements were more awkward than amusing.",
+											"A harsh winter trapped the duchess, her fool, and her fool's effigy in Castle Ravenloft for several months. The duchess subsequently succumbed to illness, after which Tatyana asked Pidlwick to remain at Castle Ravenloft.",
+											{
+												"name": "One Pidlwick Too Many",
+												"type": "entries",
+												"entries": [
+													"Von Weerg was no ordinary toymaker, and he put a little of himself into all his creations, which is to say his works had a touch of their creator's madness. Pidlwick II knew that it had no purpose as long as Pidlwick remained in Castle Ravenloft, so it pushed Pidlwick down a long flight of stairs, killing him. Everyone else thought it was an accident. In the days that followed, Pidlwick II tried its best to fill its namesake's shoes, but the effigy's mere presence was upsetting to Tatyana, and it was never called on to perform. Eventually, it was shut away like a discarded toy."
+												]
+											},
+											{
+												"name": "Evil Toy",
+												"type": "entries",
+												"entries": [
+													"Pidlwick II was kept in a small closet adjacent to one of the guest bedrooms. On rare occasions when someone stayed there, Pidlwick would sneak out of the closet in the middle of the night, smother the guest with a pillow, and then retreat back to the closet. The castle staff never considered that the effigy might be responsible, instead assuming that the guests had died in their sleep.",
+													"But Strahd was not fooled. He came to realize fairly quickly that the clockwork effigy had begun to display a murderous nature. Rather than have Pidlwick II destroyed, Strahd kept the fool around to dispose of irksome guests from time to time.",
+													"After the deaths of Sergei and Tatyana, the castle became virtually abandoned, and there were no more guests for Pidlwick II to \"entertain.\" The clockwork effigy emerged from its closet and found new places to hide. It fears Strahd and eagerly follows anyone who gives it the attention it craves.",
+													"Pidlwick II is basically an oversized toy - a 4-foot-tall mechanism stuffed with gears, springs, and other components expertly fitted together to impart a semblance of life to it. Its skin is made of stitched leather pulled taut over an articulated wooden frame. Pidlwick II has rubbed soot around its eyes and mouth, giving it the triangular eyes and jagged grin of a jack-o'-lantern."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Pidlwick II's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"I wish I could make people happy.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I would like to find someone - anyone - who isn't afraid of me and who enjoys my company.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"When I'm upset, I do bad things.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Pidlwick II.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Pidlwick II.png",
+			"traitTags": [
+				"Ambusher"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Ragnar",
+			"source": "Allies",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"alignment": null,
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "91"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 14,
+			"int": 7,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"con": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+5",
+				"perception": "+4"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"understands Draconic and Common but can't speak"
+			],
+			"trait": [
+				{
+					"name": "Variable Size",
+					"entries": [
+						"As a bonus action, Ragnar can change his size to tiny, becoming approximately 1 foot long. While in this form, his melee attacks deal 1 slashing damage on a hit and his frost bolt deals 1 cold damage on a hit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ragnar can either make two bite/claw attacks, one frost bolt attack, or use his breath weapon."
+					]
+				},
+				{
+					"name": "Bite/Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h} ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Frost Bolt",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/60 ft., one target. {@h}9 ({@damage 2d6 + 2}) cold damage."
+					]
+				},
+				{
+					"name": "Breath Weapon ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"When Ragnar uses his breath attack, he can choose from the following options.",
+						"<b>Cold Breath.</b> Ragnar exhales an icy blast in a 20-foot cone. Each creature in that area must make a {@dc 14} Constitution saving throw, taking {@damage 4d8} cold damage on a failed save, or half as much damage on a successful one.",
+						"<b>Freezing Breath</b> Ragnar exhales a freezing wind in a 20-foot cone. Each creature in that area must make a {@dc 14} Strength saving throw. On a failure, the creature's speed is reduced to 0 for one minute or until a creature uses their action to break the ice binding them. On a success, the creature's speed is reduced by half until the start of Ragnar's next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Rudolph Van Richten",
+			"alias": [
+				"Rudolph van Richten"
+			],
+			"isNpc": true,
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 77,
+				"formula": "14d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 12,
+			"con": 13,
+			"int": 16,
+			"wis": 18,
+			"cha": 16,
+			"save": {
+				"con": "+4",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"insight": "+7",
+				"medicine": "+7",
+				"perception": "+7",
+				"religion": "+6",
+				"sleight of hand": "+4"
+			},
+			"passive": 17,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish",
+				"Infernal"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Rudolph is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell detect evil and good}",
+								"{@spell protection from evil and good}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell augury}",
+								"{@spell lesser restoration}",
+								"{@spell protection from poison}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell magic circle}",
+								"{@spell remove curse}",
+								"{@spell speak with dead}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell freedom of movement}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dispel evil and good}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"In addition to his sword cane, Rictavio wears a {@item hat of disguise} and a {@item ring of mind shielding}."
+					]
+				},
+				{
+					"name": "Undead Slayer",
+					"entries": [
+						"When Rictavio hits an undead with a weapon attack, the undead takes an extra 10 ({@dice 3d6}) damage of the weapon's type."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rictavio makes two attacks."
+					]
+				},
+				{
+					"name": "Sword Cane",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage (wooden cane) or piercing damage (silvered sword)."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Rictavio",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Several months ago, a colorfully dressed half-elf bard came to Barovia in a carnival wagon, with a pet monkey on his shoulder. He took over an abandoned tower on Lake Baratok before rolling into the town of Vallaki several months later. Claiming to be a carnival ringmaster in search of new actors, he began regaling locals with tales of distant lands.",
+											{
+												"name": "Monster Hunter",
+												"type": "entries",
+												"entries": [
+													"The half-elf ringmaster is, in fact, a legendary human vampire hunter named Rudolph van Richten. Van Richten's tale is a sad one. A scholar and doctor from a land called Darkon, he married his childhood sweetheart, Ingrid, and together they had a son, Erasmus. When he was fourteen, Erasmus was stolen away by Vistani and sold to a vampire named Baron Metus to be used as a companion. By the time van Richten found his son, it was too late: the baron had already transformed Erasmus into a vampire spawn. Erasmus begged his father to end his suffering, which van Richten did by pounding a wooden stake through his son's chest. Baron Metus avenged that deed by killing van Richten's wife, and van Richten has lived with the horror of his family's destruction ever since. After destroying Baron Metus in turn, van Richten sought revenge against the Vistani and took up a life of hunting evil monsters."
+												]
+											},
+											{
+												"name": "The Waiting Game",
+												"type": "entries",
+												"entries": [
+													"Van Richten isn't a young man anymore. He knows his road is coming to an end, but his work isn't done. He has come to Barovia to kill Strahd von Zarovich, the greatest vampire of them all. Van Richten has studied Strahd for years and knows he can't hope to best the vampire in a straight-up confrontation: he must wait for the right moment to strike. He has good evidence to suggest that Strahd periodically hibernates in his coffin, sometimes for years, when all is quiet in the realm. While he bides his time, van Richten hides in plain sight with the aid of a hat of disguise, his thoughts protected by a ring of mind shielding. He is trying to learn more about the Keepers of the Feather - a society of wereravens that oppose Strahd - while trying not to expose the secret society to their mutual enemy. He thinks the wereravens might prove helpful when the time comes. Van Richten also wants to take out as many of Strahd's spies as he can, starting with evil Vistani.",
+													{
+														"name": "Man with a Plan",
+														"entries": [
+															" Van Richten doesn't know that his former protégé, a good-aligned Vistana named Ezmerelda d'Avenir, has come to Barovia looking for him. He taught her many of his monster-hunting techniques, but she doesn't know all of his tricks and disguises. So far, their paths haven't crossed. In the event that van Richten becomes aware of Ezmerelda's presence, he does his utmost to protect her without putting his own plans in jeopardy. If he can manipulate a party of adventurers into keeping an eye on her, he will do so.",
+															"Van Richten works alone. A curse placed on him long ago by a Vistani seer brings doom to those he befriends. Furthermore, he believes too much is at stake to risk exposure. Consequently, if he thinks he's in danger of being unmasked, he retreats to his tower (see chapter 11) or some other quiet corner of Strahd's domain."
+														],
+														"type": "entries"
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Rictavio's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Evil cannot go unchallenged.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"To protect those I love, I must keep them distant and hidden from my enemies.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I am cursed. Thus, I will never have peace.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Rictavio.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Rictavio.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Sofia Vernescu",
 			"source": "Allies",
 			"size": [
@@ -1290,6 +2293,117 @@
 				"stunned"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "The Martyr",
+			"source": "Allies",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": null,
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "5d10 + 25",
+				"average": 52
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 19,
+			"dex": 8,
+			"con": 21,
+			"int": 7,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+7"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"necrotic",
+						"psychic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"understands Sylvan but can't speak"
+			],
+			"trait": [
+				{
+					"name": "Executioner's Ward.",
+					"entries": [
+						"When the Martyr dies, its spirit remains with the creature it serves. As an action, that creature can touch a four legged beast (living or dead) and impart the Martyr's spirit into it. The targeted beast ceases to exist, and its body is transformed into a new vessel for the Martyr. This action can only be performed once per day."
+					]
+				},
+				{
+					"name": "Can't be Bought.",
+					"entries": [
+						"The Martyr can't be compelled to act in a manner contrary to its nature or its instructions."
+					]
+				},
+				{
+					"name": "Fortitude.",
+					"entries": [
+						"If damage reduces the Martyr to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken. On a success, the Martyr drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Antlers",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) slashing damage.",
+						"</p>&emsp;If the damage rolled on this attack is 18 or higher, the target must succeed a {@dc 16} Strength saving throw or be knocked {@condition prone}.",
+						"</p>&emsp;On a critical hit, the target must succeed a {@dc 16} Constitution saving throw or be {@condition stunned} until the start of its next turn."
+					]
+				},
+				{
+					"name": "Death Curse ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"The Martyr targets one creature within 30 feet of it. That creature must make a {@dc 16} Constitution saving throw, taking {@damage 8d8} force damage on a failed save, or half as much on a successful one. If a creature is reduced to 0 hit points by this attack, they cease to exist. Legendary and Mythic creatures are immune to this effect."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			]
 		},
 		{
 			"name": "Vallaki Guard",
@@ -1378,6 +2492,138 @@
 				"THW"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Vasilka",
+			"isNpc": true,
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d8 + 44"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 9,
+			"con": 18,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"lightning",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever Vasilka starts its turn with 40 hit points or fewer, roll a {@dice d6}. On a 6, Vasilka goes berserk. On each of its turns while berserk, Vasilka attacks the nearest creature it can see. If no creature is near enough to move to and attack, Vasilka attacks an object, with preference for an object smaller than itself. Once Vasilka goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
+						"Vasilka's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. Vasilka must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, Vasilka ceases being berserk. If it takes damage while still at 40 hit points or fewer, Vasilka might go berserk again."
+					]
+				},
+				{
+					"name": "Aversion of Fire",
+					"entries": [
+						"If Vasilka takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Vasilka is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Whenever Vasilka is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Vasilka has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Vasilka's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vasilka makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Vasilka.png",
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
 		},
 		{
 			"name": "Victor Vallakovich",
