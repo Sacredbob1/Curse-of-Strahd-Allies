@@ -1,0 +1,136 @@
+{
+	"siteVersion": "1.169.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CustomNPCs",
+				"abbreviation": "CNPC",
+				"full": "Custom NPCs",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1668133507,
+		"dateLastModified": 1668133507
+	},
+	"monster": [
+		{
+			"name": "Gadof Blinsky",
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dhampir"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "3d8 + 9",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 16,
+			"int": 9,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Blinsky's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). After dealing damage with his bite attack, for the next minute he can innately cast one of the following spells, requiring no material components:"
+					],
+					"footerEntries": [
+						"After being cast, the spell ends after one minute, regardless of its normal duration."
+					],
+					"will": [
+						"{@spell alter self}",
+						"{@spell chill touch}: ({@hit 5}:{@damage 1d8})",
+						"{@spell false life}: ({@damage 1d4+2})",
+						"{@spell guidance}: ({@damage 1d4})",
+						"{@spell mending}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"resist": [
+				"poison"
+			],
+			"damageTagsSpell": [
+				"B",
+				"N",
+				"P",
+				"S"
+			],
+			"trait": [
+				{
+					"name": "Deathless Nature",
+					"entries": [
+						"Blinsky doesn't need to breathe."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Blinsky can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d4 + 2}) piercing damage plus ({@damage 1d6}) necrotic damage. Blinsky then heals for the amount of necrotic damage dealt."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Spider Climb"
+			]
+		}
+	]
+}

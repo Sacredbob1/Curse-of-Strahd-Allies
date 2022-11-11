@@ -1,0 +1,170 @@
+{
+	"siteVersion": "1.169.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CustomNPCs",
+				"abbreviation": "CNPC",
+				"full": "Custom NPCs",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1668136500,
+		"dateLastModified": 1668136500
+	},
+	"monster": [
+		{
+			"name": "Magnus",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "CustomNPCs",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 16",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 8,
+			"wis": 8,
+			"cha": 20,
+			"passive": 9,
+			"cr": "8",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"C",
+				"DR"
+			],
+			"skill": {
+				"arcana": "+2",
+				"medicine": "+2",
+				"religion": "+2",
+				"survival": "+2"
+			},
+			"save": {
+				"wis": "+2",
+				"cha": "+8"
+			},
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
+			"spellcasting": [
+				{
+					"name": "1 Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 16}, +8 to hit with spell attacks.",
+						"<br>",
+						"&emsp;<b><i>Spell slots</i></b>",
+						"&emsp;<i>1st level.</i> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
+						"&emsp;<i>2nd level.</i> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell wrathful smite}: ({@damage 1d6})"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell chains of flame|CustomSpells}: ({@hit 8};{@damage 2d4+5})",
+								"{@spell see invisibility}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"trait": [
+				{
+					"name": "<br>Rebuke the Violent ( <input type= \"checkbox\">/short rest>)",
+					"entries": [
+						"Magnus can use his Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of him deals damage with an attack against a creature other than him, he can use his reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "<br>Necrotic Shroud ( <input type= \"checkbox\">/long rest)",
+					"entries": [
+						"As an action, Magnus can transform for up to one minute, causing all creatures within 10 ft. to make a CHA saving throw ({@dc 16}) or be {@condition frightened} of him until the end of his next turn."
+					]
+				},
+				{
+					"name": "<br>Lay on Hands",
+					"entries": [
+						"Magnus has a pool of healing power that can restore <b>50</b> HP per long rest. As an action, he can touch a creature to restore any number of HP remaining in the pool, or 5 HP to either cure a disease or neutralize a poison affecting the creature.<p><input>"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Magnus attacks twice on his turn."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		}
+	]
+}

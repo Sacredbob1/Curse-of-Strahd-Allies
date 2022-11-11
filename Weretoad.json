@@ -1,0 +1,165 @@
+{
+	"siteVersion": "1.169.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Werebois",
+				"abbreviation": "WERE",
+				"full": "Werebois",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1668136390,
+		"dateLastModified": 1668136390
+	},
+	"monster": [
+		{
+			"name": "Weretoad",
+			"group": [
+				"Lycanthropes"
+			],
+			"source": "Werebois",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "7d8 + 28",
+				"average": 59
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. in tiger form)"
+				}
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 18,
+			"int": 11,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common (can't speak in toad form)"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The weretoad can use its action to polymorph into a toad-humanoid hybrid or into a tiny or medium sized toad, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The weretoad can breathe air and water."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The weretoad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Swamp Camouflage",
+					"entries": [
+						"The weretoad has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The weretoad regains 10 hit points at the start of its turn. If the weretoad takes damage from a silvered weapon, this trait doesn't function at the start of the weretoad's next turn. The weretoad dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"The weretoad makes two attacks, only one of which can be a bite."
+					]
+				},
+				{
+					"name": "Bite (Toad or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d18 + 3}) piercing damage plus {@damage 1d4} poison damage, and the target is {@condition grappled}."
+					]
+				},
+				{
+					"name": "Spear (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft. or range 20/60, one target. {@h} ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"grassland"
+			],
+			"traitTags": [
+				"Amphibious",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"conditionInflict": [
+				"grappled"
+			]
+		}
+	]
+}

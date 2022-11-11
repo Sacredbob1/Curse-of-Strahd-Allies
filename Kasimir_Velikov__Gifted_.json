@@ -1,0 +1,229 @@
+{
+	"siteVersion": "1.169.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CustomNPCs",
+				"abbreviation": "CNPC",
+				"full": "Custom NPCs",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1668136455,
+		"dateLastModified": 1668136455
+	},
+	"monster": [
+		{
+			"name": "Kasimir Velikov (Gifted)",
+			"source": "CustomNPCs",
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "13d8 + 39"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 17,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+10",
+				"wis": "+7",
+				"cha": "+8",
+				"con": "+8"
+			},
+			"skill": {
+				"history": "+10",
+				"arcana": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Kasimir has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell guiding bolt}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell misty step}",
+								"{@spell silence}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell revivify}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell raulothim's psychic lance|FTD}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell raise dead}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell harm}",
+								"{@spell heal}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Kasimir has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Kasimir regains 10 hit points at the start of his turn if he has at least 1 hit point."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kasimir can use his Dreadful Glare and makes one attack with cursed strike."
+					]
+				},
+				{
+					"name": "Cursed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h} ({@damage 2d6 + 4}) bludgeoning damage plus ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Dreadful Glare",
+					"entries": [
+						"Kasimir targets one creature he can see within 60 feet of him. If the target can see Kasimir, it must succeed on a {@dc 16} Wisdom saving throw against this magic or become {@condition frightened} until the end of Kasimir's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare for the next 24 hours."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"N",
+				"O",
+				"R",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Deep Speech",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"DS",
+				"S"
+			],
+			"resist": [
+				"necrotic"
+			]
+		}
+	]
+}

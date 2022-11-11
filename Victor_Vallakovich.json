@@ -1,0 +1,280 @@
+{
+	"siteVersion": "1.169.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CustomNPCs",
+				"abbreviation": "CNPC",
+				"full": "Custom NPCs",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1668136737,
+		"dateLastModified": 1668136737
+	},
+	"monster": [
+		{
+			"name": "Victor Vallakovich",
+			"shortName": "Victor",
+			"isNpc": true,
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item staff of power}",
+						"{@item cloak of protection}"
+					]
+				},
+				{
+					"ac": 18,
+					"condition": "with {@spell mage armor}"
+				}
+			],
+			"hp": {
+				"formula": "12d8",
+				"average": 54
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+9",
+				"wis": "+7",
+				"str": "+2",
+				"dex": "+5",
+				"con": "+3",
+				"cha": "+3"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"spellcasting": [
+				{
+					"name": "1 Spellcasting",
+					"headerEntries": [
+						"Victor is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 9} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\">",
+						"Victor has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}: ({@hit 9};{@damage 2d10})",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}: ({@damage 1d4+1})",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}: ({@damage 8d6})",
+								"{@spell fly}",
+								"{@spell remove curse}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell Mordenkainen's private sanctum}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}: ({@damage 8d8})"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "2 Spellbook",
+					"headerEntries": [
+						"Victor has additional spells he can prepare in his spellbook."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell thunderwave}: ({@damage 2d8})"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell darkvision}",
+								"{@spell invisibility}",
+								"{@spell levitate}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell glyph of warding}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}: ({@damage 8d8})",
+								"{@spell ice storm}: ({@damage 2d8};{@damage 4d6})",
+								"{@spell Mordenkainen's faithful hound}: ({@hit 8};{@damage 4d8})"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}: ({@damage 5d8})",
+								"{@spell passwall}"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "3 Staff of Power (20 charges) <input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\">",
+					"spells": {
+						"1": {
+							"spells": [
+								"[1] {@spell magic missile}: ({@damage 1d4+1})"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"[1] {@spell ray of enfeeblement}: ({@hit 9})",
+								"[2] {@spell levitate}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"[5] {@spell fireball}: ({@damage 10d6})",
+								"[5] {@spell lightning bolt}: ({@damage 10d6})"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"[5] {@spell cone of cold}: ({@damage 8d8})",
+								"[5] {@spell hold monster}",
+								"[5] {@spell wall of force}"
+							],
+							"slots": 0
+						},
+						"6": {
+							"spells": [
+								"[6] {@spell globe of invulnerability}"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"{@item cloak of protection}, {@item staff of power}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Staff of Power",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with both hands."
+					]
+				}
+			],
+			"tokenUrl": "https://cdn.discordapp.com/attachments/920822062598217738/995462055228362862/VallakovichVictorToken.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"T"
+			],
+			"spellcastingTags": [
+				"CW",
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
+		}
+	]
+}
