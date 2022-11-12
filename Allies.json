@@ -11,8 +11,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1668174324,
-		"dateLastModified": 1668174324
+		"dateAdded": 1668212069,
+		"dateLastModified": 1668212069
 	},
 	"monster": [
 		{
@@ -47,11 +47,11 @@
 			"wis": 12,
 			"cha": 8,
 			"skill": {
-				"perception": "+3",
-				"stealth": "+6"
+				"perception": "+4",
+				"stealth": "+8"
 			},
-			"passive": 13,
-			"cr": "3",
+			"passive": 14,
+			"cr": "6",
 			"trait": [
 				{
 					"name": "Keen Smell",
@@ -103,15 +103,8 @@
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
+			"type": "humanoid",
+			"alignment": null,
 			"ac": [
 				{
 					"ac": 14,
@@ -255,6 +248,7 @@
 				"Common",
 				"Elvish"
 			],
+			"cr": "7",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -528,7 +522,7 @@
 			"languages": [
 				"Common"
 			],
-			"cr": "1/4",
+			"cr": "2",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -630,16 +624,16 @@
 			"wis": 16,
 			"cha": 13,
 			"skill": {
-				"medicine": "+7",
-				"persuasion": "+3",
-				"religion": "+5"
+				"medicine": "+9",
+				"persuasion": "+4",
+				"religion": "+7"
 			},
 			"passive": 13,
 			"languages": [
 				"Common",
 				"Sylvan"
 			],
-			"cr": "2",
+			"cr": "5",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -766,6 +760,7 @@
 			"languages": [
 				"Understands Sylvan but can't speak"
 			],
+			"cr": "5",
 			"trait": [
 				{
 					"name": "Lightning Form",
@@ -853,7 +848,7 @@
 			"wis": 12,
 			"cha": 14,
 			"skill": {
-				"stealth": "+4"
+				"stealth": "+3"
 			},
 			"senses": [
 				"darkvision 60 ft."
@@ -865,29 +860,39 @@
 			"languages": [
 				"Common"
 			],
+			"cr": "3",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "1 Innate Spellcasting",
 					"headerEntries": [
-						"Blinsky's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). After dealing damage with his bite attack, for the next minute he can innately cast one of the following spells, requiring no material components:"
+						"Blinsky's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks)."
+					],
+					"will": [
+						"{@spell chill touch}: ({@hit 5}:{@damage 1d8})",
+						"{@spell mending}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "2 Empowered Spellcasting",
+					"headerEntries": [
+						"After dealing damage with his bite attack, for the next minute he can innately cast one of the following spells <b>as a bonus action</b>, requiring no material components:"
 					],
 					"will": [
 						"{@spell alter self}",
-						"{@spell chill touch}: ({@hit 5}:{@damage 1d8})",
 						"{@spell false life}: ({@damage 1d4+2})",
-						"{@spell guidance}: ({@damage 1d4})",
-						"{@spell mending}"
+						"{@spell guidance}: ({@damage 1d4})"
 					],
 					"footerEntries": [
 						"After being cast, the spell ends after one minute, regardless of its normal duration."
 					],
-					"ability": "cha",
 					"type": "spellcasting"
 				}
 			],
 			"trait": [
 				{
-					"name": "Deathless Nature",
+					"name": "</br>Deathless Nature",
 					"entries": [
 						"Blinsky doesn't need to breathe."
 					]
@@ -904,6 +909,12 @@
 					"name": "Bite",
 					"entries": [
 						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d4 + 2}) piercing damage plus ({@damage 1d6}) necrotic damage. Blinsky then heals for the amount of necrotic damage dealt."
+					]
+				},
+				{
+					"name": "Chill Touch",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h} {@damage 1d8} necrotic damage, and the target can't regain hit points until the start of Blinsky's next turn."
 					]
 				}
 			],
@@ -929,7 +940,8 @@
 				"S"
 			],
 			"spellcastingTags": [
-				"I"
+				"I",
+				"O"
 			],
 			"miscTags": [
 				"MW"
@@ -986,7 +998,7 @@
 			"languages": [
 				"Common"
 			],
-			"cr": "5",
+			"cr": "6",
 			"spellcasting": [
 				{
 					"name": "1 Spellcasting",
@@ -1348,7 +1360,7 @@
 			"languages": [
 				"the languages it knew in life"
 			],
-			"cr": "5",
+			"cr": "8",
 			"trait": [
 				{
 					"name": "Regeneration",
@@ -1369,7 +1381,7 @@
 					]
 				},
 				{
-					"name": "Oath ( <input type = \"checkbox\">/day)",
+					"name": "Oath ( <input type = \"checkbox\">/encounter)",
 					"entries": [
 						"The knight can cast any paladin spell of 1st level. Their spellcasting ability is Charisma (Save {@dc 15}, {@hit 7} to hit with spell attacks}.",
 						"<details>{@spell bless}, {@spell ceremony|XGE}, {@spell command}, {@spell compelled duel}, {@spell cure wounds}, {@spell detect evil and good}, {@spell detect magic}, {@spell detect poison and disease}, {@spell divine favor}, {@spell heroism}, {@spell protection from evil and good}, {@spell purify food and drink}, {@spell searing smite}, {@spell shield of faith}, {@spell thunderous smite}, {@spell wrathful smite}</details>"
@@ -1475,7 +1487,7 @@
 				"Common",
 				"Draconic"
 			],
-			"cr": "8",
+			"cr": "6",
 			"spellcasting": [
 				{
 					"name": "1 Spellcasting",
@@ -1614,11 +1626,12 @@
 			"languages": [
 				"Common"
 			],
+			"cr": "4",
 			"trait": [
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"The oleg nimirovic has advantage on an attack roll against a creature if at least one of the oleg nimirovic's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"Oleg has advantage on an attack roll against a creature if at least one of the Oleg's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -1726,12 +1739,18 @@
 			"languages": [
 				"understands Common but doesn't speak and can't read or write"
 			],
-			"cr": "1/4",
+			"cr": "1",
 			"trait": [
 				{
 					"name": "Ambusher",
 					"entries": [
 						"During the first round of combat, Pidlwick II has advantage on attack rolls against any creature that hasn't had a turn yet."
+					]
+				},
+				{
+					"name": "Sneak Attack (Spy)",
+					"entries": [
+						"Pidlwick deals an extra {@dice 1d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Pidlwick that isn't {@condition incapacitated} and Pidlwick doesn't have disadvantage on the attack roll."
 					]
 				}
 			],
@@ -1746,6 +1765,14 @@
 					"name": "Dart",
 					"entries": [
 						"{@atk rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Pidlwick can take a bonus action on each of his turns to take the Dash, Disengage, or Hide action."
 					]
 				}
 			],
@@ -1828,7 +1855,8 @@
 			},
 			"tokenUrl": "https://5e.tools/img/CoS/Pidlwick II.png",
 			"traitTags": [
-				"Ambusher"
+				"Ambusher",
+				"Sneak Attack"
 			],
 			"languageTags": [
 				"C"
@@ -1894,6 +1922,7 @@
 			"languages": [
 				"understands Draconic and Common but can't speak"
 			],
+			"cr": "7",
 			"trait": [
 				{
 					"name": "Variable Size",
@@ -2015,6 +2044,7 @@
 				"Elvish",
 				"Infernal"
 			],
+			"cr": "7",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -2252,7 +2282,7 @@
 			"languages": [
 				"Common"
 			],
-			"cr": "1",
+			"cr": "3",
 			"action": [
 				{
 					"name": "Multiattack",
@@ -2295,7 +2325,7 @@
 			"hasFluff": true
 		},
 		{
-			"name": "Szoldar Szoldarovich",
+			"name": "Szoldar Szoldarovich and Yevgeni Krushkin",
 			"isNpc": true,
 			"source": "Allies",
 			"size": [
@@ -2339,14 +2369,14 @@
 			},
 			"passive": 15,
 			"languages": [
-				"any one language (usually Common)"
+				"Common"
 			],
 			"cr": "1/2",
 			"trait": [
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"Szoldar has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+						"Szoldar and Yevgeni have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
 				}
 			],
@@ -2354,7 +2384,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Szoldar makes two melee attacks or two ranged attacks."
+						"Each hunter makes two melee attacks or two ranged attacks."
 					]
 				},
 				{
@@ -2368,6 +2398,12 @@
 					"entries": [
 						"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
 					]
+				},
+				{
+					"name": "Silver Knitting Needle (Yevgeni)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
 				}
 			],
 			"tokenUrl": "https://5e.tools/img/CoS/Szoldar Szoldarovich.png",
@@ -2378,8 +2414,7 @@
 				"Multiattack"
 			],
 			"languageTags": [
-				"C",
-				"X"
+				"C"
 			],
 			"damageTags": [
 				"P"
@@ -2471,15 +2506,15 @@
 				{
 					"name": "Antlers",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) slashing damage.",
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 4}) slashing damage.",
 						"</p>&emsp;If the damage rolled on this attack is 18 or higher, the target must succeed a {@dc 16} Strength saving throw or be knocked {@condition prone}.",
 						"</p>&emsp;On a critical hit, the target must succeed a {@dc 16} Constitution saving throw or be {@condition stunned} until the start of its next turn."
 					]
 				},
 				{
-					"name": "Death Curse ( <input type= \"checkbox\">/short rest)",
+					"name": "Death Ray ( <input type= \"checkbox\">/short rest)",
 					"entries": [
-						"The Martyr targets one creature within 30 feet of it. That creature must make a {@dc 16} Constitution saving throw, taking {@damage 8d8} force damage on a failed save, or half as much on a successful one. If a creature is reduced to 0 hit points by this attack, they cease to exist. Legendary and Mythic creatures are immune to this effect."
+						"The Martyr targets one creature within 30 feet of it. That creature must make a {@dc 16} Charisma saving throw, taking {@damage 8d8} force damage on a failed save, or half as much on a successful one. If a creature is reduced to 0 hit points by this attack, they cease to exist. Legendary and Mythic creatures are immune to this effect."
 					]
 				}
 			],
@@ -2546,7 +2581,7 @@
 			"languages": [
 				"any one language (usually Common)"
 			],
-			"cr": "1/8",
+			"cr": "1/2",
 			"trait": [
 				{
 					"name": "Pack Tactics",
@@ -2644,13 +2679,14 @@
 			"languages": [
 				"understands the languages of its creator but can't speak"
 			],
-			"cr": "5",
+			"cr": "7",
 			"trait": [
 				{
 					"name": "Berserk",
 					"entries": [
-						"Whenever Vasilka starts its turn with 40 hit points or fewer, roll a {@dice d6}. On a 6, Vasilka goes berserk. On each of its turns while berserk, Vasilka attacks the nearest creature it can see. If no creature is near enough to move to and attack, Vasilka attacks an object, with preference for an object smaller than itself. Once Vasilka goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
-						"Vasilka's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. Vasilka must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, Vasilka ceases being berserk. If it takes damage while still at 40 hit points or fewer, Vasilka might go berserk again."
+						"Whenever Vasilka starts its turn with 40 hit points or fewer, roll a {@dice d6}. On a 6, Vasilka goes berserk.",
+						"<details>On each of its turns while berserk, Vasilka attacks the nearest creature it can see. If no creature is near enough to move to and attack, Vasilka attacks an object, with preference for an object smaller than itself. Once Vasilka goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
+						"Vasilka's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. Vasilka must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, Vasilka ceases being berserk. If it takes damage while still at 40 hit points or fewer, Vasilka might go berserk again.</details>"
 					]
 				},
 				{
@@ -3036,7 +3072,7 @@
 			"languages": [
 				"Common (can't speak in raven form)"
 			],
-			"cr": "2",
+			"cr": "3",
 			"trait": [
 				{
 					"name": "Shapechanger",
@@ -3053,7 +3089,7 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"The wereraven regains 10 hit points at the start of its turn. If the wereraven takes damage from a silvered weapon, this trait doesn't function at the start of the wereraven's next turn. The wereraven dies only if it starts its turn with 0 hit points and doesn't regenerate."
+						"The wereraven regains <b>5</b> hit points at the start of its turn. If the wereraven takes damage from a silvered weapon, this trait doesn't function at the start of the wereraven's next turn. The wereraven dies only if it starts its turn with 0 hit points and doesn't regenerate."
 					]
 				}
 			],
@@ -3252,7 +3288,7 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"The weretoad regains 10 hit points at the start of its turn. If the weretoad takes damage from a silvered weapon, this trait doesn't function at the start of the weretoad's next turn. The weretoad dies only if it starts its turn with 0 hit points and doesn't regenerate."
+						"The weretoad regains <b>10</b> hit points at the start of its turn. If the weretoad takes damage from a silvered weapon, this trait doesn't function at the start of the weretoad's next turn. The weretoad dies only if it starts its turn with 0 hit points and doesn't regenerate."
 					]
 				}
 			],
@@ -3377,7 +3413,7 @@
 			"languages": [
 				"Common (can't speak in wolf form)"
 			],
-			"cr": "3",
+			"cr": "4",
 			"trait": [
 				{
 					"name": "Shapechanger",
@@ -3395,6 +3431,12 @@
 					"name": "Pack Tactics",
 					"entries": [
 						"The werewolf has advantage on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The werewolf regains <b>5</b> hit points at the start of its turn. If the werewolf takes damage from a silvered weapon, this trait doesn't function at the start of the werewolf's next turn. The werewolf dies only if it starts its turn with 0 hit points and doesn't regenerate."
 					]
 				}
 			],
@@ -3534,6 +3576,7 @@
 			"traitTags": [
 				"Keen Senses",
 				"Pack Tactics",
+				"Regeneration",
 				"Shapechanger"
 			],
 			"actionTags": [
@@ -3554,102 +3597,6 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
-		},
-		{
-			"name": "Yevgeni Krushkin",
-			"isNpc": true,
-			"source": "Allies",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|phb}"
-					]
-				}
-			],
-			"hp": {
-				"average": 16,
-				"formula": "3d8 + 3"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 11,
-			"wis": 13,
-			"cha": 11,
-			"skill": {
-				"nature": "+4",
-				"perception": "+5",
-				"stealth": "+6",
-				"survival": "+5"
-			},
-			"passive": 15,
-			"languages": [
-				"any one language (usually Common)"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Keen Hearing and Sight",
-					"entries": [
-						"Yevgeni has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Yevgeni makes two melee attacks or two ranged attacks."
-					]
-				},
-				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
-					]
-				},
-				{
-					"name": "Longbow",
-					"entries": [
-						"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
-					]
-				}
-			],
-			"tokenUrl": "https://5e.tools/img/CoS/Yevgeni Krushkin.png",
-			"traitTags": [
-				"Keen Senses"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RNG",
-				"RW"
-			]
 		}
 	]
 }
