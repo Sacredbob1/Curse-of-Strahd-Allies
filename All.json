@@ -98,6 +98,14 @@
 				"convertedBy": []
 			},
 			{
+				"json": "OtherAllies",
+				"abbreviation": "ALY",
+				"full": "Other Allies",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
 				"json": "Vampires",
 				"abbreviation": "VAMP",
 				"full": "Vampires",
@@ -15350,6 +15358,418 @@
 								]
 							}
 						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Yevgeniy Fedorov",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "CustomNPCs",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"infused {@item half plate armor}",
+						"parrying dagger"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 14,
+			"int": 18,
+			"wis": 12,
+			"cha": 15,
+			"passive": 14,
+			"cr": "6",
+			"save": {
+				"con": "+5",
+				"int": "+7"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"investigation": "+7",
+				"medicine": "+7",
+				"perception": "+4"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell Save {@dc 15}, {@hit 7} to hit with spell attacks."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell alarm}",
+								"{@spell cure wounds}",
+								"{@spell faerie fire}",
+								"{@spell heroism}",
+								"{@spell identify}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell branding smite}",
+								"{@spell enhance ability}",
+								"{@spell invisibility}",
+								"{@spell vortex warp|SCC}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"trait": [
+				{
+					"name": "Infusions (end 4 days after death)",
+					"entries": [
+						"<p>+1 half plate",
+						"repeating crossbow",
+						"+1 rapier (radiant flare)</p>"
+					]
+				},
+				{
+					"name": "Curse ( <input type= \"checkbox\">/long rest)",
+					"entries": [
+						"<details>The Vistana targets one creature that it can see within 30 feet of it. The target must succeed on a {@dc 11} Wisdom saving throw or be cursed. The Vistana chooses the curse's effect from the options that follow; other Vistani curses are possible. All such effects deal psychic damage to the Vistani who uttered them when they end:",
+						{
+							"type": "list",
+							"items": [
+								"The target is unable to perform a certain kind of act involving fine motor control, such as tying knots, writing, playing an instrument, sewing, or casting spells that have somatic components. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+								"The target's appearance changes in a sinister yet purely cosmetic way. For example, the curse can place a scar on the target's face, turn the target's teeth into yellow fangs, or give the target bad breath. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+								"A nonmagical item in the target's possession (chosen by the DM) disappears and can't be found until the curse ends. The lost item can weigh no more than 1 pound. When this curse ends, the Vistana takes {@damage 1d6} psychic damage.",
+								"The target gains vulnerability to a damage type of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+								"The target has disadvantage on ability checks and saving throws tied to one ability score of the Vistana's choice. When this curse ends, the Vistana takes {@damage 3d6} psychic damage.",
+								"The target's attunement to one magic item (chosen by the DM) ends, and the target can't attune to the chosen item until the curse ends. When this curse ends, the Vistana takes {@damage 5d6} psychic damage.",
+								"The target is {@condition blinded}, {@condition deafened}, or both. When this curse ends, the Vistana takes {@damage 5d6} psychic damage."
+							]
+						},
+						"The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. It doesn't end when the target dies. If a cursed target is returned to life, the curse remains in effect.</details>"
+					]
+				},
+				{
+					"name": "Evil Eye ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"<details>As an action, a Vistana can target a creature within 10 feet that the Vistana can see. This magical ability, which the Vistani call the Evil Eye, duplicates the duration and effect of the {@spell animal friendship}, {@spell charm person}, or {@spell hold person} spell (Vistana's choice; spell {@dc 11}), but requires neither somatic nor material components. If the target succeeds on the save, the Vistana is {@condition blinded} until the end of the Vistana's next turn.",
+						"A Vistana who uses Evil Eye can't use it again before finishing a short or long rest. Once a target succeeds on a saving throw against a Vistana's Evil Eye, it is immune to the Evil Eye of all Vistani for 24 hours.</details>"
+					]
+				}
+			],
+			"actionHeader": [
+				"Yevgeniy makes two weapon attacks."
+			],
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Repeating Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 5}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"bonus": [
+				{
+					"name": "Parrying Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4+1}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Radiant Flare",
+					"entries": [
+						"After hit by attack, {@dc 15} Constitution save. Blinded until end of their next turn on failure."
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Gnomish"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"D",
+				"G"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened"
+			]
+		},
+		{
+			"name": "Ireena Kolyana",
+			"isNpc": true,
+			"source": "OtherAllies",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 12,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"insight": "+4",
+				"persuasion": "+5",
+				"medicine": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/8",
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Ireena adds 2 to HER AC against one melee attack that would hit her. To do so, Ireena must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Ireena Kolyana.png",
+			"fluff": {
+				"name": "Ireena Kolyana",
+				"source": "CoS",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Ireena Kolyana.png"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks."
+					],
+					"daily": {
+						"1": [
+							"{@spell healing word}: ({@damage 1d4+3})",
+							"{@spell heroism} (+3)"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Healer's Kit (10 uses)",
+					"entries": [
+						"Ireena uses her healer's kit on another creature. {@damage 1d6+4} if not dying, +1 if dying. A creature can benefit from this once per short rest."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"Ireena has advantage on saving throws against being {@condition frightened}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ismark Kolyanovich",
+			"isNpc": true,
+			"source": "OtherAllies",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ismark makes two longsword attacks. If he has a shortsword drawn, he can also make a shortsword attack."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"tokenUrl": "https://5e.tools/img/CoS/Ismark Kolyanovich.png",
+			"fluff": {
+				"name": "Ismark Kolyanovich",
+				"source": "CoS",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Ismark Kolyanovich.png"
+						}
 					}
 				]
 			}
