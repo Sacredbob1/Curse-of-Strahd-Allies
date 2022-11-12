@@ -11,8 +11,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1668212069,
-		"dateLastModified": 1668212069
+		"dateAdded": 1668212234,
+		"dateLastModified": 1668212234
 	},
 	"monster": [
 		{
@@ -3222,8 +3222,8 @@
 				11
 			],
 			"hp": {
-				"formula": "7d8 + 28",
-				"average": 59
+				"formula": "5d8 + 20",
+				"average": 42
 			},
 			"speed": {
 				"walk": {
@@ -3395,10 +3395,10 @@
 			"wis": 11,
 			"cha": 10,
 			"skill": {
-				"perception": "+4",
-				"stealth": "+4"
+				"perception": "+6",
+				"stealth": "+5"
 			},
-			"passive": 14,
+			"passive": 16,
 			"immune": [
 				{
 					"immune": [
@@ -3413,7 +3413,7 @@
 			"languages": [
 				"Common (can't speak in wolf form)"
 			],
-			"cr": "4",
+			"cr": "5",
 			"trait": [
 				{
 					"name": "Shapechanger",
