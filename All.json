@@ -3533,7 +3533,7 @@
 		{
 			"name": "Spectral Weapon",
 			"source": "CustomSpells",
-			"level": 1,
+			"level": 0,
 			"school": "V",
 			"time": [
 				{
@@ -3556,9 +3556,9 @@
 				}
 			],
 			"entries": [
-				"You summon a glowing melee weapon of magical energy, swinging it out at a creature within reach. Make a melee spell attack against the target. On a hit, the creature takes {@damage 1d6} + your spellcasting ability modifier of a damage type that you choose from one of your other cantrips.",
+				"You summon a glowing melee weapon of magical energy, swinging it out at a creature within reach. Make a melee spell attack against the target. On a hit, the creature takes {@damage 1d6+3} of a damage type that you choose from one of your other cantrips.",
 				"If you have no damage dealing cantrips, this spell deals no damage.",
-				"The spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+				"The spell's damage increases by {@dice 1d6+3} when you reach 5th level ({@dice 2d6+6}), 11th level ({@dice 3d6+9}), and 17th level ({@dice 4d6+12})."
 			],
 			"damageInflict": [
 				"acid",
@@ -4792,7 +4792,6 @@
 				"name": "Vampire",
 				"source": "MM"
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/920822062598217738/994823710500474891/StrahdFR_Token.png",
 			"traitTags": [
 				"Regeneration"
 			],
@@ -4829,7 +4828,19 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/StrahdFR%20Token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/StrahdFR%20Token.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "The Mad Mage of Mount Baratok",
@@ -5250,18 +5261,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://media.discordapp.net/attachments/879545259334434896/960557932464980048/proxy-image_19.jpeg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://media.discordapp.net/attachments/879545259334434896/960557932464980048/proxy-image_19.jpeg",
 			"languageTags": [
 				"C",
 				"DS"
@@ -5281,12 +5280,23 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorOldToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorOldToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Victor Vallakovich",
 			"shortName": "Victor",
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
@@ -5409,7 +5419,10 @@
 				{
 					"name": "2 Spellbook",
 					"headerEntries": [
-						"Victor has additional spells he can prepare in his spellbook."
+						"Victor has additional spells he can prepare in his spellbook.<details>"
+					],
+					"footerEntries": [
+						"</details>"
 					],
 					"spells": {
 						"1": {
@@ -5514,7 +5527,6 @@
 					]
 				}
 			],
-			"tokenUrl": "https://cdn.discordapp.com/attachments/920822062598217738/995462055228362862/VallakovichVictorToken.png",
 			"languageTags": [
 				"C"
 			],
@@ -5542,7 +5554,19 @@
 				"RW",
 				"MW",
 				"THW"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Volenta Popofsky",
@@ -5724,7 +5748,6 @@
 					]
 				}
 			],
-			"tokenUrl": "https://cdn.discordapp.com/attachments/920822062598217738/994810531980509374/VolentaPopofskyToken.png",
 			"traitTags": [
 				"Keen Senses",
 				"Pack Tactics",
@@ -5756,7 +5779,19 @@
 				"grappled",
 				"poisoned",
 				"prone"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VolentaPopofskyToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VolentaPopofskyToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Anastrasya Karelova",
@@ -5925,7 +5960,6 @@
 					]
 				}
 			],
-			"tokenUrl": "https://cdn.discordapp.com/attachments/920822062598217738/994810531775004763/AnastrasyaKarelovaToken.png",
 			"traitTags": [
 				"Legendary Resistances"
 			],
@@ -5952,7 +5986,19 @@
 				"charmed",
 				"frightened",
 				"prone"
-			]
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/AnastrasyaKarelovaToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/AnastrasyaKarelovaToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Beucephalus, the Wonder Horse",
@@ -6065,7 +6111,7 @@
 				"MW",
 				"AOE"
 			],
-			"tokenUrl": "https://5e.tools/img/CoS/Beucephalus.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Beaucephalus%20Token.png",
 			"save": {
 				"dex": "+6"
 			},
@@ -6085,7 +6131,18 @@
 					]
 				}
 			],
-			"shortName": "Beucephalus"
+			"shortName": "Beucephalus",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Beaucephalus%20Token.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Poor Gertruda",
@@ -6218,7 +6275,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://cdn.discordapp.com/attachments/920822062598217738/999809699782340668/GertrudaToken.png"
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/GertrudaToken.png"
 						}
 					}
 				]
@@ -6272,7 +6329,7 @@
 				"O",
 				"Y"
 			],
-			"tokenUrl": "https://cdn.discordapp.com/attachments/920822062598217738/999809699782340668/GertrudaToken.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/GertrudaToken.png",
 			"legendaryActions": 1,
 			"reaction": [
 				{
@@ -6489,8 +6546,8 @@
 				}
 			],
 			"legendaryGroup": {
-				"name": "Yan-C-Bin",
-				"source": "PotA"
+				"name": "Zrin-Hala, the Howling Storm",
+				"source": "CustomNPCs"
 			},
 			"fluff": {
 				"entries": [
@@ -6520,12 +6577,12 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://cdn.discordapp.com/attachments/920822062598217738/998720508558319647/Zrin-HalaToken.png"
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Zrin-HalaToken.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://cdn.discordapp.com/attachments/920822062598217738/998720508558319647/Zrin-HalaToken.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Zrin-HalaToken.png",
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -7707,9 +7764,9 @@
 			],
 			"ac": [
 				{
-					"ac": 22,
+					"ac": 2,
 					"from": [
-						"{@item +2 plate armor}",
+						"{@item plate armor}",
 						"{@item shield|phb}"
 					]
 				}
@@ -7866,12 +7923,6 @@
 			],
 			"trait": [
 				{
-					"name": "Stone of Agathys",
-					"entries": [
-						"When Brunjorn crushes the Stone of Agathys, he casts Armor of Agathys on himself at 9th level."
-					]
-				},
-				{
 					"name": "Powerful Build",
 					"entries": [
 						"Brunjorn can lift up to 960 lbs in an ideal scenario."
@@ -7889,6 +7940,9 @@
 						"Brunjorn has advantage on CON saving throws that he makes to maintain his concentration on a spell when he takes damage."
 					]
 				}
+			],
+			"spellcastingTags": [
+				"O"
 			]
 		},
 		{
@@ -8061,25 +8115,14 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/FTD/Ghost Dragon.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ArgynvostToken3.png",
 			"fluff": {
-				"name": "Ghost Dragon",
-				"source": "FTD",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"A dragon's attachment to a hoard can be strong enough to bind the dragon's spirit to existence after death. Such a ghost dragon haunts the hoard, often forming an attachment to a single priceless object that becomes the focus of the ghost dragon's Undead existence.",
-							"A ghost dragon is a translucent and incorporeal version of the original dragon. Though its breath weapon resembles ghostly flames, lightning, or acid, it carries an otherworldly curse. The breath's shadowy mist can induce waking nightmares."
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/FTD/Ghost Dragon.webp"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ArgynvostToken3.png"
 						}
 					}
 				]
@@ -8726,7 +8769,7 @@
 			]
 		},
 		{
-			"name": "Ismark",
+			"name": "Ismark, Knight of the Silver Dragon",
 			"source": "Allies",
 			"size": [
 				"M"
@@ -8864,7 +8907,19 @@
 						"&emsp;<b><i>Turn the Tide.</i></b> As a bonus action, Ismark can bolster injured creatures with his Channel Divinity. Each creature of his choice within 30 feet of him regains hit points equal to {@damage 1d6+3}."
 					]
 				}
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Magnus",
@@ -9015,7 +9070,19 @@
 			],
 			"actionTags": [
 				"Multiattack"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MagnusCuredToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MagnusCuredToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Vampire Spawn Warrior",
@@ -10247,8 +10314,13 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Kasimir has the following spells prepared:"
+						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Kasimir has the following spells prepared:"
 					],
+					"weekly": {
+						"1": [
+							"{@spell resurrection}"
+						]
+					},
 					"spells": {
 						"0": {
 							"spells": [
@@ -10306,11 +10378,6 @@
 							"slots": 1
 						}
 					},
-					"weekly": {
-						"1": [
-							"{@spell resurrection}"
-						]
-					},
 					"ability": "int",
 					"type": "spellcasting"
 				}
@@ -10325,7 +10392,7 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Kasimir regains 10 hit points at the start of his turn if it has at least 1 hit point."
+						"Kasimir regains 10 hit points at the start of his turn if he has at least 1 hit point. If he takes fire damage, this trait doesn't function at the start of his next turn."
 					]
 				},
 				{
@@ -10417,38 +10484,14 @@
 				"prone",
 				"stunned"
 			],
-			"tokenUrl": "https://5e.tools/img/PSA/Amonkhet Mummy Lord.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png",
 			"fluff": {
-				"name": "Amonkhet Mummy Lord",
-				"source": "PSA",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Not every citizen of Naktamun proves to be worthy of the afterlife. Acolytes sometimes die before the Ceremony of Measurement, perhaps in training accidents. Many {@background initiate|PSA|initiates} perish in one of the first four trials, before earning their five cartouches. {@background vizier|PSA|Viziers} sometimes die before they have truly earned a place in the afterlife serving their gods. Without having proven themselves worthy, these poor souls have no place as Eternals in the afterlife—but neither have they committed a grievous sin that would warrant abandoning them to the Curse of Wandering as marauding {@creature amonkhet mummy|PSA|mummies}.",
-									"Fortunately, the beneficence of the God-Pharaoh is great enough to provide a role for these people. Called the anointed, they are carefully embalmed, protected from the Curse of Wandering, and allowed to spend another lifetime in service to the worthy. The God-Pharaoh promises that those who faithfully serve as the anointed will earn a place as attendants in the afterlife as well, and even an eternity of service in the afterlife is prefera-ble to an eternity subjected to the Curse of Wandering.",
-									"The bodies of the anointed are carefully wrapped in cloth and adorned with cartouches. In contrast to the cartouches of {@background initiate|PSA|initiates} and {@background vizier|PSA|viziers}, these do not harbor the life essence of the deceased at their best. Instead, they coach the anointed for a particular form of service. With their cartouches in place, the anointed rise and join the ranks of serving {@creature amonkhet mummy|PSA|mummies} who attend to the needs of daily life in Amonkhet.",
-									{
-										"type": "entries",
-										"name": "The Curse of Wandering",
-										"entries": [
-											"The Curse of Wandering is the greatest danger of the desert lands. A creature killed in the desert rises again as a {@creature zombie} as soon as the moisture has dried from its flesh. As a result, the corpses of every kind of desert creature shamble across the dunes alongside the humanoid {@creature zombie||zombies} of {@background dissenter|PSA|dissenters} and would-be explorers. Most of these former humanoids are mindless marauders, though some tales speak of {@creature amonkhet mummy|PSA|mummies} that have retained a sinister intelligence and even magical ability, becoming {@creature amonkhet mummy lord|PSA|mummy lords}."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/PSA/Amonkhet Mummy Lord.webp"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png"
 						}
 					}
 				]
@@ -12334,11 +12377,6 @@
 					]
 				}
 			],
-			"environment": [
-				"desert",
-				"forest",
-				"grassland"
-			],
 			"traitTags": [
 				"Amphibious",
 				"Regeneration",
@@ -12364,10 +12402,29 @@
 			"hasFluffImages": true,
 			"conditionInflict": [
 				"grappled"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Weretoad2Token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Weretoad2Token.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WeretoadToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Wereraven",
+			"name": "Urwin Martikov",
 			"group": [
 				"Lycanthropes"
 			],
@@ -12414,19 +12471,19 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"The wereraven can use its action to polymorph into a raven-humanoid hybrid or into a raven, or back into its human form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its human form if it dies."
+						"Urwin can use his action to polymorph into a raven-humanoid hybrid or into a raven, or back into his human form. His statistics, other than his size, are the same in each form. Any equipment He is wearing or carrying isn't transformed. He reverts to his human form if he dies."
 					]
 				},
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The wereraven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+						"Urwin can mimic simple sounds he has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
 					]
 				},
 				{
 					"name": "Regeneration",
 					"entries": [
-						"The wereraven regains <b>5</b> hit points at the start of its turn. If the wereraven takes damage from a silvered weapon, this trait doesn't function at the start of the wereraven's next turn. The wereraven dies only if it starts its turn with 0 hit points and doesn't regenerate."
+						"Urwin regains <b>5</b> hit points at the start of his turn. If Urwin takes damage from a silvered weapon, this trait doesn't function at the start of Urwin's next turn. Urwin dies only if he starts his turn with 0 hit points and doesn't regenerate."
 					]
 				}
 			],
@@ -12434,7 +12491,7 @@
 				{
 					"name": "Multiattack (Human or Hybrid Form Only)",
 					"entries": [
-						"The wereraven makes two weapon attacks, one of which can be with its hand crossbow."
+						"Uwrin makes two weapon attacks."
 					]
 				},
 				{
@@ -12477,59 +12534,21 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/VRGR/Wereraven.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Urwin%20Martikov%20Token.png",
 			"fluff": {
-				"name": "Wereraven",
-				"source": "VRGR",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Wereravens are secretive and extraordinarily cautious lycanthropes that trust one another but are wary of just about everyone else. Although skilled at blending into society, they keep mostly to themselves, respect local laws, and strive to do good whenever possible.",
-									"In their human and hybrid forms, wereravens favor light weapons. They are reluctant to make bite attacks in raven form for fear of spreading their curse to those who don't deserve it or who would abuse it.",
-									{
-										"name": "A Kindness of Wereravens",
-										"entries": [
-											"Wereravens refer to their tightly knit groups as kindnesses. A kindness of wereravens usually numbers between seven and twelve individuals. Not surprisingly, wereravens get along well with ravens and often hide in plain sight among them."
-										],
-										"type": "entries"
-									},
-									{
-										"name": "Charitable Collectors",
-										"type": "entries",
-										"entries": [
-											"Wereravens like to collect shiny trinkets and precious baubles. They are fond of sharing their wealth with those in need and, in their humanoid forms, modestly give money to charity. They take steps to keep magic items out of evil hands by stashing them in secret hiding places."
-										]
-									},
-									{
-										"name": "Characters as Wereravens",
-										"type": "entries",
-										"entries": [
-											"The Monster Manual has rules for characters afflicted with lycanthropy. The following text applies to wereraven characters specifically.",
-											"A character cursed with wereraven lycanthropy gains a Dexterity of 15 if his or her score isn't already higher. Attack and damage rolls for the wereraven's bite are based on whichever is higher of the character's Strength and Dexterity. The bite of a wereraven in raven form deals 1 piercing damage (no ability modifier applies to this damage) and carries the curse of lycanthropy; see the \"Player Characters as Lycanthropes\" sidebar in the lycanthropes entry in the Monster Manual for details."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/VRGR/Wereraven.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Urwin%20Martikov%20Token.png"
 						}
 					},
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/VRGR/Wereraven 2.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Wereraven3Token.png"
 						}
 					}
 				]
@@ -12696,108 +12715,21 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/MM/Werewolf.png",
+			"skill": {
+				"perception": "+6",
+				"stealth": "+5"
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WerewolfToken.png",
 			"fluff": {
-				"name": "Werewolf",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"A werewolf is a savage predator. In its humanoid form, a werewolf has heightened senses, a fiery temper, and a tendency to eat rare meat. Its wolf form is a fearsome predator, but its hybrid form is more terrifying by far-a furred and well-muscled humanoid body topped by a ravening wolf's head. A werewolf can wield weapons in hybrid form, though it prefers to tear foes apart with its powerful claws and bite.",
-									"Most werewolves flee civilized lands not long after becoming afflicted. Those that reject the curse fear what will happen if they remain among their friends and family. Those that embrace the curse fear discovery and the consequences of their murderous acts. In the wild, werewolves form packs that also include wolves and dire wolves."
-								]
-							}
-						]
-					},
-					{
-						"type": "section",
-						"name": "Lycanthropes",
-						"entries": [
-							"One of the most ancient and feared of all curses, lycanthropy can transform the most civilized humanoid into a ravening beast. In its natural humanoid form, a creature cursed by lycanthropy appears as its normal self. Over time, however, many lycanthropes acquire features suggestive of their animal form. In that animal form, a lycanthrope resembles a powerful version of a normal animal. On close inspection, its eyes show a faint spark of unnatural intelligence and might glow red in the dark.",
-							"Evil lycanthropes hide among normal folk, emerging in animal form at night to spread terror and bloodshed, especially under a full moon. Good lycanthropes are reclusive and uncomfortable around other civilized creatures, often living alone in wilderness areas far from villages and towns.",
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Curse of Lycanthropy",
-										"entries": [
-											"A humanoid creature can be afflicted with the curse of lycanthropy after being wounded by a lycanthrope, or if one or both of its parents are lycanthropes. A {@spell remove curse} spell can rid an afflicted lycanthrope of the curse, but a natural born lycanthrope can be freed of the curse only with a wish.",
-											"A lycanthrope can either resist its curse or embrace it. By resisting the curse, a lycanthrope retains its normal alignment and personality while in humanoid form. It lives its life as it always has, burying deep the bestial urges raging inside it. However, when the full moon rises, the curse becomes too strong to resist, transforming the individual into its beast form-or into a horrible hybrid form that combines animal and humanoid traits. When the moon wanes, the beast within can be controlled once again. Especially if the cursed creature is unaware of its condition, it might not remember the events of its transformation, though those memories often haunt a lycanthrope as bloody dreams.",
-											"Some individuals see little point in fighting the curse and accept what they are. With time and experience, they learn to master their shapechanging ability and can assume beast form or hybrid form at will. Most lycanthropes that embrace their bestial natures succumb to bloodlust, becoming evil, opportunistic creatures that prey on the weak."
-										]
-									}
-								]
-							},
-							{
-								"type": "inset",
-								"name": "Player Characters as Lycanthropes",
-								"entries": [
-									"A character who becomes a lycanthrope retains his or her statistics except as specified by lycanthrope type. The character gains the lycanthrope's speeds in non-humanoid form, damage immunities, traits, and actions that don't involve equipment. The character is proficient with the lycanthrope's natural attacks, such as its bite or claws, which deal damage as shown in the lycanthrope's statistics. The character can't speak while in animal form.",
-									"A non-lycanthrope humanoid hit by an attack that carries the curse of lycanthropy must succeed on a Constitution saving throw (DC 8 + the lycanthrope's proficiency bonus + the lycanthrope's Constitution modifier) or be cursed. If the character embraces the curse, his or her alignment becomes the one defined for the lycanthrope. The DM is free to decide that a change in alignment places the character under DM control until the curse of lycanthropy is removed.",
-									"The following information applies to specific lycanthropes.",
-									{
-										"type": "entries",
-										"entries": [
-											{
-												"type": "entries",
-												"name": "{@creature Werebear}",
-												"entries": [
-													"The character gains a Strength of 19 if his or her score isn't already higher, and a +1 bonus to AC while in bear or hybrid form (from natural armor). Attack and damage rolls for the natural weapons are based on Strength."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "{@creature Wereboar}",
-												"entries": [
-													"The character gains a Strength of 17 if his or her score isn't already higher, and a +1 bonus to AC while in boar or hybrid form (from natural armor). Attack and damage rolls for the tusks are based on Strength. For the Charge trait, the DC is 8 + the character's proficiency bonus + Strength modifier."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "{@creature Wererat}",
-												"entries": [
-													"The character gains a Dexterity of 15 if his or her score isn't already higher. Attack and damage rolls for the bite are based on whichever is higher of the character's Strength and Dexterity."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "{@creature Weretiger}",
-												"entries": [
-													"The character gains a Strength of 17 if his or her score isn't already higher. Attack and damage rolls for the natural weapons are based on Strength. For the Pounce trait, the DC is 8 + the character's proficiency bonus + Strength modifier."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "{@creature Werewolf}",
-												"entries": [
-													"The character gains a Strength of 15 if his or her score isn't already higher, and a +1 bonus to AC while in wolf or hybrid form (from natural armor). Attack and damage rolls for the natural weapons are based on Strength."
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Werewolf.jpg"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WerewolfToken.png"
 						}
 					}
 				]
-			},
-			"skill": {
-				"perception": "+6",
-				"stealth": "+5"
 			}
 		},
 		{
@@ -12930,7 +12862,7 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Kasimir regains 10 hit points at the start of his turn if he has at least 1 hit point."
+						"Kasimir regains 10 hit points at the start of his turn if he has at least 1 hit point. If he takes fire damage, this trait doesn't function at the start of his next turn."
 					]
 				}
 			],
@@ -13008,7 +12940,19 @@
 			],
 			"resist": [
 				"necrotic"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Father Lucian",
@@ -13135,7 +13079,19 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LucianPetrovich.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LucianPetrovich.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Father Donavich",
@@ -13244,7 +13200,23 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DonovichToken1.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DonovichToken1.png"
+						}
+					}
+				]
+			},
+			"resist": [
+				"necrotic",
+				"radiant"
+			]
 		},
 		{
 			"name": "Doru",
@@ -13289,7 +13261,10 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Doru is a 1st-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Doru has following cleric spells prepared:"
+						"Doru is a 2nd-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">",
+						"Doru has following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -13302,14 +13277,13 @@
 						"1": {
 							"spells": [
 								"{@spell cure wounds}",
-								"{@spell guiding bolt}: ({@hit 4};{@damage 4d6})",
+								"{@spell guiding bolt}: ({@hit 5};{@damage 4d6})",
 								"{@spell shield of faith}"
 							],
-							"slots": 3
+							"slots": 4
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"action": [
@@ -13338,7 +13312,23 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DoruCuredToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DoruCuredToken.png"
+						}
+					}
+				]
+			},
+			"resist": [
+				"necrotic",
+				"radiant"
+			]
 		},
 		{
 			"name": "Gadof Blinsky",
@@ -13472,7 +13462,19 @@
 			"traitTags": [
 				"Spider Climb"
 			],
-			"cr": "3"
+			"cr": "3",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/BlinskyToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/BlinskyToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Oleg Nimirovic",
@@ -13509,7 +13511,7 @@
 			"dex": 13,
 			"con": 14,
 			"int": 10,
-			"wis": 11,
+			"wis": 16,
 			"cha": 10,
 			"skill": {
 				"athletics": "+5",
@@ -13523,13 +13525,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Oleg makes two attacks."
+						"Oleg makes two attacks. His pike has 10 feet of reach."
 					]
 				},
 				{
 					"name": "Pike",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d10 + 3}) piercing damage."
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h} ({@damage 1d10 + 3}) piercing damage."
 					]
 				},
 				{
@@ -13566,6 +13568,7 @@
 			],
 			"miscTags": [
 				"MW",
+				"RCH",
 				"RW",
 				"RNG"
 			],
@@ -13581,7 +13584,38 @@
 			"traitTags": [
 				"Pack Tactics"
 			],
-			"cr": "4"
+			"cr": "4",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/OlegNimirovicToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/OlegNimirovicToken.png"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Ranger's Experience",
+					"headerEntries": [
+						"Spell Save {@dc 14}"
+					],
+					"daily": {
+						"3": [
+							"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell ensnaring strike} ({@damage 1d6})"
+						]
+					}
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"P"
+			]
 		},
 		{
 			"name": "Vallaki Guard",
@@ -13669,10 +13703,22 @@
 			],
 			"traitTags": [
 				"Pack Tactics"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/TownGuardToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/TownGuardToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Knight of the Order",
+			"name": "Knight of the Silver Dragon",
 			"source": "Allies",
 			"alignment": [
 				"L",
@@ -13799,7 +13845,19 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/RevenantToken8.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/RevenantToken8.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Sofia Vernescu",
@@ -13881,7 +13939,19 @@
 			"hasFluff": true,
 			"conditionInflict": [
 				"stunned"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SofiaVernescuToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SofiaVernescuToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Ragnar",
@@ -13992,7 +14062,19 @@
 					]
 				}
 			],
-			"cr": "7"
+			"cr": "7",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DragnarToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DragnarToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Fintir Haurach",
@@ -14094,7 +14176,19 @@
 			"miscTags": [
 				"MW"
 			],
-			"cr": "5"
+			"cr": "5",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/FintirHaurach%20Token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/FintirHaurach%20Token.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "The Martyr",
@@ -14105,7 +14199,12 @@
 			"source": "Allies",
 			"alignment": null,
 			"ac": [
-				15
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
 			],
 			"hp": {
 				"formula": "5d10 + 25",
@@ -14205,14 +14304,26 @@
 			"conditionInflict": [
 				"prone",
 				"stunned"
-			]
+			],
+			"cr": "5",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MartyrToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MartyrToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Rudolph Van Richten",
 			"alias": [
 				"Rudolph van Richten"
 			],
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
@@ -14382,83 +14493,14 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/CoS/Rictavio.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VanRichtenToken1.png",
 			"fluff": {
-				"name": "Rictavio",
-				"source": "CoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Several months ago, a colorfully dressed half-elf bard came to Barovia in a carnival wagon, with a pet monkey on his shoulder. He took over an abandoned tower on Lake Baratok before rolling into the town of Vallaki several months later. Claiming to be a carnival ringmaster in search of new actors, he began regaling locals with tales of distant lands.",
-											{
-												"name": "Monster Hunter",
-												"type": "entries",
-												"entries": [
-													"The half-elf ringmaster is, in fact, a legendary human vampire hunter named Rudolph van Richten. Van Richten's tale is a sad one. A scholar and doctor from a land called Darkon, he married his childhood sweetheart, Ingrid, and together they had a son, Erasmus. When he was fourteen, Erasmus was stolen away by Vistani and sold to a vampire named Baron Metus to be used as a companion. By the time van Richten found his son, it was too late: the baron had already transformed Erasmus into a vampire spawn. Erasmus begged his father to end his suffering, which van Richten did by pounding a wooden stake through his son's chest. Baron Metus avenged that deed by killing van Richten's wife, and van Richten has lived with the horror of his family's destruction ever since. After destroying Baron Metus in turn, van Richten sought revenge against the Vistani and took up a life of hunting evil monsters."
-												]
-											},
-											{
-												"name": "The Waiting Game",
-												"type": "entries",
-												"entries": [
-													"Van Richten isn't a young man anymore. He knows his road is coming to an end, but his work isn't done. He has come to Barovia to kill Strahd von Zarovich, the greatest vampire of them all. Van Richten has studied Strahd for years and knows he can't hope to best the vampire in a straight-up confrontation: he must wait for the right moment to strike. He has good evidence to suggest that Strahd periodically hibernates in his coffin, sometimes for years, when all is quiet in the realm. While he bides his time, van Richten hides in plain sight with the aid of a hat of disguise, his thoughts protected by a ring of mind shielding. He is trying to learn more about the Keepers of the Feather - a society of wereravens that oppose Strahd - while trying not to expose the secret society to their mutual enemy. He thinks the wereravens might prove helpful when the time comes. Van Richten also wants to take out as many of Strahd's spies as he can, starting with evil Vistani.",
-													{
-														"name": "Man with a Plan",
-														"entries": [
-															" Van Richten doesn't know that his former protégé, a good-aligned Vistana named Ezmerelda d'Avenir, has come to Barovia looking for him. He taught her many of his monster-hunting techniques, but she doesn't know all of his tricks and disguises. So far, their paths haven't crossed. In the event that van Richten becomes aware of Ezmerelda's presence, he does his utmost to protect her without putting his own plans in jeopardy. If he can manipulate a party of adventurers into keeping an eye on her, he will do so.",
-															"Van Richten works alone. A curse placed on him long ago by a Vistani seer brings doom to those he befriends. Furthermore, he believes too much is at stake to risk exposure. Consequently, if he thinks he's in danger of being unmasked, he retreats to his tower (see chapter 11) or some other quiet corner of Strahd's domain."
-														],
-														"type": "entries"
-													}
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Rictavio's Traits",
-										"entries": [
-											{
-												"name": "Ideal",
-												"type": "entries",
-												"entries": [
-													"\"Evil cannot go unchallenged.\""
-												]
-											},
-											{
-												"name": "Bond",
-												"type": "entries",
-												"entries": [
-													"\"To protect those I love, I must keep them distant and hidden from my enemies.\""
-												]
-											},
-											{
-												"name": "Flaw",
-												"type": "entries",
-												"entries": [
-													"\"I am cursed. Thus, I will never have peace.\""
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Rictavio.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VanRichtenToken1.png"
 						}
 					}
 				]
@@ -14467,7 +14509,6 @@
 		},
 		{
 			"name": "Ezmerelda d'Avenir",
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
@@ -14648,10 +14689,8 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/CoS/Ezmerelda d'Avenir.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/EzmereldaToken1.png",
 			"fluff": {
-				"name": "Ezmerelda d'Avenir",
-				"source": "CoS",
 				"entries": [
 					{
 						"type": "entries",
@@ -14744,8 +14783,8 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Ezmerelda d'Avenir.jpg"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/EzmereldaToken1.png"
 						}
 					}
 				]
@@ -14754,7 +14793,6 @@
 		},
 		{
 			"name": "Vasilka",
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
@@ -14883,7 +14921,18 @@
 			"miscTags": [
 				"MW"
 			],
-			"tokenUrl": "https://5e.tools/img/CoS/Vasilka.png"
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VasilkaToken3.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VasilkaToken3.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Armored Saber-Toothed Tiger",
@@ -14964,11 +15013,21 @@
 			"conditionInflict": [
 				"prone"
 			],
-			"tokenUrl": "https://5e.tools/img/CoS/Armored Saber-Toothed Tiger.png"
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SaberToothedTigerToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SaberToothedTigerToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Pidlwick II",
-			"isNpc": true,
 			"source": "Allies",
 			"page": 236,
 			"size": [
@@ -15024,23 +15083,29 @@
 					]
 				},
 				{
-					"name": "Sneak Attack (Spy)",
+					"name": "Sneak Attack",
 					"entries": [
 						"Pidlwick deals an extra {@dice 1d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Pidlwick that isn't {@condition incapacitated} and Pidlwick doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Construct",
+					"entries": [
+						"If Pidlwick has the mending spell cast on him, he regain {@dice 2d6} hit points."
+					]
+				},
+				{
+					"name": "Too Many Knives",
+					"entries": [
+						"Where did he get them all?"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Club",
+					"name": "Knife",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
-					]
-				},
-				{
-					"name": "Dart",
-					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw,rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
 					]
 				}
 			],
@@ -15052,90 +15117,22 @@
 				"C"
 			],
 			"damageTags": [
-				"B",
 				"P"
 			],
 			"miscTags": [
-				"MW",
 				"RW",
-				"THW"
+				"MW"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/CoS/Pidlwick II.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/PidlwickToken1.png",
 			"fluff": {
-				"name": "Pidlwick II",
-				"source": "CoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"After her husband died in battle, Duchess Dorfniya Dilisnya set her sights on becoming Count Strahd von Zarovich's bride, but she failed to win his love. Her visits to the castle were nonetheless frequent, and she never traveled without her fool, the delightful Pidlwick. The little man was like a ray of sunshine in Castle Ravenloft, and though he failed to amuse Strahd, he delighted Tatyana and Sergei with his jokes and gambols. As a result, Strahd didn't object whenever Pidlwick and the duchess came to visit.",
-											"Eager to please and desiring to return the courtesy, the duchess commissioned the legendary toymaker Fritz von Weerg to build a clockwork effigy of Pidlwick as a gift for Strahd's family. Although the duchess's heart was in the right place, the effigy didn't have Pidlwick's abilities, and it failed to entertain anyone. Even though Pidlwick himself had spent months training it, the effigy couldn't speak, and its movements were more awkward than amusing.",
-											"A harsh winter trapped the duchess, her fool, and her fool's effigy in Castle Ravenloft for several months. The duchess subsequently succumbed to illness, after which Tatyana asked Pidlwick to remain at Castle Ravenloft.",
-											{
-												"name": "One Pidlwick Too Many",
-												"type": "entries",
-												"entries": [
-													"Von Weerg was no ordinary toymaker, and he put a little of himself into all his creations, which is to say his works had a touch of their creator's madness. Pidlwick II knew that it had no purpose as long as Pidlwick remained in Castle Ravenloft, so it pushed Pidlwick down a long flight of stairs, killing him. Everyone else thought it was an accident. In the days that followed, Pidlwick II tried its best to fill its namesake's shoes, but the effigy's mere presence was upsetting to Tatyana, and it was never called on to perform. Eventually, it was shut away like a discarded toy."
-												]
-											},
-											{
-												"name": "Evil Toy",
-												"type": "entries",
-												"entries": [
-													"Pidlwick II was kept in a small closet adjacent to one of the guest bedrooms. On rare occasions when someone stayed there, Pidlwick would sneak out of the closet in the middle of the night, smother the guest with a pillow, and then retreat back to the closet. The castle staff never considered that the effigy might be responsible, instead assuming that the guests had died in their sleep.",
-													"But Strahd was not fooled. He came to realize fairly quickly that the clockwork effigy had begun to display a murderous nature. Rather than have Pidlwick II destroyed, Strahd kept the fool around to dispose of irksome guests from time to time.",
-													"After the deaths of Sergei and Tatyana, the castle became virtually abandoned, and there were no more guests for Pidlwick II to \"entertain.\" The clockwork effigy emerged from its closet and found new places to hide. It fears Strahd and eagerly follows anyone who gives it the attention it craves.",
-													"Pidlwick II is basically an oversized toy - a 4-foot-tall mechanism stuffed with gears, springs, and other components expertly fitted together to impart a semblance of life to it. Its skin is made of stitched leather pulled taut over an articulated wooden frame. Pidlwick II has rubbed soot around its eyes and mouth, giving it the triangular eyes and jagged grin of a jack-o'-lantern."
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Pidlwick II's Traits",
-										"entries": [
-											{
-												"name": "Ideal",
-												"type": "entries",
-												"entries": [
-													"\"I wish I could make people happy.\""
-												]
-											},
-											{
-												"name": "Bond",
-												"type": "entries",
-												"entries": [
-													"\"I would like to find someone - anyone - who isn't afraid of me and who enjoys my company.\""
-												]
-											},
-											{
-												"name": "Flaw",
-												"type": "entries",
-												"entries": [
-													"\"When I'm upset, I do bad things.\""
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Pidlwick II.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/PidlwickToken1.png"
 						}
 					}
 				]
@@ -15151,7 +15148,6 @@
 		},
 		{
 			"name": "Szoldar Szoldarovich and Yevgeni Krushkin",
-			"isNpc": true,
 			"source": "Allies",
 			"type": {
 				"type": "humanoid",
@@ -15203,6 +15199,12 @@
 					"entries": [
 						"Szoldar and Yevgeni have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
 					]
+				},
+				{
+					"name": "Favored Foe ( <input type= \"checkbox\"><input type= \"checkbox\">/day)",
+					"entries": [
+						"As a bonus action, Szoldar and Yevgeni can mark a target. Once on their turn when either of them deals damage to that target, the target takes and additional {@damage 1d8} damage."
+					]
 				}
 			],
 			"action": [
@@ -15213,21 +15215,21 @@
 					]
 				},
 				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
-					]
-				},
-				{
 					"name": "Longbow",
 					"entries": [
 						"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
 					]
 				},
 				{
+					"name": "Silver Shortsword (Szoldar)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
 					"name": "Silver Knitting Needle (Yevgeni)",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3}) piercing damage."
 					]
 				}
 			],
@@ -15244,11 +15246,22 @@
 				"P"
 			],
 			"miscTags": [
-				"MW",
 				"RW",
-				"RNG"
+				"RNG",
+				"MW"
 			],
-			"tokenUrl": "https://5e.tools/img/CoS/Szoldar Szoldarovich.png"
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniAndSzoldarToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniAndSzoldarToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Von Zarovich Soldier",
@@ -15544,7 +15557,19 @@
 			"conditionInflict": [
 				"blinded",
 				"deafened"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniyFederovToken1.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniyFederovToken1.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Ireena Kolyana",
@@ -15623,20 +15648,6 @@
 			"miscTags": [
 				"MW"
 			],
-			"tokenUrl": "https://5e.tools/img/CoS/Ireena Kolyana.png",
-			"fluff": {
-				"name": "Ireena Kolyana",
-				"source": "CoS",
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Ireena Kolyana.png"
-						}
-					}
-				]
-			},
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
@@ -15668,7 +15679,19 @@
 						"Ireena has advantage on saving throws against being {@condition frightened}."
 					]
 				}
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/IreenaKolyanaToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/IreenaKolyanaToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Ismark Kolyanovich",
@@ -15759,20 +15782,377 @@
 				"RW",
 				"RNG"
 			],
-			"tokenUrl": "https://5e.tools/img/CoS/Ismark Kolyanovich.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png",
 			"fluff": {
-				"name": "Ismark Kolyanovich",
-				"source": "CoS",
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Ismark Kolyanovich.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png"
 						}
 					}
 				]
 			}
+		},
+		{
+			"name": "Danika Dorakovna",
+			"group": [
+				"Feranthropes"
+			],
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 31,
+				"formula": "7d8"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(fly 50 ft. in raven and hybrid forms)"
+				}
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 11,
+			"int": 13,
+			"wis": 15,
+			"cha": 14,
+			"skill": {
+				"insight": "+4",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common (can't speak in raven form)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Danika can use her action to polymorph into a raven-humanoid hybrid or into a raven, or back into her human form. Her statistics, other than her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her human form if she dies."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"Danika can mimic simple sounds she has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Danika regains <b>5</b> hit points at the start of her turn. If Danika takes damage from a silvered weapon, this trait doesn't function at the start of Danika's next turn. Danika dies only if she starts her turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Human or Hybrid Form Only)",
+					"entries": [
+						"Danika makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Beak (Raven or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}1 piercing damage in raven form, or ({@damage 1d4 + 4}) piercing damage in hybrid form."
+					]
+				},
+				{
+					"name": "Shortsword (Human or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow (Human or Hybrid Form Only)",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Danika%20Dorakova%202%20Token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Danika%20Dorakova%202%20Token.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Wereraven3Token.png"
+						}
+					}
+				]
+			},
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"alignment": null
+		},
+		{
+			"name": "Brunjorn's Clone",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "CustomNPCs",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"{@item +2 plate armor}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"special": "108"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 16,
+			"passive": 11,
+			"shortName": "Brunjorn",
+			"level": 10,
+			"languages": [
+				"Common",
+				"Celestial",
+				"Giant"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"GI"
+			],
+			"save": {
+				"cha": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+7",
+				"religion": "+3",
+				"survival": "+5",
+				"persuasion": "+7"
+			},
+			"resist": [
+				"cold",
+				"psychic"
+			],
+			"spellcasting": [
+				{
+					"name": "1 Spellcasting",
+					"headerEntries": [
+						"Save {@dc 16}, {@hit 8} to hit.",
+						"<b>Spell Slots</b>",
+						"1st: <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
+						"2nd: <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
+						"3rd: <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
+						"4th: <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
+						"5th: <input type= \"checkbox\"> <input type= \"checkbox\">"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell force field|CustomSpells}: ({@damage 1d8+3})",
+								"{@spell guidance}",
+								"{@spell sacred flame}: ({@damage 2d8})",
+								"{@spell thaumaturgy}",
+								"{@spell word of radiance|XGE}: ({@damage 2d6})"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}: ({@damage 1d8+3})",
+								"{@spell guiding bolt}: ({@hit 8};{@damage 4d6})",
+								"{@spell healing word}: ({@damage 1d4+3})",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell spiritual weapon}: ({@hit 8};{@damage 1d8+3})",
+								"{@spell stone greathammer|CustomSpells}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell spirit guardians}: ({@damage 3d8})"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell freedom of movement}",
+								"{@spell guardian of faith}",
+								"{@spell orbital stones|CustomSpells}: ({@hit 8};{@damage 3d10})<p><input> {@dice 1d4}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell flame strike}: ({@damage 4d8})",
+								"{@spell hold monster}",
+								"{@spell mass cure wounds}: ({@damage 3d8+3})"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O",
+				"R"
+			],
+			"action": [
+				{
+					"name": "The Morning Star",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage plus 4 ({@damage 1d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Stone Greathammer",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage plus 4 ({@damage 1d8}) radiant damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"reaction": [
+				{
+					"name": "War God's Blessing ( <input type= \"checkbox\"><input type= \"checkbox\">)",
+					"entries": [
+						"When a creature within 30 feet of Brunjorn makes an attack roll, he can use his reaction using Channel Divinity to grant that creature a +10 bonus to the roll (after the roll but before knowing the result)."
+					]
+				},
+				{
+					"name": "Stone's Endurance ( <input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">)",
+					"entries": [
+						"Brunjorn reduces damage dealt to him by {@dice 1d12+3}."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Stone of Agathys",
+					"entries": [
+						"When Brunjorn crushes the Stone of Agathys, he casts Armor of Agathys on himself at 9th level."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"Brunjorn can lift up to 960 lbs in an ideal scenario."
+					]
+				},
+				{
+					"name": "War Priest ( <input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">)",
+					"entries": [
+						"When Brunjorn takes the attack action, he can attack one additional time as part of the same action."
+					]
+				},
+				{
+					"name": "War Caster",
+					"entries": [
+						"Brunjorn has advantage on CON saving throws that he makes to maintain his concentration on a spell when he takes damage."
+					]
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"name": "Zrin-Hala, the Howling Storm",
+			"source": "CustomNPCs",
+			"lairActions": [
+				"Zrin-Hala can use the following actions in his lair. On initiative count 20 (losing initiative ties), Zrin-Hala takes a lair action to cause one of the following effects; it can't use the same effect two rounds in a row:\",",
+				{
+					"type": "list",
+					"items": [
+						"Zrin-Hala drops the temperature of the air, covering all surfaces with ice. This effect is identical to the {@spell sleet storm} spell.",
+						"Zrin-Hala controls the surrounding air as an extension of itself. Each creature Zrin-Hala designates must succeed at a {@dc 24} Constitution saving throw or be hoisted or flung {@dice 3d6 × 10} feet through the air. A creature smashed into a solid object or released in mid-air takes {@damage 1d6} bludgeoning damage for every 10 feet moved or fallen.",
+						"Zrin-Hala creates a torrent of debris within 120 feet of him that lasts until initiative count 20 on the next round. The debris lightly obscures every creature and object in the area for the duration. All creatures in the area must succeed at a {@dc 24} Wisdom saving throw or be {@condition blinded} until initiative count 20 on the next round."
+					]
+				}
+			]
 		}
 	]
 }
