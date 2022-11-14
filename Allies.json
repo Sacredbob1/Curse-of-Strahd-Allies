@@ -11,8 +11,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1668383750,
-		"dateLastModified": 1668383750
+		"dateAdded": 1668385345,
+		"dateLastModified": 1668385345
 	},
 	"monster": [
 		{
@@ -1992,7 +1992,6 @@
 		},
 		{
 			"name": "Pidlwick II",
-			"isNpc": true,
 			"source": "Allies",
 			"page": 236,
 			"size": [
@@ -2239,7 +2238,6 @@
 			"alias": [
 				"Rudolph van Richten"
 			],
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
@@ -2519,7 +2517,6 @@
 		},
 		{
 			"name": "Szoldar Szoldarovich and Yevgeni Krushkin",
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
@@ -3008,7 +3005,6 @@
 		},
 		{
 			"name": "Vasilka",
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
@@ -3153,7 +3149,6 @@
 		{
 			"name": "Victor Vallakovich",
 			"shortName": "Victor",
-			"isNpc": true,
 			"source": "Allies",
 			"size": [
 				"M"
