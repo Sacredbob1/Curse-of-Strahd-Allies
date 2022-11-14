@@ -74,6 +74,22 @@
 				"convertedBy": []
 			},
 			{
+				"json": "CustomNPCs",
+				"abbreviation": "CNPC",
+				"full": "Custom NPCs",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
+				"json": "CustomNPCs",
+				"abbreviation": "CNPC",
+				"full": "Custom NPCs",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
 				"json": "CustomSpells",
 				"abbreviation": "CS",
 				"full": "Custom Spells",
@@ -123,7 +139,7 @@
 			}
 		],
 		"dateAdded": 1657405461,
-		"dateLastModified": 1667864177
+		"dateLastModified": 1668469500
 	},
 	"spell": [
 		{
@@ -16136,6 +16152,365 @@
 			"spellcastingTags": [
 				"O"
 			]
+		},
+		{
+			"name": "Antithesis",
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "40d20 + 240",
+				"average": 660
+			},
+			"speed": {
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 20,
+			"dex": 26,
+			"con": 22,
+			"int": 20,
+			"wis": 18,
+			"cha": 24,
+			"save": {
+				"con": "+15",
+				"cha": "+16",
+				"int": "+14"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 23,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"poison",
+				"psychic",
+				"thunder"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"All",
+				"telepathy 300 ft."
+			],
+			"cr": "30",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the nothing man fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If destroyed, the nothing man reforms within 10 miles of the place he was destroyed with all of his hit points 1 day later."
+					]
+				},
+				{
+					"name": "Nothingness",
+					"entries": [
+						"Any creature or nonmagical object which touches the nothing man takes {@damage 3d10} force damage. Any creature he kills is completely erased from existance, and any nonmagical object he touches is utterly destroyed where he intersected with it."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The the nothing man can move through other creatures and objects as if they were {@quickref difficult terrain||3}. Any creature he passes through must make a {@dc 15} Dexterity saving throw or take {@damage 5d10} force damage, and any nonmagical object he moves through is reduced to dust."
+					]
+				},
+				{
+					"name": "Voidsight",
+					"entries": [
+						"The nothing man can see through nonmagical objects out to a range of 120 feet. This vision is blocked by even transparent magical objects."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"The nothing man can't be affected or detected by spells of 5th level or lower unless he wishes to be."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"U"
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsLegendary": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"C",
+				"O",
+				"Y"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"languageTags": [
+				"TP"
+			],
+			"skill": {
+				"history": "+23",
+				"perception": "+13",
+				"intimidation": "+16"
+			},
+			"action": [
+				{
+					"name": "Touch",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}35 ({@damage 5d10 + 8}) force damage."
+					]
+				},
+				{
+					"name": "Thought",
+					"entries": [
+						"The nothing man thinks of a creature within 120 feet of him. The creature must make a {@dc 24} Charisma saving throw, taking {@damage 6d6} psychic damage on a failure or half as much on a success."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 24}, {@hit 14} to hit with spell attacks."
+					],
+					"will": [
+						"{@spell aether lance|CustomSpells}: ({@damage 8d4})",
+						"{@spell pulse wave|EGW}: ({@damage 6d6})",
+						"{@spell gravity sinkhole|EGW}: ({@damage 5d10})",
+						"{@spell magic missile}: 8x({@damage 1d4+1};{@damage 8d4+8})",
+						"{@spell magnify gravity|EGW}: ({@damage 4d8})"
+					],
+					"daily": {
+						"1e": [
+							"{@spell antilife shell}",
+							"{@spell antimagic field}",
+							"{@spell disintegrate}: ({@damage 10d6+30})",
+							"{@spell ravenous void|EGW}: ({@damage 5d10})",
+							"{@spell reality break|EGW}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"actionHeader": [
+				"The nothing man's attacks ignore nonmagical armor."
+			]
+		},
+		{
+			"name": "Elisabeth Durst",
+			"source": "CustomNPCs",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": null,
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 24",
+				"average": 57
+			},
+			"speed": {
+				"walk": 15,
+				"climb": 15
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 13,
+			"wis": 11,
+			"cha": 14,
+			"passive": 10,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Enthralled Lure ( <input type= \"checkbox\">/10 minutes)",
+					"entries": [
+						"Elisabeth can cast the {@spell suggestion} spell, requiring no spell components and using Charisma as her spellcasting ability (spell save {@dc 12})."
+					]
+				},
+				{
+					"name": "Reconstruction",
+					"entries": [
+						"When Elisabeth is reduced to 0 hit points, she explodes into 10 crawling claws and one zombie. After 10 minutes, if at least two of those creatures are still alive, they teleport to the location of Elisabeth's death and merge together, whereupon Elisabetj reforms and regains all her hit points."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Elisabeth doesn't require air, food, drink, or sleep."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Elisabeth can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Crushing Grasp",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed a {@dc 15} Strength saving throw or become {@condition grappled} (escape {@dc 15}). Elisabeth can have only one creature {@condition grappled} in this way at a time."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Consume Vitality",
+					"entries": [
+						"Elisabeth targets a creature she is grappling. If the target is not a Construct or an Undead, the target must succeed on a {@dc 14} Constitution saving throw or they gain 1 level of {@condition exhaustion} while Elisabeth gains 5 temporary hit points and doubles her movement speed for one round."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"exhaustion",
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/JttRC/Soul Shaker.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+6"
+			},
+			"shortName": "Elisabeth",
+			"traitTags": [
+				"Spider Climb"
+			],
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Elisabeth moves up to 10 feet. Opportunity attacks against her are made with disadvantage."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"<input type= \"checkbox\">",
+				"Elisabeth can take 1 legendary action at the end of another creature's turn."
+			],
+			"legendaryActions": 1,
+			"reaction": [
+				{
+					"name": "Entrap",
+					"entries": [
+						"When a creature Elisabeth  can see attempts to move through a doorway in Durst Manor, she can cause the doorway to shut and lock immediately before or after they move through the space."
+					]
+				}
+			],
+			"environment": [
+				"arctic"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/JttRC/Soul Shaker.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"legendaryGroup": [
