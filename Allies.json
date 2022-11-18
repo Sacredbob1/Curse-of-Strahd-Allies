@@ -11,8 +11,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1668385345,
-		"dateLastModified": 1668385345
+		"dateAdded": 1668741273,
+		"dateLastModified": 1668741273
 	},
 	"monster": [
 		{
@@ -64,19 +64,39 @@
 					"entries": [
 						"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
 					]
+				},
+				{
+					"name": "Silvered Weapons",
+					"entries": [
+						"All of the tiger's damage is considered silvered for the purpose of overcoming resistances."
+					]
+				},
+				{
+					"name": "Spiked Armor",
+					"entries": [
+						"Any creature grappling the tiger takes {@damage 1d4} piercing damage at the start of each of its turns."
+					]
 				}
 			],
 			"action": [
 				{
-					"name": "Bite",
+					"name": "Bite (silvered)",
 					"entries": [
 						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "Claw (silvered)",
 					"entries": [
 						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spikes",
+					"entries": [
+						"When the tiger is hit by a melee attack from a creature within 5 feet of it, it can use its reaction to deal {@damage 1d4} piercing damage to that creature using its spiked armor."
 					]
 				}
 			],
@@ -178,7 +198,13 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Danika regains <b>5</b> hit points at the start of her turn. If Danika takes damage from a silvered weapon, this trait doesn't function at the start of Danika's next turn. Danika dies only if she starts her turn with 0 hit points and doesn't regenerate."
+						"Danika regains <b>5</b> hit points at the start of her turn. If she takes damage from a silvered weapon, this trait doesn't function at the start of her next turn. Danika dies only if she starts her turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Raven's Sight ( <input type= \"checkbox\">/day)",
+					"entries": [
+						"Danika peers into the near future and predicts a specific outcome. When any creature that she can see makes a {@dice d20} roll, she can choose to turn that roll into either a 1 or a 20 (no action required)"
 					]
 				}
 			],
@@ -190,12 +216,6 @@
 					]
 				},
 				{
-					"name": "Beak (Raven or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}1 piercing damage in raven form, or ({@damage 1d4 + 4}) piercing damage in hybrid form."
-					]
-				},
-				{
 					"name": "Shortsword (Human or Hybrid Form Only)",
 					"entries": [
 						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
@@ -204,7 +224,7 @@
 				{
 					"name": "Hand Crossbow (Human or Hybrid Form Only)",
 					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
 					]
 				}
 			],
@@ -260,9 +280,10 @@
 			"alignment": null,
 			"ac": [
 				{
-					"ac": 14,
+					"ac": 16,
 					"from": [
-						"{@item chain shirt|phb}"
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
 					]
 				}
 			],
@@ -280,8 +301,8 @@
 			"wis": 14,
 			"cha": 11,
 			"skill": {
-				"medicine": "+4",
-				"religion": "+2"
+				"religion": "+3",
+				"medicine": "+5"
 			},
 			"passive": 12,
 			"resist": [
@@ -296,9 +317,9 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Doru is a 2nd-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks).",
+						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks.",
 						"<b>Spell Slots</b>",
-						"1st level: <input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">",
+						"1st level: <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
 						"Doru has following cleric spells prepared:"
 					],
 					"spells": {
@@ -312,20 +333,34 @@
 						"1": {
 							"spells": [
 								"{@spell cure wounds}",
-								"{@spell guiding bolt}: ({@hit 5};{@damage 4d6})",
+								"{@spell detect magic}",
 								"{@spell shield of faith}"
 							],
 							"slots": 4
 						}
 					},
-					"ability": "wis"
+					"type": "spellcasting"
 				}
 			],
 			"action": [
 				{
 					"name": "Mace",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Guiding Bolt ( <input type= \"checkbox\"><input type= \"checkbox\">/long rest)",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}15 ({@damage 4d6}) radiant damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Warding Flare ( <input type= \"checkbox\"><input type= \"checkbox\">/long rest)",
+					"entries": [
+						"When Doru is attacked by a creature within 30 feet of him that he can see, he can use his reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can’t be {@condition blinded} is immune to this feature."
 					]
 				}
 			],
@@ -348,7 +383,8 @@
 				"C"
 			],
 			"damageTags": [
-				"B"
+				"B",
+				"R"
 			],
 			"damageTagsSpell": [
 				"R"
@@ -357,7 +393,8 @@
 				"CC"
 			],
 			"miscTags": [
-				"MW"
+				"MW",
+				"RW"
 			],
 			"hasFluff": true
 		},
@@ -663,9 +700,10 @@
 			],
 			"ac": [
 				{
-					"ac": 13,
+					"ac": 15,
 					"from": [
-						"chain shirt"
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
 					]
 				}
 			],
@@ -683,8 +721,8 @@
 			"wis": 14,
 			"cha": 11,
 			"skill": {
-				"medicine": "+4",
-				"religion": "+2"
+				"medicine": "+5",
+				"religion": "+3"
 			},
 			"passive": 12,
 			"resist": [
@@ -699,7 +737,11 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Donavich is a 3rd-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Donavich has following cleric spells prepared:"
+						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks.",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"Donavich has following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -720,20 +762,33 @@
 						"2": {
 							"spells": [
 								"{@spell gentle repose}",
-								"{@spell spiritual weapon}: ({@hit 4};{@damage 1d8+2})"
+								"{@spell spiritual weapon}: ({@hit 5};{@damage 1d8+2})"
 							],
 							"slots": 2
 						}
 					},
-					"ability": "wis",
 					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Channel Divinity: Radiance of the Dawn ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"As an action, Donavich presents his holy symbol, dispelling any magical darkness within 30 feet of him. Additionally, each hostile creature within 30 feet of him must make a Constitution saving throw ({@dc 13}). A creature takes radiant damage equal to {@damage 2d10 + 3} on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from Donavich is not affected."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+					]
+				},
+				{
+					"name": "Lathandar's Light",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 60 ft., one target. {@h}({@damage 1d6 + 2}) fire damage."
 					]
 				}
 			],
@@ -766,7 +821,8 @@
 				"CC"
 			],
 			"miscTags": [
-				"MW"
+				"MW",
+				"RW"
 			],
 			"hasFluff": true
 		},
@@ -822,7 +878,12 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Lucian is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Lucian has the following cleric spells prepared:"
+						"Lucian is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"Lucian has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -836,7 +897,7 @@
 							"spells": [
 								"{@spell bless}",
 								"{@spell healing word}: ({@damage 1d4+3})",
-								"{@spell sanctuary}"
+								"{@spell protection from evil and good}"
 							],
 							"slots": 4
 						},
@@ -871,7 +932,7 @@
 				{
 					"name": "Mace",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
 					]
 				}
 			],
@@ -1116,7 +1177,13 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d4 + 2}) piercing damage plus ({@damage 1d6}) necrotic damage. Blinsky then heals for the amount of necrotic damage dealt."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d4 + 3}) piercing damage plus ({@damage 1d6}) necrotic damage. Blinsky then heals for the amount of necrotic damage dealt."
+					]
+				},
+				{
+					"name": "Bite/Claw (Alter Self)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage plus {@damage 1d6} necrotic damage."
 					]
 				},
 				{
@@ -1385,7 +1452,15 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Kasimir has the following spells prepared:"
+						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"6th level: <input type=\"checkbox\">",
+						"Kasimir has the following spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -1895,24 +1970,26 @@
 				"Common"
 			],
 			"cr": "4",
-			"spellcasting": [
-				{
-					"name": "Ranger's Experience",
-					"headerEntries": [
-						"Spell Save {@dc 14}"
-					],
-					"daily": {
-						"3": [
-							"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell ensnaring strike} ({@damage 1d6})"
-						]
-					}
-				}
-			],
 			"trait": [
 				{
 					"name": "Pack Tactics",
 					"entries": [
 						"Oleg has advantage on an attack roll against a creature if at least one of the Oleg's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Battle Commander ( <input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">/short rest>",
+					"entries": [
+						"Oleg has access to the following Battle Master Maneuvers. His superiority die is {@dice 1d8}, and his save DC is 15.",
+						"<b>Bait and Switch</b>",
+						"<details>&emsp;When Oleg is within 5 feet of a willing ally on his turn, He can expend one superiority die and switch places with that ally. This movement doesn’t provoke opportunity attacks.",
+						"&emsp;Roll the superiority die. Until the start of his next turn, Oleg or the ally (Oleg's choice) gains a bonus to AC equal to the number rolled.</details>",
+						"<b>Brace</b>",
+						"<details>&emsp;When an enemy moves into his reach, Oleg can use his reaction to expend one superiority die and make one attack against the creature. If the attack hits, add the superiority die to the weapon’s damage roll.</details>",
+						"<b>Trip Attack</b>",
+						"<details>&emsp;When Oleg hits a creature with a weapon attack, he can expend one superiority die to attempt to knock the target down. He adds the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}</details>",
+						"<b>Lunging Attack</b>",
+						"<details>&emsp;When Oleg makes a melee attack, he can expend one superiority die to increase his reach for that attack by 5 feet. If he hits, he adds the superiority die to the attack’s damage roll."
 					]
 				}
 			],
@@ -1927,12 +2004,6 @@
 					"name": "Pike",
 					"entries": [
 						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h} ({@damage 1d10 + 3}) piercing damage."
-					]
-				},
-				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
 					]
 				},
 				{
@@ -1979,14 +2050,14 @@
 			"damageTagsSpell": [
 				"P"
 			],
-			"spellcastingTags": [
-				"O"
-			],
 			"miscTags": [
 				"MW",
 				"RCH",
 				"RNG",
 				"RW"
+			],
+			"conditionInflict": [
+				"prone"
 			],
 			"hasFluff": true
 		},
@@ -2297,7 +2368,14 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Rudolph is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He has the following cleric spells prepared:"
+						"Rudolph is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\">",
+						"Rudolph has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -2832,7 +2910,13 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Urwin regains <b>5</b> hit points at the start of his turn. If Urwin takes damage from a silvered weapon, this trait doesn't function at the start of Urwin's next turn. Urwin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+						"Urwin regains <b>5</b> hit points at the start of his turn. If he takes damage from a silvered weapon, this trait doesn't function at the start of his next turn. Urwin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Raven's Eye (<input type= \"checkbox\">/day)",
+					"entries": [
+						"Urwin opens his magical senses, granting himself {@sense truesight} for the next minute (no action required)."
 					]
 				}
 			],
@@ -2844,12 +2928,6 @@
 					]
 				},
 				{
-					"name": "Beak (Raven or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}1 piercing damage in raven form, or ({@damage 1d4 + 4}) piercing damage in hybrid form."
-					]
-				},
-				{
 					"name": "Shortsword (Human or Hybrid Form Only)",
 					"entries": [
 						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
@@ -2858,7 +2936,7 @@
 				{
 					"name": "Hand Crossbow (Human or Hybrid Form Only)",
 					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
 					]
 				}
 			],
@@ -3486,31 +3564,38 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"The weretoad can use its action to polymorph into a toad-humanoid hybrid or into a tiny or medium sized toad, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+						"</br>The weretoad can use its action to polymorph into a toad-humanoid hybrid or into a tiny or medium sized toad, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
 					]
 				},
 				{
 					"name": "Amphibious",
 					"entries": [
-						"The weretoad can breathe air and water."
+						"</br>The weretoad can breathe air and water."
 					]
 				},
 				{
 					"name": "Standing Leap",
 					"entries": [
-						"The weretoad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+						"</br>The weretoad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
 					]
 				},
 				{
 					"name": "Swamp Camouflage",
 					"entries": [
-						"The weretoad has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
+						"</br>The weretoad has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
 					]
 				},
 				{
 					"name": "Regeneration",
 					"entries": [
-						"The weretoad regains <b>10</b> hit points at the start of its turn. If the weretoad takes damage from a silvered weapon, this trait doesn't function at the start of the weretoad's next turn. The weretoad dies only if it starts its turn with 0 hit points and doesn't regenerate."
+						"</br>The weretoad regains <b>10</b> hit points at the start of its turn. If the weretoad takes damage from a silvered weapon, this trait doesn't function at the start of the weretoad's next turn. The weretoad dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Jeny's Blessing (<input type= \"checkbox\">/day)",
+					"entries": [
+						"</br>The weretoad can cast any first level evocation or transmutation druid spell (Spell Save {@dc 15}, {@hit 7} to hit with spell attacks)",
+						"<details>{@spell arctic breath|CS}, {@spell bad blood|CS}, {@spell create or destroy water}, {@spell cure wounds}, {@spell earth tremor|XGE}, {@spell faerie fire}, {@spell goodberry}, {@spell healing word}, {@spell jump}, {@spell lightning tendril|CS}, {@spell longstrider}, {@spell purify food and drink}, {@spell stone fist|CS}, {@spell thunderwave}</details>"
 					]
 				}
 			],
