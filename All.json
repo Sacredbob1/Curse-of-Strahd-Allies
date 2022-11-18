@@ -12812,7 +12812,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks).",
+						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks).",
 						"<b>Spell Slots</b>",
 						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
 						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
