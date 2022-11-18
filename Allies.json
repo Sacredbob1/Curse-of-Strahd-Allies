@@ -11,8 +11,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1668741439,
-		"dateLastModified": 1668741439
+		"dateAdded": 1668742343,
+		"dateLastModified": 1668742343
 	},
 	"monster": [
 		{
@@ -202,9 +202,9 @@
 					]
 				},
 				{
-					"name": "Raven's Sight ( <input type= \"checkbox\">/day)",
+					"name": "Raven's Eye ( <input type= \"checkbox\">/day)",
 					"entries": [
-						"Danika peers into the near future and predicts a specific outcome. When any creature that she can see makes a {@dice d20} roll, she can choose to turn that roll into either a 1 or a 20 (no action required)"
+						"Danika opens her magical senses, granting herself {@sense truesight} out to a range of 120 feet for the next minute (no action required). While this ability is active, she can see into the ethereal plane to the same range."
 					]
 				}
 			],
@@ -2914,9 +2914,9 @@
 					]
 				},
 				{
-					"name": "Raven's Eye (<input type= \"checkbox\">/day)",
+					"name": "Raven's Foresight (<input type= \"checkbox\">/day)",
 					"entries": [
-						"Urwin opens his magical senses, granting himself {@sense truesight} for the next minute (no action required)."
+						"Urwin peers into the near future and predicts a specific outcome. When any creature that he can see makes a {@dice d20} roll, he can choose to turn that roll into either a 1 or a 20 (no action required)"
 					]
 				}
 			],

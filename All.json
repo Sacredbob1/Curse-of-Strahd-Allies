@@ -12511,9 +12511,9 @@
 					]
 				},
 				{
-					"name": "Raven's Eye (<input type= \"checkbox\">/day)",
+					"name": "Raven's Foresight (<input type= \"checkbox\">/day)",
 					"entries": [
-						"Urwin opens his magical senses, granting himself {@sense truesight} for the next minute (no action required)."
+						"Urwin peers into the near future and predicts a specific outcome. When any creature that he can see makes a {@dice d20} roll, he can choose to turn that roll into either a 1 or a 20 (no action required)"
 					]
 				}
 			],
@@ -15961,9 +15961,9 @@
 					]
 				},
 				{
-					"name": "Raven's Sight ( <input type= \"checkbox\">/day)",
+					"name": "Raven's Eye ( <input type= \"checkbox\">/day)",
 					"entries": [
-						"Danika peers into the near future and predicts a specific outcome. When any creature that she can see makes a {@dice d20} roll, she can choose to turn that roll into either a 1 or a 20 (no action required)"
+						"Danika opens her magical senses, granting herself {@sense truesight} out to a range of 120 feet for the next minute (no action required). While this ability is active, she can see into the ethereal plane to the same range."
 					]
 				}
 			],
@@ -16059,7 +16059,8 @@
 				}
 			],
 			"hp": {
-				"special": "108"
+				"formula": "10d8 + 50",
+				"average": 108
 			},
 			"speed": {
 				"walk": 30
@@ -16096,6 +16097,8 @@
 			},
 			"resist": [
 				"cold",
+				"necrotic",
+				"poison",
 				"psychic"
 			],
 			"spellcasting": [
@@ -16156,9 +16159,9 @@
 						},
 						"5": {
 							"spells": [
+								"{@spell dawn|XGE}",
 								"{@spell flame strike}: ({@damage 4d8})",
-								"{@spell hold monster}",
-								"{@spell mass cure wounds}: ({@damage 3d8+3})"
+								"{@spell hold monster}"
 							],
 							"slots": 0
 						}
