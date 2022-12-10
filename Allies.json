@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.169.5",
+	"siteVersion": "1.171.0",
 	"_meta": {
 		"sources": [
 			{
@@ -11,8 +11,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1668821008,
-		"dateLastModified": 1668821008
+		"dateAdded": 1670631227,
+		"dateLastModified": 1670631227
 	},
 	"monster": [
 		{
@@ -3620,9 +3620,9 @@
 					]
 				},
 				{
-					"name": "Spear (Humanoid or Hybrid Form Only)",
+					"name": "Cursed Trident (Humanoid or Hybrid Form Only)",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft. or range 20/60, one target. {@h} ({@damage 1d8 + 3}) piercing damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft. or range 20/60, one target. {@h} ({@damage 1d8 + 5}) piercing damage."
 					]
 				}
 			],
