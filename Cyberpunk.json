@@ -1,0 +1,185 @@
+{
+	"siteVersion": "1.171.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CYBR",
+				"abbreviation": "CYBR",
+				"full": "Cyberpunk",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1671601333,
+		"dateLastModified": 1671601333
+	},
+	"monster": [
+		{
+			"name": "Corpo Grunt",
+			"source": "CYBR",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"English"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Arasaka HJSH-18 Masamune",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 90/300 ft., one target. {@h}16 ({@damage 3d6 + 2}) damage."
+					]
+				},
+				{
+					"name": "F-GX Frag Grenade ({@coinflip})",
+					"entries": [
+						"Range 60 feet. Explodes at end of next turn after activation.",
+						"{@dc 16} DEX save",
+						"{@damage 6d6} in 10 foot radius, half on success.",
+						"{@dc 22} DEX check to throw back: detonates on failure."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"fluff": {
+				"name": "Commoner",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits."
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Commoner.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/commoner.mp3"
+			},
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Corpo Shield",
+			"source": "CYBR",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"athletics": "+7"
+			},
+			"senses": [
+				"Thermal Vision 120 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"English"
+			],
+			"cr": "5",
+			"actionHeader": [
+				"The Corpo Shield can attack twice."
+			],
+			"action": [
+				{
+					"name": "Militech M-76e Omaha",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 60/200 ft., one target. {@h}8 ({@damage 2d6 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Antipersonnel Axe",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shield Projectors",
+					"entries": [
+						"The Corpo Shield projects a hemispherical shield in a space adjacent to him.",
+						"15 ft. radius",
+						"100 HP",
+						"Provides total cover",
+						"Must use action to maintain"
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		}
+	]
+}
