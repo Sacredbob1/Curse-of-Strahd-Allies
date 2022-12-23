@@ -1,0 +1,158 @@
+{
+	"siteVersion": "1.172.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "CYBR",
+				"abbreviation": "CYBR",
+				"full": "Cyberpunk",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1671755790,
+		"dateLastModified": 1671755790
+	},
+	"monster": [
+		{
+			"name": "Aurelius",
+			"shortName": true,
+			"source": "CYBR",
+			"level": 7,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@spell barkskin}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"int": "+4",
+				"wis": "+8"
+			},
+			"skill": {
+				"animal handling": "+8",
+				"nature": "+4",
+				"stealth": "+6",
+				"survival": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Primordial",
+				"Sylvan"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Aurelius's spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 8} to hit with spell attacks). He can innately cast the following spells with his druidic focus."
+					],
+					"will": [
+						"{@spell control flames|XGE}",
+						"{@spell druidcraft}",
+						"{@spell ray of frost}: ({@hit 8};{@damage 3d8})"
+					],
+					"daily": {
+						"3e": [
+							"<p></p><input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> {@spell healing word}: ({@damage 1d4+4})",
+							"<p></p><input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> {@spell ice knife|XGE}: ({@hit 8};{@damage 1d10}/{@damage 2d6})"
+						],
+						"1e": [
+							"<p></p><b><em>*Require Concentration</em></b>",
+							"<p></p><input type=\"checkbox\"> {@spell dispel magic}",
+							"<p></p><input type=\"checkbox\"> {@spell dominate beast}*",
+							"<p></p><input type=\"checkbox\"> {@spell freedom of movement}",
+							"<p></p><input type=\"checkbox\"> {@spell ice storm}: ({@damage 2d8};{@damage 4d6})",
+							"<p></p><input type=\"checkbox\"> {@spell lesser restoration}",
+							"<p></p><input type=\"checkbox\"> {@spell moonbeam}: ({@damage 3d10})*",
+							"<p></p><input type=\"checkbox\"> {@spell pass without trace}*",
+							"<p></p><input type=\"checkbox\"> {@spell polymorph}*",
+							"<p></p><input type=\"checkbox\"> {@spell summon beast|TCE} ({@creature Bestial Spirit|TCE}): ({@hit 8};{@damage 1d8+6})*"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Wild Shape: (<input type = \"checkbox\"> <input type = \"checkbox\">/Short Rest)",
+					"entries": [
+						"You can use your action to transform into a {@creature Dire Wolf}, {@creature Giant Owl}, {@creature Fox|IDRotF}, {@creature Saber-Toothed Tiger}.",
+						"You gain the beast's hit points on top of your current hit points. When your beast form loses all of its hit points, the excess damage carries over to your humanoid form.",
+						"You can't cast spells while in your animal form. However, you can continue concentrating on spells you have already cast, and you can take spell actions (i.e. moving {@spell moonbeam})."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shillelagh (2 attacks)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}({@damage 1d8+4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Ray of Frost",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60 ft., one target. {@h}9 ({@damage 3d8}) cold damage, and the target's movement speed is reduced by 10 feet until the start of your next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"P",
+				"S"
+			],
+			"damageTags": [
+				"C"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"spellcastingTags": [
+				"O"
+			]
+		}
+	]
+}
