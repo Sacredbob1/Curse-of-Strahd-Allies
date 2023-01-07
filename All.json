@@ -4656,7 +4656,8 @@
 				{
 					"name": "Unarmed Strike/Longsword (Vampire or Wolf Form Only).",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, 9 ({@dice 1d8 + 5}) slashing, 7 ({@dice 2d6}) necrotic. Forgo slashing damage to grapple ({@dc 19})."
+						"{@atk mw} {@hit 11} to hit.",
+						"({@dice 1d8 + 5}) slashing, ({@dice 2d6}) necrotic. Forgo slashing damage to grapple ({@dc 19})."
 					]
 				},
 				{
@@ -4676,7 +4677,8 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit against {@condition grappled}, {@condition incapacitated}, or {@condition restrained}. {@h}8 ({@dice 1d6 + 5}) piercing, 10 ({@dice 3d6}) necrotic. Hit point max reduced by necrotic and heals."
+						"{@atk mw} {@hit 11} to hit against {@condition grappled}, {@condition incapacitated}, or {@condition restrained}.",
+						"{@h} ({@dice 1d6 + 5}) piercing, ({@dice 3d6}) necrotic. Hit point max reduced by necrotic and heals."
 					]
 				},
 				{
@@ -5630,20 +5632,28 @@
 				{
 					"name": "Savage Bite",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, {@condition restrained}, or {@condition prone}. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage (lingering).",
-						"Volenta can bite a chunk of flesh out of any creature that is hit by her bite attack. The creature is grievously wounded, and takes 10 ({@damage 3d6}) necrotic damage at the start of each of its turns. The wound ends if the target regains any hit points or if a creature uses an action to staunch the wound, which requires a successful {@dc 15} wisdom (medicine) check. If she uses this ability on a humanoid, she regains an additional 10 hit points at the start of her next turn."
+						"{@hit 9} to hit.",
+						"Willing, {@condition grappled}, {@condition incapacitated}, {@condition restrained}, or {@condition prone}.",
+						"{@h} ({@damage 2d6 + 5}) piercing damage plus ({@damage 2d6}) necrotic damage (lingering).",
+						"<details>",
+						"Volenta can bite a chunk of flesh out of any creature that is hit by her bite attack. The creature is grievously wounded, and takes ({@damage 3d6}) necrotic damage at the start of each of its turns. The wound ends if the target regains any hit points or if a creature uses an action to staunch the wound, which requires a successful {@dc 15} Wisdom (Medicine) check. If she uses this ability on a humanoid, she regains an additional 10 hit points at the start of her next turn.",
+						"</details>",
+						"Deep bite: Wounded ({@damage 3d6}), {@dc 15} Med check. Regains 10 additional HP."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}15 ({@damage 3d6 + 5}) slashing damage. Instead of dealing damage, Volenta can leap onto and grapple the target (escape {@dc 20})."
+						"{@hit 9} to hit.",
+						"{@h}15 ({@damage 3d6 + 5}) slashing damage. Instead of dealing damage, Volenta can leap onto and grapple the target (escape {@dc 20})."
 					]
 				},
 				{
 					"name": "Poisoned Dart",
 					"entries": [
-						"{@atk rw} {@hit 9} to hit, range 40/120 ft., one target. {@h}10 ({@damage 2d4 + 5}) piercing damage, and the target must make a constitution saving throw ({@dc 14}) or take an additional 7 ({@damage 2d6}) poison damage and be {@condition poisoned} until the end of their next turn."
+						"{@hit 9} to hit.",
+						"Range 40/120 ft.",
+						"{@h}10 ({@damage 2d4 + 5}) piercing damage, and the target must make a constitution saving throw ({@dc 14}) or take an additional 7 ({@damage 2d6}) poison damage and be {@condition poisoned} until the end of their next turn."
 					]
 				}
 			],
@@ -5701,15 +5711,9 @@
 			],
 			"damageTags": [
 				"I",
-				"N",
 				"P",
 				"R",
 				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
 			],
 			"conditionInflict": [
 				"grappled",
@@ -5850,14 +5854,16 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@hit 9} to hit, willing or {@condition grappled} creature, {@condition incapacitated}, or {@condition restrained}.",
+						"{@hit 9} to hit.",
+						"Willing, {@condition grappled} creature, {@condition incapacitated}, or {@condition restrained}.",
 						"{@h} ({@damage 1d6 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage (lingering)."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@hit 9} to hit, reach 5 ft., one creature. {@h}10 ({@damage 2d4 + 5}) slashing damage.",
+						"{@hit 9} to hit.",
+						"{@h}10 ({@damage 2d4 + 5}) slashing damage.",
 						"<i>Lifeless Form:</i> additional {@damage 2d6} necrotic damage.",
 						"Instead of dealing slashing damage, Anastrasya can grapple the target (escape {@dc 19})."
 					]
@@ -6170,13 +6176,15 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Gertruda, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage (lingering)."
+						"{@hit 9} to hit, reach 5 ft., willing, {@condition grappled}, {@condition incapacitated}, or {@condition restrained}.",
+						"{@h}6 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage (lingering)."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}8 ({@damage 2d4 + 4}) slashing damage. Instead of dealing damage, Gertruda can grapple the target (escape {@dc 16})."
+						"{@atk mw} {@hit 9} to hit.",
+						"{@h}8 ({@damage 2d4 + 4}) slashing damage. Instead of dealing damage, Gertruda can grapple the target (escape {@dc 16})."
 					]
 				}
 			],
@@ -10080,13 +10088,15 @@
 				{
 					"name": "Beak",
 					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}27 ({@damage 4d8 + 9}) piercing damage."
+						"{@hit 13} to hit.",
+						"{@h}27 ({@damage 4d8 + 9}) piercing damage."
 					]
 				},
 				{
 					"name": "Talons",
 					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}23 ({@damage 4d6 + 9}) slashing damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained}, and the roc can't use its talons on another target."
+						"{@hit 13} to hit.",
+						"{@h}23 ({@damage 4d6 + 9}) slashing damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained}, and the roc can't use its talons on another target."
 					]
 				}
 			],
@@ -10113,8 +10123,6 @@
 				"S"
 			],
 			"miscTags": [
-				"MW",
-				"RCH",
 				"AOE"
 			],
 			"conditionInflict": [
@@ -15344,7 +15352,8 @@
 				{
 					"name": "Javelin",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft.",
+						"{@h}5 ({@damage 1d6 + 2}) piercing damage."
 					]
 				}
 			],
@@ -16917,15 +16926,18 @@
 					]
 				},
 				{
-					"name": "Greatsword",
+					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage plus 3 ({@damage 1d6}) lightning damage."
+						"{@hit 6} to hit.",
+						"{@h}10 ({@damage 1d10 + 3}) slashing damage plus 3 ({@damage 1d6}) lightning damage."
 					]
 				},
 				{
 					"name": "Shocking Bolt",
 					"entries": [
-						"{@atk rs} {@hit 4} to hit (with advantage on the attack roll if the target is wearing armor made of metal), range 60 ft., one target. {@h}10 ({@damage 3d6}) lightning damage."
+						"{@hit 4} to hit (adv against metal armor)",
+						"Range 60 ft.",
+						"{@h}10 ({@damage 3d6}) lightning damage."
 					]
 				}
 			],
@@ -16946,9 +16958,6 @@
 			"damageTags": [
 				"L",
 				"S"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -17044,13 +17053,16 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled}, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage (lingering)."
+						"{@hit 7} to hit",
+						"Willing, {@condition grappled}, {@condition incapacitated}, or {@condition restrained}.",
+						"{@h} ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage (lingering)."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d4 + 4}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 14})."
+						"{@hit 7} to hit",
+						"{@h} ({@damage 2d4 + 4}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 14})."
 					]
 				}
 			],
@@ -17076,92 +17088,18 @@
 			],
 			"damageTags": [
 				"N",
-				"P",
-				"R",
-				"S"
-			],
-			"miscTags": [
-				"MW"
+				"R"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/MM/Vampire Spawn.png",
 			"fluff": {
-				"name": "Vampire Spawn",
-				"source": "MM",
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Vampire Spawn.jpg"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/BigleyVampireToken.png"
 						}
-					}
-				],
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.",
-									{
-										"name": "Dark Desires",
-										"type": "entries",
-										"entries": [
-											"Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed."
-										]
-									},
-									{
-										"name": "Born from Death",
-										"type": "entries",
-										"entries": [
-											"Most of a vampire's victims become vampire spawn-ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies."
-										]
-									},
-									{
-										"name": "Chained to the Grave",
-										"type": "entries",
-										"entries": [
-											"Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way."
-										]
-									},
-									{
-										"name": "Undead Nature",
-										"type": "entries",
-										"entries": [
-											"Neither a vampire nor a vampire spawn requires air."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "A Vampire's Lair",
-										"entries": [
-											"A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night."
-										]
-									},
-									{
-										"type": "inset",
-										"name": "Player Characters as Vampires",
-										"entries": [
-											"The game statistics of a player character transformed into a vampire spawn and then a vampire don't change, except that the character's Strength, Dexterity, and Constitution scores become 18 if they aren't higher. In addition, the character gains the vampire's damage resistances, {@sense darkvision}, traits, and actions. Attack and damage rolls for the vampire's attacks are based on Strength.",
-											"The save DC for Charm is 8 + the vampire's proficiency bonus + the vampire's Charisma modifier. The character's alignment becomes lawful evil, and the DM might take control of the character until the vampirism is reversed with a {@spell wish} spell or the character is killed and brought back to life."
-										]
-									},
-									{
-										"type": "inset",
-										"name": "Strahd von Zarovich",
-										"entries": [
-											"A brilliant thinker and capable warrior in life, Strahd von Zarovich fought in countless battles for his people. When war and killing finally stripped him of his youth and strength, he settled in the remote valley of Barovia and built a castle on a towering pinnacle, from which he could survey his lands. His brother Sergei came to live with him in Castle Ravenloft, becoming Strahd's adviser and constant companion.",
-											"In his brother, Strahd saw everything he had lost. Sergei was handsome and young, while Strahd had become old and scarred. Resentment colored their relationship, eventually turning into hatred. Strahd's beloved, Tatyana, spurned him for Sergei, whom she pledged to marry.",
-											"In a desperate attempt to win Tatyana's heart, Strahd forged a pact with dark powers that made him immortal. At the wedding of Sergei and Tatyana, he confronted his brother and killed him. Tatyana fled and flung herself from Ravenloft's walls. Strahd's guards, seeing him for a monster, shot him with arrows. But he did not die. He became a vampire-the first vampire, according to many sages.",
-											"In the centuries since his transformation, Strahd's lust for life and youth have only grown. He broods in his dark castle, cursing the living for stealing away what he lost, and never admitting his hand in the tragedy he created."
-										]
-									}
-								]
-							}
-						]
 					}
 				]
 			},
@@ -17253,7 +17191,8 @@
 						"</br>"
 					]
 				}
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/BigleyVampireToken.png"
 		}
 	],
 	"legendaryGroup": [
