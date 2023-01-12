@@ -5,7 +5,7 @@
 				"json": "Allies",
 				"abbreviation": "ALLY",
 				"full": "Allies",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -13,7 +13,7 @@
 				"json": "CustomNPCs",
 				"abbreviation": "CNPC",
 				"full": "Custom NPCs",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -21,7 +21,7 @@
 				"json": "CustomSpells",
 				"abbreviation": "CS",
 				"full": "Custom Spells",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -29,7 +29,7 @@
 				"json": "DOOM",
 				"abbreviation": "DOOM",
 				"full": "DOOM",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -37,7 +37,7 @@
 				"json": "OtherAllies",
 				"abbreviation": "ALY",
 				"full": "Other Allies",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -45,7 +45,7 @@
 				"json": "Vampires",
 				"abbreviation": "VAMP",
 				"full": "Vampires",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -53,7 +53,7 @@
 				"json": "Werebois",
 				"abbreviation": "WERE",
 				"full": "Werebois",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			}
@@ -17193,6 +17193,270 @@
 				}
 			],
 			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/BigleyVampireToken.png"
+		},
+		{
+			"name": "Ludmilla Vilisevic",
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 16,
+			"int": 18,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"int": "+7",
+				"dex": "+6",
+				"con": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+8",
+				"perception": "+4",
+				"arcana": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "11",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ludmilla makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit",
+						"Willing, {@condition grappled}, {@condition incapacitated}, or {@condition restrained}.",
+						"{@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage (lingering)."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit",
+						"{@h}9 ({@damage 2d4 + 4}) slashing damage. Instead of dealing damage, Ludmilla can grapple the target (escape {@dc 15})."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"group": [
+				"Advanced Spawn"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"{@hit 8} to hit, Spell Save {@dc 16}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}: ({@hit 7};{@damage 3d8})",
+								"{@spell green-flame blade|TCE}: ({@damage 2d8};{@damage 2d8+4})",
+								"{@spell minor illusion}<br></br>"
+							]
+						},
+						"1": {
+							"spells": [
+								"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell absorb elements|XGE}",
+								"{@spell fog cloud}",
+								"{@spell shield}",
+								"{@spell silent image}<br></br>"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell ice blades|CustomSpells}: ({@hit 8};{@damage 2d4})",
+								"{@spell vortex warp|SCC}",
+								"{@spell wristpocket|EGW}<br></br>"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell counterspell}",
+								"{@spell haste}",
+								"{@spell lightning bolt}: ({@damage 8d6})<br></br>"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell greater invisibility}",
+								"{@spell shadow of moil|XGE} ({@damage 2d8})",
+								"{@spell vitriolic sphere|XGE}: ({@damage 10d4};{@damage 2d4})"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"<input type= \"checkbox\"><input type= \"checkbox\"> {@spell danse macabre|XGE}",
+								"{@spell immolation|XGE}: ({@damage 8d6};{@damage 4d6})"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"A",
+				"F",
+				"L",
+				"N"
+			],
+			"trait": [
+				{
+					"name": "Vampire Traits",
+					"entries": [
+						"<details>",
+						"<strong style=\"font-weight:normal\"><i style=\"font-style:normal\">",
+						"<b><i>Regeneration</b></i>",
+						"</p>Regains 10 hit points at start of turn unless it takes radiant damage.",
+						"<b><i>Spider Climb</b></i>",
+						"</p>The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check..",
+						"<b><i>Sunlight Hypersensitivity</b></i>",
+						"</p>The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+						"<b><i>Sunlight Hypersensitivity</b></i>",
+						"</p>The vampire has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+						"</details>"
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"<details>If Ludmilla isn't in sunlight or running water, she can use her action to polymorph into a Tiny bat or a Medium cloud of mist, or back into her true form. While in bat form, the Ludmilla can't speak, her walking speed is 5 feet, and she has a flying speed of 30 feet. Her statistics, other than her size and speed, are unchanged. Anything she is wearing transforms with her, but nothing she is carrying does. She reverts to her true form if she dies. While in mist form, Ludmilla can't take any actions, speak, or manipulate objects. She is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. She has advantage on Strength, Dexterity, and Constitution saving throws, and she is immune to all nonmagical damage, except the damage she takes from sunlight.</details>"
+					]
+				},
+				{
+					"name": "Legendary Resistance ( <input type= \"checkbox\">/Day)",
+					"entries": [
+						"If Ludmilla fails a saving throw, she can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Shapechanger"
+			],
+			"reaction": [
+				{
+					"name": "Heart Pendant ( <input type= \"checkbox\">/Day)",
+					"entries": [
+						"Ludmilla wears a pendant of the prototype for the Heart of Sorrow. She can use it to gain damage absorption against one instance of radiant damage, and she gains temporary hit points equal to half the damage she would have taken."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "{@spell Misty Step} {@recharge 5}",
+					"entries": [
+						"Ludmilla casts {@spell misty step} without using a spell slot."
+					]
+				}
+			],
+			"shortName": "Ludmilla",
+			"legendary": [
+				{
+					"name": "Command Ally",
+					"entries": [
+						"Ludmilla targets one ally she can see within 30 feet of her. If the target can see or hear her, the target can use its reaction to either move up to half its movement speed without provoking opportunity attacks or make one melee weapon attack with advantage."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Ludmilla moves up to her speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Break Concentration",
+					"entries": [
+						"Ludmilla targets one creature within 120 feet of her that is concentrating on a spell. She then makes a contested Intelligence (Arcana) check against that creature. If the creature fails, it loses concentration on that spell, and takes {@damage 1d4} psychic damage per level of spell."
+					]
+				}
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LudmillaVilisevicToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LudmillaVilisevicToken.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"legendaryGroup": [
