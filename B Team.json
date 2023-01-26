@@ -1,0 +1,631 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BTeam",
+				"abbreviation": "BTEAM",
+				"full": "B Team",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Cyber Car",
+			"size": [
+				"H"
+			],
+			"type": "construct",
+			"source": "CustomNPCs",
+			"alignment": null,
+			"ac": [
+				16
+			],
+			"hp": {
+				"special": "180 (mishap threshold 30)"
+			},
+			"speed": {
+				"walk": 120
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 10,
+			"cr": "0",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Mishaps ({@damage 1d6})",
+					"entries": [
+						"<details>",
+						"<b>1. Blown Tire:</b> Speed reduced by 30, {@dc 10} Dexterity saving throw to turn more than 30 degrees.",
+						"<b>2. Broken Axle:</b> Car and everyone within have disadvantage on DEX saves.",
+						"<b>3. Flaming Engine:</b> Travel at max speed, occupants and vehicle take {@damage 1d6} fire damage at start of turn.",
+						"<b>4. Cracked Windshield:</b> Driver must make {@dc 15} Perception check to drive vehicle.",
+						"<b>5. Gas Leak:</b> Vehicle begins leaking gas. If it takes fire damage, it flips and explodes. {@dc 20} Dex save against {@dice 6d6} fire & {@dice 6d6} bludgeoning.",
+						"<b>6. Flip:</b> The vehicle flips over, falls {@condition prone}, and comes to a dead stop in an unoccupied space. Any unsecured creature holding on to the outside of the vehicle must succeed on a {@dc 20} Strength saving throw or be thrown off, landing {@condition prone} in a random unoccupied space within 20 feet of the overturned vehicle. Creatures inside the vehicle fall {@condition prone} and must succeed on a {@dc 15} Strength saving throw or take {@damage 3d6} bludgeoning damage.",
+						"</details>"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ram (traveling at max speed)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}36 ({@damage 6d10 + 3}) bludgeoning damage. The car takes half if attacking something large or larger."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Escher",
+			"source": "BTeam",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 14,
+			"int": 14,
+			"wis": 8,
+			"cha": 20,
+			"save": {
+				"wis": "+3",
+				"dex": "+9",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+9",
+				"acrobatics": "+9",
+				"arcana": "+6",
+				"performance": "+13",
+				"persuasion": "+13",
+				"investigation": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Vampire Traits",
+					"entries": [
+						"<details>",
+						"<strong style=\"font-weight:normal\"><i style=\"font-style:normal\">",
+						"<b><i>Regeneration</b></i>",
+						"</p>Regains 10 hit points at start of turn unless it takes radiant damage.",
+						"<b><i>Spider Climb</b></i>",
+						"</p>The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check..",
+						"<b><i>Sunlight Hypersensitivity</b></i>",
+						"</p>The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+						"<b><i>Sunlight Hypersensitivity</b></i>",
+						"</p>The vampire has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+						"</details>"
+					]
+				},
+				{
+					"name": "Distracted Foe",
+					"entries": [
+						"Escher has advantage on an attack roll against a creature if at least one of the his allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"Escher has advantage on saving throws against any effect that turns undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Escher makes three attacks, only one of which can be a bite attack. Instead of making an attack, he can cast a cantrip."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, willing, {@condition grappled}, {@condition incapacitated}, or {@condition restrained}.",
+						"{@h} ({@damage 1d6 + 5}) piercing damage plus ({@damage 2d6}) necrotic damage (lingering, {@dc 16})."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit.",
+						"{@h} ({@damage 2d4 + 5}) slashing damage.",
+						"Grapple escape {@dc 13}."
+					]
+				},
+				{
+					"name": "+1 Dueling Rapier",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit.",
+						"{@h} ({@damage 1d8 + 6}) slashing damage + {@damage 1d6} necrotic damage."
+					]
+				},
+				{
+					"name": "</br>Rally",
+					"entries": [
+						"Escher grants each vampire within 30 feet of him an additional saving throw against an effect."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/vampire-spawn.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Vampire Spawn.png",
+			"fluff": {
+				"name": "Vampire Spawn",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Vampire Spawn.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.",
+									{
+										"name": "Dark Desires",
+										"type": "entries",
+										"entries": [
+											"Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed."
+										]
+									},
+									{
+										"name": "Born from Death",
+										"type": "entries",
+										"entries": [
+											"Most of a vampire's victims become vampire spawn-ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies."
+										]
+									},
+									{
+										"name": "Chained to the Grave",
+										"type": "entries",
+										"entries": [
+											"Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"Neither a vampire nor a vampire spawn requires air."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Vampire's Lair",
+										"entries": [
+											"A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Player Characters as Vampires",
+										"entries": [
+											"The game statistics of a player character transformed into a vampire spawn and then a vampire don't change, except that the character's Strength, Dexterity, and Constitution scores become 18 if they aren't higher. In addition, the character gains the vampire's damage resistances, {@sense darkvision}, traits, and actions. Attack and damage rolls for the vampire's attacks are based on Strength.",
+											"The save DC for Charm is 8 + the vampire's proficiency bonus + the vampire's Charisma modifier. The character's alignment becomes lawful evil, and the DM might take control of the character until the vampirism is reversed with a {@spell wish} spell or the character is killed and brought back to life."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Strahd von Zarovich",
+										"entries": [
+											"A brilliant thinker and capable warrior in life, Strahd von Zarovich fought in countless battles for his people. When war and killing finally stripped him of his youth and strength, he settled in the remote valley of Barovia and built a castle on a towering pinnacle, from which he could survey his lands. His brother Sergei came to live with him in Castle Ravenloft, becoming Strahd's adviser and constant companion.",
+											"In his brother, Strahd saw everything he had lost. Sergei was handsome and young, while Strahd had become old and scarred. Resentment colored their relationship, eventually turning into hatred. Strahd's beloved, Tatyana, spurned him for Sergei, whom she pledged to marry.",
+											"In a desperate attempt to win Tatyana's heart, Strahd forged a pact with dark powers that made him immortal. At the wedding of Sergei and Tatyana, he confronted his brother and killed him. Tatyana fled and flung herself from Ravenloft's walls. Strahd's guards, seeing him for a monster, shot him with arrows. But he did not die. He became a vampire-the first vampire, according to many sages.",
+											"In the centuries since his transformation, Strahd's lust for life and youth have only grown. He broods in his dark castle, cursing the living for stealing away what he lost, and never admitting his hand in the tragedy he created."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"group": [
+				"Advanced Spawn"
+			],
+			"damageTagsSpell": [
+				"F",
+				"T",
+				"Y"
+			],
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"reaction": [
+				{
+					"name": "Commander",
+					"entries": [
+						"Grant {@dice 1d4} to a weapon attack roll or saving throw to ally within 30 feet before the die is rolled."
+					]
+				}
+			],
+			"languages": [
+				"Celestial",
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"CE",
+				"C",
+				"E",
+				"S"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell Save {@dc 17}, {@hit 9} to hit."
+					],
+					"daily": {
+						"2": [
+							"{@spell ashardalon's stride|FTD}: ({@damage 1d6})",
+							"{@spell detect thoughts}",
+							"{@spell dissonant whispers}: ({@damage 3d6})",
+							"{@spell shatter}: ({@damage 5d8})",
+							"{@spell silence}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell thaumaturgy}",
+								"{@spell vicious mockery}: ({@damage 4d4})"
+							]
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"bonus": [
+				{
+					"name": "Dueling Stance",
+					"entries": [
+						"<b>Options:</b>",
+						"• Increase AC by 5 until start of next turn.",
+						"• Disengage.",
+						"• Add 4 to each damage roll."
+					]
+				}
+			]
+		},
+		{
+			"name": "Helga Ruvak",
+			"source": "BTeam",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d8 + 50",
+				"average": 162
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 16,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Vampire Traits",
+					"entries": [
+						"<details>",
+						"<strong style=\"font-weight:normal\"><i style=\"font-style:normal\">",
+						"<b><i>Regeneration</b></i>",
+						"</p>Regains 10 hit points at start of turn unless it takes radiant damage.",
+						"<b><i>Spider Climb</b></i>",
+						"</p>The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check..",
+						"<b><i>Sunlight Hypersensitivity</b></i>",
+						"</p>The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+						"<b><i>Sunlight Hypersensitivity</b></i>",
+						"</p>The vampire has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+						"</details>"
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Helga can transform into a large batlike creature. While in this form, she grows wings and gains a flying speed of 50 feet, her claw attack gains 2 damage dice, and she can use her sonic cry."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Helga makes two attacks, only one of which can be a bite attack. She can use her sonic cry in place of one of her attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, willing, {@condition grappled}, {@condition incapacitated}, or {@condition restrained}.",
+						"{@h} ({@damage 1d6 + 4}) piercing damage plus ({@damage 2d6}) necrotic damage (lingering, {@dc 16})."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit.",
+						"{@h} ({@damage 2d4 + 4}) damage.",
+						"{@h} ({@damage 4d4 + 4}) damage (bat).",
+						"Grapple escape {@dc 16}."
+					]
+				},
+				{
+					"name": "Shriek",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit.",
+						"Range 60 ft.",
+						"{@h}13 ({@damage 3d6 + 3}) thunder damage."
+					]
+				},
+				{
+					"name": "Sonic Cry ({@recharge 5})",
+					"entries": [
+						"Helga casts {@spell thunderwave} at second level ({@dc 17}, {@damage 3d8}). Any creature that fails their saving throw is also {@condition deafened} until the end of their next turn."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/vampire-spawn.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Vampire Spawn.png",
+			"fluff": {
+				"name": "Vampire Spawn",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Vampire Spawn.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.",
+									{
+										"name": "Dark Desires",
+										"type": "entries",
+										"entries": [
+											"Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed."
+										]
+									},
+									{
+										"name": "Born from Death",
+										"type": "entries",
+										"entries": [
+											"Most of a vampire's victims become vampire spawn-ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies."
+										]
+									},
+									{
+										"name": "Chained to the Grave",
+										"type": "entries",
+										"entries": [
+											"Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"Neither a vampire nor a vampire spawn requires air."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Vampire's Lair",
+										"entries": [
+											"A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Player Characters as Vampires",
+										"entries": [
+											"The game statistics of a player character transformed into a vampire spawn and then a vampire don't change, except that the character's Strength, Dexterity, and Constitution scores become 18 if they aren't higher. In addition, the character gains the vampire's damage resistances, {@sense darkvision}, traits, and actions. Attack and damage rolls for the vampire's attacks are based on Strength.",
+											"The save DC for Charm is 8 + the vampire's proficiency bonus + the vampire's Charisma modifier. The character's alignment becomes lawful evil, and the DM might take control of the character until the vampirism is reversed with a {@spell wish} spell or the character is killed and brought back to life."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Strahd von Zarovich",
+										"entries": [
+											"A brilliant thinker and capable warrior in life, Strahd von Zarovich fought in countless battles for his people. When war and killing finally stripped him of his youth and strength, he settled in the remote valley of Barovia and built a castle on a towering pinnacle, from which he could survey his lands. His brother Sergei came to live with him in Castle Ravenloft, becoming Strahd's adviser and constant companion.",
+											"In his brother, Strahd saw everything he had lost. Sergei was handsome and young, while Strahd had become old and scarred. Resentment colored their relationship, eventually turning into hatred. Strahd's beloved, Tatyana, spurned him for Sergei, whom she pledged to marry.",
+											"In a desperate attempt to win Tatyana's heart, Strahd forged a pact with dark powers that made him immortal. At the wedding of Sergei and Tatyana, he confronted his brother and killed him. Tatyana fled and flung herself from Ravenloft's walls. Strahd's guards, seeing him for a monster, shot him with arrows. But he did not die. He became a vampire-the first vampire, according to many sages.",
+											"In the centuries since his transformation, Strahd's lust for life and youth have only grown. He broods in his dark castle, cursing the living for stealing away what he lost, and never admitting his hand in the tragedy he created."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"group": [
+				"Advanced Spawn"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"wis": "+7",
+				"con": "+6",
+				"str": "+8"
+			},
+			"skill": {
+				"stealth": "+7",
+				"athletics": "+8",
+				"perception": "+7",
+				"survival": "+7"
+			},
+			"traitTags": [
+				"Shapechanger"
+			],
+			"conditionInflict": [
+				"deafened"
+			]
+		}
+	]
+}
