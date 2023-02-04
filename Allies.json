@@ -116,20 +116,20 @@
 								"{@spell counterspell}",
 								"{@spell fireball}: ({@damage 8d6})",
 								"{@spell fly}",
+								"{@spell haste}",
 								"{@spell remove curse}"
 							],
 							"slots": 3
 						},
 						"4": {
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell Mordenkainen's private sanctum}"
+								"{@spell greater invisibility}"
 							],
 							"slots": 3
 						},
 						"5": {
 							"spells": [
-								"{@spell cone of cold}: ({@damage 8d8})"
+								"{@spell passwall}"
 							],
 							"slots": 1
 						}
@@ -148,6 +148,7 @@
 					"spells": {
 						"1": {
 							"spells": [
+								"{@spell identify}",
 								"{@spell thunderwave}: ({@damage 2d8})"
 							],
 							"slots": 0
@@ -163,7 +164,8 @@
 						"3": {
 							"spells": [
 								"{@spell animate dead}",
-								"{@spell glyph of warding}"
+								"{@spell glyph of warding}",
+								"{@spell haste}"
 							],
 							"slots": 0
 						},
@@ -171,13 +173,15 @@
 							"spells": [
 								"{@spell blight}: ({@damage 8d8})",
 								"{@spell ice storm}: ({@damage 2d8};{@damage 4d6})",
-								"{@spell Mordenkainen's faithful hound}: ({@hit 8};{@damage 4d8})"
+								"{@spell Mordenkainen's faithful hound}: ({@hit 8};{@damage 4d8})",
+								"{@spell Mordenkainen's private sanctum}"
 							],
 							"slots": 0
 						},
 						"5": {
 							"spells": [
 								"{@spell cloudkill}: ({@damage 5d8})",
+								"{@spell cone of cold}: ({@damage 8d8})",
 								"{@spell passwall}"
 							],
 							"slots": 0
