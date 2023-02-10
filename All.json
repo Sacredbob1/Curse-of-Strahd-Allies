@@ -13,7 +13,7 @@
 				"json": "BTeam",
 				"abbreviation": "BTEAM",
 				"full": "B Team",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -58,6 +58,14 @@
 				"convertedBy": []
 			},
 			{
+				"json": "VSTG",
+				"abbreviation": "VSTG",
+				"full": "Vestiges",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
 				"json": "Werebois",
 				"abbreviation": "WERE",
 				"full": "Werebois",
@@ -67,7 +75,7 @@
 			}
 		],
 		"dateAdded": 1657405461,
-		"dateLastModified": 1670631227
+		"dateLastModified": 1675991311
 	},
 	"spell": [
 		{
@@ -5341,20 +5349,20 @@
 								"{@spell counterspell}",
 								"{@spell fireball}: ({@damage 8d6})",
 								"{@spell fly}",
+								"{@spell haste}",
 								"{@spell remove curse}"
 							],
 							"slots": 3
 						},
 						"4": {
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell Mordenkainen's private sanctum}"
+								"{@spell greater invisibility}"
 							],
 							"slots": 3
 						},
 						"5": {
 							"spells": [
-								"{@spell cone of cold}: ({@damage 8d8})"
+								"{@spell passwall}"
 							],
 							"slots": 1
 						}
@@ -5373,6 +5381,7 @@
 					"spells": {
 						"1": {
 							"spells": [
+								"{@spell identify}",
 								"{@spell thunderwave}: ({@damage 2d8})"
 							],
 							"slots": 0
@@ -5388,7 +5397,8 @@
 						"3": {
 							"spells": [
 								"{@spell animate dead}",
-								"{@spell glyph of warding}"
+								"{@spell glyph of warding}",
+								"{@spell haste}"
 							],
 							"slots": 0
 						},
@@ -5396,13 +5406,15 @@
 							"spells": [
 								"{@spell blight}: ({@damage 8d8})",
 								"{@spell ice storm}: ({@damage 2d8};{@damage 4d6})",
-								"{@spell Mordenkainen's faithful hound}: ({@hit 8};{@damage 4d8})"
+								"{@spell Mordenkainen's faithful hound}: ({@hit 8};{@damage 4d8})",
+								"{@spell Mordenkainen's private sanctum}"
 							],
 							"slots": 0
 						},
 						"5": {
 							"spells": [
 								"{@spell cloudkill}: ({@damage 5d8})",
+								"{@spell cone of cold}: ({@damage 8d8})",
 								"{@spell passwall}"
 							],
 							"slots": 0
@@ -6306,7 +6318,7 @@
 			"shortName": "Zrin-Hala",
 			"isNpc": true,
 			"isNamedCreature": true,
-			"source": "CustomNPCs",
+			"source": "VSTG",
 			"size": [
 				"G"
 			],
@@ -6555,10 +6567,7 @@
 				"L"
 			],
 			"damageTagsSpell": [
-				"C",
-				"L",
-				"P",
-				"T"
+				"L"
 			],
 			"spellcastingTags": [
 				"I"
@@ -12758,16 +12767,16 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
+								"{@spell fire bolt}: ({@hit 9};{@damage 3d10})",
 								"{@spell mage hand}",
-								"{@spell sacred flame}",
+								"{@spell sacred flame}: ({@damage 3d10})",
 								"{@spell thaumaturgy}"
 							]
 						},
 						"1": {
 							"spells": [
 								"{@spell detect magic}",
-								"{@spell guiding bolt}",
+								"{@spell guiding bolt}: ({@hit 9};{@damage 4d6})",
 								"{@spell shield}"
 							],
 							"slots": 4
@@ -12777,7 +12786,7 @@
 								"{@spell hold person}",
 								"{@spell misty step}",
 								"{@spell silence}",
-								"{@spell spiritual weapon}"
+								"{@spell spiritual weapon}: ({@hit 9};{@damage 1d8+5})"
 							],
 							"slots": 3
 						},
@@ -12785,7 +12794,7 @@
 							"spells": [
 								"{@spell counterspell}",
 								"{@spell dispel magic}",
-								"{@spell fireball}",
+								"{@spell fireball}: ({@damage 8d6})",
 								"{@spell fly}",
 								"{@spell revivify}"
 							],
@@ -12794,20 +12803,20 @@
 						"4": {
 							"spells": [
 								"{@spell greater invisibility}",
-								"{@spell raulothim's psychic lance|FTD}"
+								"{@spell raulothim's psychic lance|FTD}: ({@damage 7d6})"
 							],
 							"slots": 3
 						},
 						"5": {
 							"spells": [
-								"{@spell cone of cold}",
+								"{@spell cone of cold}: ({@damage 8d8})",
 								"{@spell raise dead}"
 							],
 							"slots": 2
 						},
 						"6": {
 							"spells": [
-								"{@spell harm}",
+								"{@spell harm}: ({@damage 14d6})",
 								"{@spell heal}"
 							],
 							"slots": 1
@@ -17941,6 +17950,213 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Vampyr",
+			"source": "VSTG",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"vestige"
+				]
+			},
+			"alignment": null,
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "31d12 + 217",
+				"average": 418
+			},
+			"speed": {
+				"walk": 80,
+				"fly": {
+					"number": 120,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 22,
+			"dex": 19,
+			"con": 24,
+			"int": 18,
+			"wis": 14,
+			"cha": 20,
+			"save": {
+				"con": "+13"
+			},
+			"senses": [
+				"lifesense 60 ft,",
+				"darkvision 300 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "25",
+			"trait": [
+				{
+					"name": "Annihilating Aura",
+					"entries": [
+						"Any creature that starts its turn within 60 feet of Vampyr and in its magical darkness must succeed on a {@dc 21} Constitution saving throw or take 21 ({@damage 6d6}) necrotic damage. Undead are immune to this aura.<br></br>"
+					]
+				},
+				{
+					"name": "Life Eater",
+					"entries": [
+						"A creature dies if reduced to 0 hit points by Vampyr and can't be revived except by a {@spell wish} spell.<br></br>"
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Vampyr doesn't require air, food, drink, or sleep."
+					]
+				},
+				{
+					"name": "God of Blood and Darkness",
+					"entries": [
+						"Magical darkness doesn't impede Vampyr's darkvision. In addition, Vampyr can choose to make any area within 1 mile of it magical darkness. This darkness can only be dispelled by sunlight.<br></br>"
+					]
+				},
+				{
+					"name": "Sunbane",
+					"entries": [
+						"Vampyr cannot regain hit points while in sunlight, and sunlight is considered difficult terrain for it.<br></br>"
+					]
+				},
+				{
+					"name": "Regeneration (Vampire)",
+					"entries": [
+						"Vampyr regains 20 hit points at the start of its turn if it isn't in sunlight or running water. If Vampyr takes radiant damage or damage from holy water, this trait doesn't function at the start of Vampyr's next turn.<br></br>"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vampyr makes two Consume Vitality attacks, one of which can be replaced by Finger of Doom or Blades of Blood, if available."
+					]
+				},
+				{
+					"name": "Consume Vitality",
+					"entries": [
+						"{@hit 12} to hit, reach 15 ft.",
+						"{@h} ({@damage 4d8 + 6}) necrotic damage, Vampyr regains equal hitpoints.",
+						"{@dc 21} saving throw against lingering."
+					]
+				},
+				{
+					"name": "Finger of Doom {@recharge}",
+					"entries": [
+						"Range 300, one creature, {@dc 21} WIS save.",
+						"Success: Immune for 24 hours.",
+						"Failure: {@dice 6d12} necrotic, {@condition frightened} & {@condition paralyzed} until end of Vampyr's next turn.",
+						"<details>Vampyr points at one creature it can see within 300 feet of it. The target must succeed on a {@dc 21} Wisdom saving throw or take 39 ({@damage 6d12}) necrotic damage and become {@condition frightened} until the end of Vampyr's next turn. While {@condition frightened} in this way, the creature is also {@condition paralyzed}. If a target's saving throw is successful, the target is immune to Vampyr's Finger of Doom for the next 24 hours.</details>"
+					]
+				},
+				{
+					"name": "Blades of Blood {@recharge}",
+					"entries": [
+						"Range 300, one creature, {@dc 21} CON save.",
+						"Success: {@dice 4d6} necrotic.",
+						"Failure: {@dice 8d6} necrotic, {@dc 21} DEX save (15ft area, {@dice 8d6} necrotic).",
+						"<details>Vampyr points at one creature it can see within 300 feet of it. The creature must succeed a {@dc 21} Constitution saving throw. On a success, the creature takes {@damage 4d6} necrotic damage. On a failure, the creature takes {@damage 8d6} necrotic damage as their blood explodes from their every orifice, forming slashing blades around them. Each creature within 15 feet of the target must succeed a {@dc 21} Dexterity saving throw or take {@damage 8d6} necrotic damage.</details>"
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"swamp",
+				"underdark"
+			],
+			"traitTags": [
+				"Regeneration",
+				"Unusual Nature"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"legendaryHeader": [
+				"<input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\"> Legendary Actions."
+			],
+			"isNamedCreature": true,
+			"senseTags": [
+				"SD"
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Vampyr2.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Vampyr2.png"
+						}
+					}
+				]
+			},
+			"legendary": [
+				{
+					"name": "From Darkness",
+					"entries": [
+						"Vampyr targets the shadow of a living creature it can see within 120 feet of it. The creatures shadow becomes a {@creature shadow}, taking its turn immediately."
+					]
+				},
+				{
+					"name": "Dominate {@recharge 5}",
+					"entries": [
+						"Vampyr compels a creature to obey it with ite dominating will. A creature of its choice within 120 feet of it must make a {@dc 21} Wisdom or Charisma saving throw. On a failure, Vampyr forces that creature to use its reaction to take an action, bonus action, or a movement action of Vampyr's choice."
+					]
+				}
+			]
 		}
 	],
 	"legendaryGroup": [
