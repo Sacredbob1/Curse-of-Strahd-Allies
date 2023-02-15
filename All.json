@@ -50,6 +50,14 @@
 				"convertedBy": []
 			},
 			{
+				"json": "SHDW",
+				"abbreviation": "SHDW",
+				"full": "Shadow",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
 				"json": "Vampires",
 				"abbreviation": "VAMP",
 				"full": "Vampires",
@@ -75,7 +83,7 @@
 			}
 		],
 		"dateAdded": 1657405461,
-		"dateLastModified": 1675991311
+		"dateLastModified": 1676418514
 	},
 	"spell": [
 		{
@@ -16443,7 +16451,7 @@
 				{
 					"name": "Reconstruction",
 					"entries": [
-						"When Elisabeth is reduced to 0 hit points, she explodes into 10 crawling claws and one zombie. After 10 minutes, if at least two of those creatures are still alive, they teleport to the location of Elisabeth's death and merge together, whereupon Elisabetj reforms and regains all her hit points."
+						"When Elisabeth is reduced to 0 hit points, she explodes into 10 crawling claws and one zombie. After 10 minutes, if at least two of those creatures are still alive, they teleport to the location of Elisabeth's death and merge together, whereupon Elisabeth reforms and regains all her hit points."
 					]
 				},
 				{
@@ -16505,7 +16513,8 @@
 			},
 			"shortName": "Elisabeth",
 			"traitTags": [
-				"Spider Climb"
+				"Spider Climb",
+				"Unusual Nature"
 			],
 			"isNamedCreature": true,
 			"legendary": [
@@ -18156,6 +18165,2277 @@
 						"Vampyr compels a creature to obey it with ite dominating will. A creature of its choice within 120 feet of it must make a {@dc 21} Wisdom or Charisma saving throw. On a failure, Vampyr forces that creature to use its reaction to take an action, bonus action, or a movement action of Vampyr's choice."
 					]
 				}
+			]
+		},
+		{
+			"name": "Izek Strazni",
+			"isNpc": true,
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 72",
+				"average": 180
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 9,
+			"cha": 15,
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when Izek hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Fire Absorption",
+					"entries": [
+						"Whenever Izek is subjected to fire damage, he takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+					]
+				},
+				{
+					"name": "Immolation",
+					"entries": [
+						"If Izek takes fire damage, he ignites. While ignited, he regains {@dice 2d6} hit points at the start of each of his turns. Each creature that hits him with a melee attack while within 5 feet of him takes {@damage 1d6} fire damage.",
+						"If he takes 10 or more cold damage from a single instance, his flame is quenched."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Izek makes two attacks with his battleaxe."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft.",
+						"{@h} ({@dice 2d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 60 ft.",
+						"{@h} ({@damage 3d6}) fire damage.",
+						"If the target is a flammable object that isn't being worn or carried, it catches fire."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Izek Strazni",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Izek and his sister were born in Vallaki. One morning, their father and their uncle took them fishing on Lake Zarovich. On the way back to town, a dire wolf attacked Izek and bit off his right arm. His father carried Izek back to town while his uncle distracted the beast. His sister ran and hid in the woods and was never seen again.",
+											"Unlike his sister, Izek was born without a soul. As time wore on, he forgot his lost sister and learned to cope with his disability.",
+											{
+												"name": "Orphaned Killer",
+												"type": "entries",
+												"entries": [
+													"Izek's parents succumbed to their grief, leaving him an orphan. He became a sociopath. Other children ruthlessly mocked him because of his dead family and his missing arm, but he was a large boy and had no trouble killing them and disposing of their bodies. He was eventually caught in the act and brought to the burgomaster. Instead of punishing the boy for his crimes, Baron Vallakovich pardoned Izek and took him into his home. Izek has been loyal to the burgomaster ever since, enjoying the power of his position and the comforts of his master's mansion. When he isn't enforcing the burgomaster's will, Izek drinks copious amounts of wine."
+												]
+											},
+											{
+												"name": "Fiendish Gift",
+												"type": "entries",
+												"entries": [
+													"After years of doing Baron Vallakovich's dirty work, Izek awakened from a drunken stupor one morning to find that he had grown a new arm to replace the one he had lost.",
+													"The new appendage has barbed spines, elongated fingers, and long nails. He can create fire with the snap of his fiendish fingers and has used the flames to put the fear of the devil in every Vallakian."
+												]
+											},
+											{
+												"name": "Doll Collector",
+												"type": "entries",
+												"entries": [
+													"Perhaps more disturbing than his fiendish arm and his murderous nature is Izek's collection of dolls, which he keeps in his bedroom in the burgomaster's mansion. Izek often has dreams of a beautiful young woman, and for years he has forced a local toymaker named Gadof Blinsky to craft dolls in her likeness. The woman is Ireena Kolyana, although Izek doesn't know her name."
+												]
+											},
+											{
+												"name": "Family Is Forever",
+												"type": "entries",
+												"entries": [
+													"Izek has dreams of Ireena. If he spots her, he tries to take her by force to the burgomaster's mansion. If he succeeds, he holds her captive in his bedroom (chapter 5, area N3j). Unknown to Izek and Ireena, they are brother and sister. Ireena fled after Izek was attacked by the dire wolf and became lost in the woods. She wandered for days in shock until she was found and adopted by Kolyan Indirovich in the village of Barovia. Izek covets her in an unwholesome way and won't allow anyone or anything to come between them."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Izek Strazni's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Fear is a powerful weapon. I use it to get what I want.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I am loyal to my master, Baron Vallakovich, for he brought me into his home. I owe him my life, but he isn't family.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I would do anything, kill anything, to find my sister.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Izek Strazni.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Izek Strazni.png",
+			"traitTags": [
+				"Brute",
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 15}."
+					],
+					"daily": {
+						"2": [
+							"{@spell fireball}: ({@damage 8d6})"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"bonus": [
+				{
+					"name": "Flame Step",
+					"entries": [
+						"Izek teleports up to 30 feet. Every creature in the path of his travel must succeed a {@dc 13} Dexterity saving throw or take {@damage 1d8} fire damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Elisabeth Durst",
+			"shortName": "Elisabeth",
+			"isNamedCreature": true,
+			"source": "SHDW",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": null,
+			"alignmentPrefix": "typically ",
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "4d10 + 16",
+				"average": 38
+			},
+			"speed": {
+				"walk": 25,
+				"climb": 25
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 13,
+			"wis": 11,
+			"cha": 14,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Enthralled Lure ( <input type= \"checkbox\">/10 minutes)",
+					"entries": [
+						"Elisabeth can cast the {@spell suggestion} spell, requiring no spell components and using Charisma as her spellcasting ability (spell save {@dc 12})."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Elisabeth doesn't require air, food, drink, or sleep."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Elisabeth can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Crushing Grasp",
+					"entries": [
+						"{@hit 7} to hit, reach 5 ft.",
+						"{@h} ({@damage 2d8 + 5}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed a {@dc 15} Strength saving throw or become {@condition grappled} (escape {@dc 15}). Elisabeth can have only one creature {@condition grappled} in this way at a time."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Consume Vitality",
+					"entries": [
+						"Elisabeth targets a creature she is grappling. If the target is not a Construct or an Undead, the target must succeed on a {@dc 14} Constitution saving throw or they gain 1 level of {@condition exhaustion} while Elisabeth gains 5 temporary hit points and doubles her movement speed for one round."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"<input type= \"checkbox\">",
+				"Elisabeth can take 1 legendary action at the end of another creature's turn."
+			],
+			"environment": [
+				"arctic"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/JttRC/Soul Shaker.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/JttRC/Soul Shaker.png",
+			"traitTags": [
+				"Spider Climb",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"conditionInflict": [
+				"exhaustion",
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shadow Grakhunakra",
+			"source": "SHDW",
+			"size": [
+				"H"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "5d12 + 25",
+				"average": 57
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 20,
+			"int": 6,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"fire",
+				"radiant"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"understands Common and Druidic but doesn't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Grakhunakra deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Grakhunakra makes one Branch attack and one Grasping Root attack."
+					]
+				},
+				{
+					"name": "Branch",
+					"entries": [
+						"{@hit 9} to hit, reach 15 ft.",
+						"{@h} ({@damage 3d6 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Grasping Root",
+					"entries": [
+						"{@hit 9} to hit, reach 15 ft., one creature not {@condition grappled. {@h}{@condition grappled} (escape {@dc 15})}",
+						"({@damage 1d6 + 6}) bludgeoning damage at start of target's turns.",
+						"AC 15, 6hp."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Crush",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature {@condition grappled} by the blight.",
+						"{@h} ({@damage 3d8 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Tree Blight",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Blights (as described in the Monster Manual) are evil, ambulatory plant creatures, and a tree blight is a particularly enormous variety. It looks like a dead tree or treant, 30 feet tall, with spongy wooden flesh, thorny branches, and rubbery roots that trail behind it. It has blood for sap and is so saturated with blood that it doesn't catch fire easily.",
+											{
+												"name": "Vicious Carnivore",
+												"type": "entries",
+												"entries": [
+													"A tree blight feeds on warm-blooded prey and takes perverse delight in causing carnage. It strikes with its heavy branches and crushes prey to death with its roots. It can open its gaping, tooth-filled mouth and bite a creature caught in its roots. The roots of a tree blight can be severed, though cutting them causes the blight no harm."
+												]
+											},
+											{
+												"name": "Blight Animosity",
+												"type": "entries",
+												"entries": [
+													"A tree blight will often fight alongside other kinds of blights, but it hates other tree blights and will attack them given the chance. Tree blights also hate treants, and the feeling is mutual."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Tree Blight.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Tree Blight.png",
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DU"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"RCH",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shadow Kiril",
+			"group": [
+				"Lycanthropes"
+			],
+			"isNpc": true,
+			"source": "SHDW",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"condition": "in humanoid form"
+				},
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					],
+					"condition": "in wolf or hybrid form"
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. in wolf form)"
+				}
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				},
+				{
+					"immune": [
+						"necrotic",
+						"poison"
+					]
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"languages": [
+				"Common (can't speak in wolf form)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"Kiril has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Kiril regains 10 hit points at the start of his turn unless he takes damage from a silvered weapon. Kiril dies only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"Kiril makes two attacks: two with his spear (humanoid form) or one with his bite and one with his claws (hybrid form)."
+					]
+				},
+				{
+					"name": "Bite (Wolf or Hybrid Form Only)",
+					"entries": [
+						"{@hit 4} to hit, reach 5 ft.",
+						"{@h} ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws (Hybrid Form Only)",
+					"entries": [
+						"{@hit 4} to hit, reach 5 ft.",
+						"{@h} ({@damage 2d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear (Humanoid Form Only)",
+					"entries": [
+						"{@atk mw,rw}",
+						"{@hit 4} to hit, reach 5 ft. or range 20/60 ft.",
+						"{@h} ({@damage 1d6 + 2}) piercing damage, or ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Kiril Stoyanovich",
+				"source": "CoS",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Kiril Stoyanovich.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Kiril Stoyanovich.png",
+			"traitTags": [
+				"Keen Senses",
+				"Regeneration"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"hasFluffImages": true,
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Shadow Morgantha",
+			"source": "SHDW",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+6",
+				"wis": "+5"
+			},
+			"skill": {
+				"deception": "+6",
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Common",
+				"Giant",
+				"Infernal"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Morgantha's spellcasting ability is Charisma (spell save {@dc 14}). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell disguise self}",
+						"{@spell magic missile}: ({@damage 1d4+1})"
+					],
+					"daily": {
+						"3e": [
+							"{@spell dream}",
+							"{@spell bestow curse}",
+							"{@spell sleep} ({@dice 9d8})"
+						],
+						"1e": [
+							"{@spell legend lore}",
+							"{@spell scrying}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Morgantha has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Morgantha makes two Nightmare Touch attacks."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@hit 5} to hit, reach 5 ft.",
+						"{@h} ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Nightmare Touch",
+					"entries": [
+						"{@hit 7} to hit, reach 5 ft.",
+						"{@h} ({@damage 4d6 + 4}) psychic damage. If the target is {@condition unconscious}, it takes an extra ({@damage 3d6}) psychic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Dream Eater",
+					"entries": [
+						"When an {@condition unconscious} creature Morgantha can see within 30 feet of her regains consciousness, she can force the creature to make a {@dc 14} Wisdom saving throw. Unless the save succeeds, the creature takes ({@damage 2d10}) psychic damage, and Morgantha regains hit points equal to the amount of damage taken."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Dusk Hag",
+				"source": "ERLW",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Dusk hags resemble gnarled crones with shriveled orange skin, tangled gray hair, and eyes that burn like hot coals. They see visions of the future in their dreams, and their dark magic allows them to influence the dreams of others, sending messages or inflicting nightmares with a touch. Tales talk of ambitious wizards, frantic monarchs, and desperate heroes undertaking quests or making bargains with a dusk hag in exchange for its prophecies and visions of the future. But the information gained from a dusk hag often has a way of causing more pain than joy. Like all hags, dusk hags enjoy causing strife to those who bargain with them, and find ways to twist and turn promises to their own advantage. The Dusk Hag Prophecies table provides examples of the sort of dreams dusk hags might share with unsuspecting sleepers.",
+									{
+										"type": "table",
+										"caption": "Dusk Hag Prophecies",
+										"colLabels": [
+											"d10",
+											"Prophecy"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"\"A red hat approaches with ill intent. Be wary.\""
+											],
+											[
+												"2",
+												"\"A ship comes on a sea of bones, but treasure waits behind a silver skull.\""
+											],
+											[
+												"3",
+												"\"Three days, three deaths, three eyes, three breaths.\""
+											],
+											[
+												"4",
+												"\"Doom falls on the peacock and the sparrow alike. Best be a raven.\""
+											],
+											[
+												"5",
+												"\"A white hand on a black field holds the golden key.\""
+											],
+											[
+												"6",
+												"\"Beware the black horse.\""
+											],
+											[
+												"7",
+												"\"The fish is your friend.\""
+											],
+											[
+												"8",
+												"\"The stairs downward lead to that which you seek.\""
+											],
+											[
+												"9",
+												"\"Look for two crossed swords. There your goal lies.\""
+											],
+											[
+												"10",
+												"\"If you see two crows, turn back. Beyond is death.\""
+											]
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/ERLW/Dusk Hag.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/ERLW/Dusk Hag.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"I"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shadow Rahadin",
+			"isNpc": true,
+			"source": "SHDW",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 45,
+				"fly": {
+					"number": 40,
+					"condition": "(dim or dark)"
+				}
+			},
+			"str": 14,
+			"dex": 22,
+			"con": 17,
+			"int": 15,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"con": "+7",
+				"wis": "+7",
+				"dex": "+10"
+			},
+			"skill": {
+				"deception": "+12",
+				"insight": "+11",
+				"intimidation": "+12",
+				"perception": "+11",
+				"stealth": "+14"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 21,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "<font size= 3>1 Innate Spellcasting</font>",
+					"headerEntries": [
+						"Save {@dc 16}, {@hit 8} to hit."
+					],
+					"will": [
+						"{@spell mage armor}",
+						"{@spell message}",
+						"{@spell mind sliver|TCE}: ({@damage 2d6})"
+					],
+					"daily": {
+						"1e": [
+							"{@spell chilling darkness|CustomSpells}: ({@damage 4d6})",
+							"{@spell freedom of movement}",
+							"{@spell magic weapon}",
+							"{@spell nondetection}",
+							"{@spell slow}"
+						],
+						"3e": [
+							"{@spell dispel magic}",
+							"{@spell feather fall}",
+							"{@spell misty step}",
+							"{@spell phantom steed}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "<font size= 3>Deathly Choir</font>",
+					"entries": [
+						"<details>Any creature within 10 feet of Rahadin that isn't protected by a {@spell mind blank} spell hears in its mind the screams of the thousands of people Rahadin has killed. As a bonus action, Rahadin can force all creatures that can hear the screams to make a {@dc 16} Wisdom saving throw. Each creature takes 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one.</details>",
+						"Creatures within 10 feet hear screams, speed reduced by 10 feet.",
+						"Bonus action: Save {@dc 16}, {@damage 3d10} psychic damage and {@condition frightened} on failure."
+					]
+				},
+				{
+					"name": "<font size= 3>Elf Traits</font>",
+					"entries": [
+						"Fey Ancestry, Mask of the Wild<details>",
+						"<b>Fey Ancestry.</b> Rahadin has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep.",
+						"<b>Mask of the Wild.</b> Rahadin can attempt to hide even when he is only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.",
+						"</details>"
+					]
+				},
+				{
+					"name": "<font size= 3>Equipment</font>",
+					"entries": [
+						"<details>{@item cloak of the bat}, {@item ring of water walking}</details>"
+					]
+				},
+				{
+					"name": "<font size= 3>Soul Thirst</font>",
+					"entries": [
+						"After killing a creature, gains temp HP equal to half their max HP."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rahadin attacks three times with his scimitar, or twice with his {@condition poisoned} darts."
+					]
+				},
+				{
+					"name": "Silver Scimitar",
+					"entries": [
+						"<p>{@hit 10} to hit",
+						"{@h} ({@damage 1d6 + 6}) slashing damage.",
+						"Target can't regain hit points until the start of Rahadin's next turn.</p>"
+					]
+				},
+				{
+					"name": "Poisoned Knife",
+					"entries": [
+						"<p>{@hit 10} to hit, range 20/60 ft.",
+						"{@h}8 ({@damage 1d4 + 6}) piercing damage plus 5 ({@damage 2d4}) poison damage.</p>"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shrieks of Terror",
+					"entries": [
+						"{@dc 16} Wisdom save, {@condition frightened} on failure. Optional {@damage 3d10} psychic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry and Counter",
+					"entries": [
+						"<p>+10 to AC against melee, counterattack with scimitar.</p>"
+					]
+				}
+			],
+			"fluff": {
+				"name": "Rahadin",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Rahadin, the dusk elf chamberlain of Castle Ravenloft, has served Strahd's family faithfully for nearly five hundred years. He is Strahd's eternal servant, a longtime comrade-in-arms, and a ruthless warrior who has killed thousands in his lifetime.",
+											{
+												"name": "Exile",
+												"type": "entries",
+												"entries": [
+													"Rahadin was exiled for refusing to bow down to a dusk elf prince whom he considered weak and corrupt. When the dusk elves later declined to pay fealty to King Barov, Rahadin helped Barov conquer them. The elf kingdom's royal line was obliterated, the dusk elves hunted like rabbits. The few that survived were either subjugated or forced to live among the Vistani. So pleased was Barov with Rahadin that the king made the dusk elf an honorary member of his family."
+												]
+											},
+											{
+												"name": "Chamberlain",
+												"type": "entries",
+												"entries": [
+													"After Barov died, Rahadin continued to fight as one of Strahd's generals. When the wars ended and Strahd turned his attention to building Castle Ravenloft, Rahadin saw to it that wizards and artisans were brought to Barovia. Years later, Strahd appointed Rahadin his castle chamberlain. Rahadin was pleased to do whatever Strahd asked of him, and he instilled terror in the castle staff by routinely flogging those who didn't perform their duties to his exacting standards.",
+													"When a dusk elf named Patrina Velikovna came knocking on Strahd's door, Rahadin could see that she intrigued Strahd, but Rahadin was suspicious of her motives. Patrina tried to seduce Strahd with the prospect of immortality - something Strahd desired above all. She told him of a vault of forbidden lore called the Amber Temple, where the secret of gaining immortality was hidden. While Strahd was off exploring the temple, Rahadin handled all of his master's affairs and began searching for a woman who could tear Strahd away from Patrina Velikovna. In this task, he failed. His goal was fulfilled, however, when Sergei, Strahd's brother, found Tatyana.",
+													"Tatyana was Strahd's type - a woman of exquisite beauty and gentle manner. When Strahd returned to Ravenloft, the young woman instantly caught his eye, and Rahadin had the pleasure of informing Patrina that her presence at the castle was no longer desired.",
+													"Rahadin's loyalty didn't waver after Tatyana died and Strahd became a vampire. Rahadin continued to do his master's bidding. Eager to put Tatyana out of his mind, Strahd lured more women to the castle, taking several of them as brides before draining their lives and turning them into vampire spawn. Rahadin would see to it that these women were lavished with jewels and fine clothes, and made comfortable during their stay in Ravenloft."
+												]
+											},
+											{
+												"name": "Executioner",
+												"type": "entries",
+												"entries": [
+													"Patrina Velikovna and her people were living among the Vistani when they heard of Tatyana's death and Strahd's curse. The ageless Patrina returned to Ravenloft in the hope of winning Strahd's love. This time, it was clear that Patrina craved Strahd's power and that Strahd would never love her. Rahadin assumed that Patrina would suffer the same fate as those women who had come before her. He was proven wrong when Patrina's own people stoned her to death to keep Strahd from claiming her as his wife.",
+													"Strahd was upset that the dusk elves had taken Patrina from him. After securing her body and entombing it in the catacombs of Ravenloft, Strahd sent Rahadin to punish the dusk elves. Rahadin slew the female elves so that the males couldn't breed. He also sliced off the ears of Patrina's brother, Kasimir, who had orchestrated the stoning."
+												]
+											},
+											{
+												"name": "Screams of the Dead",
+												"type": "entries",
+												"entries": [
+													"So dreadful a creature is Rahadin that anyone who stands within 10 feet of him can hear the howling screams of the countless men and women he has killed in his lifetime. Rahadin can't hear them, nor would he be haunted by them if he could. The only thing he cares about is Strahd von Zarovich, for whom he would gladly give his life."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Rahadin's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Loyalty is everything.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I am a son of King Barov von Zarovich, and I will serve his son - my brother and lord - forever.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I have slain thousands of men. I will slaughter thousands more to preserve the von Zarovich legacy.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Rahadin.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Rahadin1Token.png",
+			"senseTags": [
+				"D",
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Shadow Strahd",
+			"shortName": "Strahd",
+			"isNpc": true,
+			"source": "SHDW",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "7d8 + 35",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 80,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 20,
+			"int": 20,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"str": "+11",
+				"dex": "+10",
+				"wis": "+10",
+				"cha": "+10"
+			},
+			"skill": {
+				"arcana": "+17",
+				"athletics": "+11",
+				"deception": "+10",
+				"history": "+11",
+				"perception": "+10",
+				"religion": "+11",
+				"stealth": "+16"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 19}, {@hit 11} to hit with spell attacks.",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\"> <input type=\"checkbox\">"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}: ({@hit 11};{@damage 4d8})"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell magic missile}: ({@damage 1d4+1})",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mind spike|XGE}: ({@damage 3d8})",
+								"{@spell rime's binding ice|FTD}: ({@damage 3d8})",
+								"{@spell Tasha's mind whip|TCE}: ({@damage 3d6})"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}: ({@damage 8d6})",
+								"{@spell flash freeze|CustomNPCs}: ({@damage 4d8})"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell greater invisibility}",
+								"{@spell wall of fire}: ({@damage 5d8})"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}: ({@hit 8};{@damage 1d4+4})",
+								"{@spell steel wind strike|XGE}: ({@hit 11};{@damage 6d10})"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Innate Spellcasting",
+					"daily": {
+						"1e": [
+							"<input type=\"checkbox\"> {@spell shadow of moil|XGE}: ({@damage 2d8})"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Regains 25 hit points at the start of his turn."
+					]
+				},
+				{
+					"name": "Unholy Persistence",
+					"entries": [
+						"Strahd has advantage on saving throws against any effect that turns undead, and is only turned for one turn if he fails the saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Three attacks (magical), only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Unarmed Strike/Longsword (Vampire or Wolf Form Only).",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit.",
+						"({@dice 1d8 + 5}) slashing, ({@dice 2d6}) necrotic. Forgo slashing damage to grapple ({@dc 19})."
+					]
+				},
+				{
+					"name": "Skilled Swordsman {@recharge 4}",
+					"entries": [
+						"<p></p>",
+						"<b>Disarming Attack</b>",
+						"STR save, object lands at his feet.",
+						"<b>Pushing Attack</b>",
+						"STR save, push up to 15ft.",
+						"<b>Trip Attack</b>",
+						"STR save, knock {@condition prone}.",
+						"<b>Wounding Attack</b>",
+						"CON save, {@dice  + 3d6} necrotic at start of every turn. MED check ({@dc 15}) or healing to fix."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit against {@condition grappled}, {@condition incapacitated}, or {@condition restrained}.",
+						"{@h} ({@dice 1d6 + 5}) piercing, ({@dice 3d6}) necrotic. Hit point max reduced by necrotic and heals."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"Humanoid: {@dc 20} WIS save. 24 hour duration, save again if harmed."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/StrahdFR%20Token.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/StrahdFR%20Token.png",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"N",
+				"O",
+				"P",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Shadow Izek",
+			"source": "SHDW",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 9,
+			"cha": 15,
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when Izek hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Fire Absorption",
+					"entries": [
+						"Whenever Izek is subjected to fire damage, he takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+					]
+				},
+				{
+					"name": "Immolation",
+					"entries": [
+						"If Izek takes fire damage, he ignites. While ignited, he regains {@dice 2d6} hit points at the start of each of his turns. Each creature that hits him with a melee attack while within 5 feet of him takes {@damage 1d6} fire damage.",
+						"If he takes 10 or more cold damage from a single instance, his flame is quenched."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Izek makes two attacks with his battleaxe."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft.",
+						"{@h} ({@dice 2d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 60 ft.",
+						"{@h} ({@damage 3d6}) fire damage.",
+						"If the target is a flammable object that isn't being worn or carried, it catches fire."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute",
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 15}."
+					],
+					"daily": {
+						"2": [
+							"{@spell fireball}: ({@damage 8d6})"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"bonus": [
+				{
+					"name": "Flame Step",
+					"entries": [
+						"Izek teleports up to 30 feet. Every creature in the path of his travel must succeed a {@dc 13} Dexterity saving throw or take {@damage 1d8} fire damage."
+					]
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Baba Lysaga",
+			"group": [
+				"Hags"
+			],
+			"isNpc": true,
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 120,
+				"formula": "16d8 + 48"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 60,
+					"condition": "(skull of Argynvost)"
+				}
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 20,
+			"wis": 17,
+			"cha": 13,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+13",
+				"religion": "+13"
+			},
+			"passive": 13,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Deep Speech",
+				"Draconic",
+				"Dwarvish",
+				"Giant"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "1 Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 17}, {@hit 9} to hit with spell attacks."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}: ({@damage 3d6})",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell sapping sting|EGW}: ({@damage 3d4})"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell lightning tendril|CustomSpells}: ({@damage 1d12})",
+								"{@spell ray of sickness}: ({@damage 2d8})"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell enlarge/reduce}",
+								"{@spell flock of familiars|LLK}",
+								"{@spell web}: ({@damage 2d4})"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}: ({@damage 8d6})",
+								"{@spell lightning bolt}: ({@damage 8d6})",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}: ({@damage 8d8})",
+								"{@spell Evard's black tentacles}: ({@damage 3d6})",
+								"{@spell polymorph}",
+								"{@spell shadow of moil|XGE}: ({@damage 2d8})"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}: ({@damage 5d8})",
+								"{@spell geas}",
+								"{@spell scrying}",
+								"{@spell wall of stone}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "2 Innate Spellcasting",
+					"daily": {
+						"3e": [
+							"{@spell absorb elements|XGE}",
+							"{@spell counterspell}",
+							"{@spell dispel magic}",
+							"{@spell misty step}",
+							"{@spell shield}"
+						],
+						"1e": [
+							"{@spell bestow curse}",
+							"{@spell finger of death}: ({@damage 7d8+30})",
+							"{@spell fog cloud}",
+							"{@spell mirage arcane}",
+							"{@spell power word stun}",
+							"{@spell programmed illusion}",
+							"{@spell Tasha's caustic brew|TCE}: ({@damage 2d4})",
+							"{@spell true seeing}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Baba Lysaga can use an action to polymorph into a {@creature swarm of insects} (flies), or back into her true form. While in swarm form, she has a walking speed of 5 feet and a flying speed of 30 feet. Anything she is wearing transforms with her, but nothing she is carrying does."
+					]
+				},
+				{
+					"name": "Blessing of Mother Night",
+					"entries": [
+						"Baba Lysaga is shielded against divination magic, as though protected by a {@spell nondetection} spell."
+					]
+				},
+				{
+					"name": "Sacrificial Concentration",
+					"entries": [
+						"Baba's cloak is composed of still living, partially skinned small creatures. She can use their minds to concentrate on spells for her."
+					]
+				},
+				{
+					"name": "Legendary Resistance (<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">/Day)",
+					"entries": [
+						"If Baba Lysaga fails a saving throw, she can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Baba Lysaga makes three attacks with her quarterstaff."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft.",
+						"{@h} ({@damage 1d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Summon Swarms of Insects {@recharge 5}",
+					"entries": [
+						"Baba Lysaga summons {@dice 1d4} swarms of insects. A summoned swarm appears in an unoccupied space within 60 feet of Baba Lysaga and acts as her ally. It remains until it dies or until Baba Lysaga dismisses it as an action."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DS",
+				"DR",
+				"D",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"F",
+				"I",
+				"L",
+				"N",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/CoS/Baba Lysaga.png",
+			"fluff": {
+				"name": "Baba Lysaga",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Two women gave life to Strahd von Zarovich. The first was Queen Ravenovia van Roeyen, Strahd's biological mother. The second was the queen's midwife, a devout follower of Mother Night named Baba Lysaga. Although it was the former who raised Strahd and enabled him to follow in his father's footsteps, it was the latter who sensed a potential for greatness and darkness in Strahd surpassing that of any other mortal. Lysaga believed then, as she believes now, that she is Strahd's true mother.",
+											{
+												"name": "Other Mother",
+												"type": "entries",
+												"entries": [
+													"When Strahd was still a baby in his crib, Baba Lysaga cast protective spells on him and crept into his nursery on stormy nights to sing magical rhymes to him. She also placed the \"spark of magic\" in him, ensuring that he would become a spellcaster.",
+													"Baba Lysaga's unhealthy attachment to the baby Strahd did not go unnoticed. After she received several disturbing reports, Queen Ravenovia was forced to banish the midwife from the kingdom. Lysaga never saw Strahd again, but she has succeeded in staying alive to witness the triumphs of her beloved boy, who, in her mind, is eternally blessed. Despite the horrors Strahd has wrought, Lysaga still envisions him as the perfect child she delivered into the world. Strahd is the only thing in her life that matters to her."
+												]
+											},
+											{
+												"name": "Mother Nearest",
+												"type": "entries",
+												"entries": [
+													"During her exile, Baba Lysaga made countless sacrifices to Mother Night, pleading with the goddess to afflict Queen Ravenovia with ill health and visit death upon her. Lysaga eventually got her wish, and after Strahd settled in the valley of Barovia, Lysaga moved as close to him as she dared to.",
+													"In the filth-ridden depths of her heart, Lysaga knows that Strahd would never accept her as his true mother, nor could she bear his rejection. As a result, she has never confronted him. She would rather exist in perpetual denial, whiling away the days, months, and years practicing fell magic and looking for ways to help her \"son.\""
+												]
+											},
+											{
+												"name": "Raven Bane",
+												"type": "entries",
+												"entries": [
+													"Baba Lysaga has allies in Castle Ravenloft - a coven of witches. Through the aid of these witches, Lysaga recently uncovered a potential threat to Strahd: a secret society of wereravens called the Keepers of the Feather, a group that uses ordinary ravens as their spies.",
+													"Strahd doesn't consider the wereravens a serious threat, but Lysaga has chosen to make them the bane of her existence. After much searching and scrying, she discovered a wereraven refuge at the Wizard of Wines winery (chapter 12), and she has begun to wage war against it. In addition, she has forged an alliance with the mad druids that haunt Yester Hill (chapter 14), convincing them that she gave birth to Strahd, whom the druids consider a god. With the druids on her side, she expects to rid Barovia of its wereraven menace."
+												]
+											},
+											{
+												"name": "Gifts of Mother Night",
+												"type": "entries",
+												"entries": [
+													"The goddess Mother Night has bestowed magical gifts on Baba Lysaga as rewards for her ceaseless devotion to Strahd. Her skin has the resilience of stone, she is resistant to harmful magic, and she is shielded against divination magic. Mother Night has also imparted to Lysaga the secret of longevity, which requires her to bathe in the blood of beasts on nights of the new moon. Failure to do so causes Lysaga to age rapidly, becoming mere dust and bones in a matter of seconds."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Baba Lysaga's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"No love is greater than a mother's love for her son.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I am the mother of Strahd. Anyone who disputes this fact can rot.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I will not rest until the last of my son's enemies are destroyed.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Baba Lysaga.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"legendary": [
+				{
+					"name": "Spell (Actions equal spell level}",
+					"entries": [
+						"Casts a spell up to 3rd level. A cantrip costs one action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Baba Lysaga",
+			"group": [
+				"Hags"
+			],
+			"isNpc": true,
+			"source": "SHDW",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 12",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 20,
+			"wis": 17,
+			"cha": 13,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+13",
+				"religion": "+13"
+			},
+			"passive": 13,
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "1 Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 17}, {@hit 9} to hit with spell attacks.",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\"> <input type=\"checkbox\">"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}: ({@damage 3d6})",
+								"{@spell sapping sting|EGW}: ({@damage 3d4})"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell lightning tendril|CustomSpells}: ({@damage 1d12})",
+								"{@spell ray of sickness}: ({@damage 2d8})"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell enlarge/reduce}",
+								"{@spell web}: ({@damage 2d4})"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell lightning bolt}: ({@damage 8d6})",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}: ({@damage 8d8})",
+								"{@spell Evard's black tentacles}: ({@damage 3d6})",
+								"{@spell polymorph}",
+								"{@spell shadow of moil|XGE}: ({@damage 2d8})"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}: ({@damage 5d8})",
+								"{@spell wall of stone}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "2 Innate Spellcasting",
+					"daily": {
+						"1e": [
+							"{@spell finger of death}: ({@damage 7d8+30})"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Baba Lysaga can use an action to polymorph into a {@creature swarm of insects} (flies), or back into her true form. While in swarm form, she has a walking speed of 5 feet and a flying speed of 30 feet. Anything she is wearing transforms with her, but nothing she is carrying does."
+					]
+				},
+				{
+					"name": "Blessing of Mother Night",
+					"entries": [
+						"Baba Lysaga is shielded against divination magic, as though protected by a {@spell nondetection} spell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Baba Lysaga makes three attacks with her quarterstaff."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft.",
+						"{@h} ({@damage 1d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Summon Swarms of Insects {@recharge 5}",
+					"entries": [
+						"Baba Lysaga summons {@dice 1d4} swarms of insects. A summoned swarm appears in an unoccupied space within 60 feet of Baba Lysaga and acts as her ally. It remains until it dies or until Baba Lysaga dismisses it as an action."
+					]
+				}
+			],
+			"traitTags": [
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"F",
+				"I",
+				"L",
+				"N",
+				"T"
+			],
+			"spellcastingTags": [
+				"O",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/CoS/Baba Lysaga.png",
+			"fluff": {
+				"name": "Baba Lysaga",
+				"source": "CoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Two women gave life to Strahd von Zarovich. The first was Queen Ravenovia van Roeyen, Strahd's biological mother. The second was the queen's midwife, a devout follower of Mother Night named Baba Lysaga. Although it was the former who raised Strahd and enabled him to follow in his father's footsteps, it was the latter who sensed a potential for greatness and darkness in Strahd surpassing that of any other mortal. Lysaga believed then, as she believes now, that she is Strahd's true mother.",
+											{
+												"name": "Other Mother",
+												"type": "entries",
+												"entries": [
+													"When Strahd was still a baby in his crib, Baba Lysaga cast protective spells on him and crept into his nursery on stormy nights to sing magical rhymes to him. She also placed the \"spark of magic\" in him, ensuring that he would become a spellcaster.",
+													"Baba Lysaga's unhealthy attachment to the baby Strahd did not go unnoticed. After she received several disturbing reports, Queen Ravenovia was forced to banish the midwife from the kingdom. Lysaga never saw Strahd again, but she has succeeded in staying alive to witness the triumphs of her beloved boy, who, in her mind, is eternally blessed. Despite the horrors Strahd has wrought, Lysaga still envisions him as the perfect child she delivered into the world. Strahd is the only thing in her life that matters to her."
+												]
+											},
+											{
+												"name": "Mother Nearest",
+												"type": "entries",
+												"entries": [
+													"During her exile, Baba Lysaga made countless sacrifices to Mother Night, pleading with the goddess to afflict Queen Ravenovia with ill health and visit death upon her. Lysaga eventually got her wish, and after Strahd settled in the valley of Barovia, Lysaga moved as close to him as she dared to.",
+													"In the filth-ridden depths of her heart, Lysaga knows that Strahd would never accept her as his true mother, nor could she bear his rejection. As a result, she has never confronted him. She would rather exist in perpetual denial, whiling away the days, months, and years practicing fell magic and looking for ways to help her \"son.\""
+												]
+											},
+											{
+												"name": "Raven Bane",
+												"type": "entries",
+												"entries": [
+													"Baba Lysaga has allies in Castle Ravenloft - a coven of witches. Through the aid of these witches, Lysaga recently uncovered a potential threat to Strahd: a secret society of wereravens called the Keepers of the Feather, a group that uses ordinary ravens as their spies.",
+													"Strahd doesn't consider the wereravens a serious threat, but Lysaga has chosen to make them the bane of her existence. After much searching and scrying, she discovered a wereraven refuge at the Wizard of Wines winery (chapter 12), and she has begun to wage war against it. In addition, she has forged an alliance with the mad druids that haunt Yester Hill (chapter 14), convincing them that she gave birth to Strahd, whom the druids consider a god. With the druids on her side, she expects to rid Barovia of its wereraven menace."
+												]
+											},
+											{
+												"name": "Gifts of Mother Night",
+												"type": "entries",
+												"entries": [
+													"The goddess Mother Night has bestowed magical gifts on Baba Lysaga as rewards for her ceaseless devotion to Strahd. Her skin has the resilience of stone, she is resistant to harmful magic, and she is shielded against divination magic. Mother Night has also imparted to Lysaga the secret of longevity, which requires her to bathe in the blood of beasts on nights of the new moon. Failure to do so causes Lysaga to age rapidly, becoming mere dust and bones in a matter of seconds."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Baba Lysaga's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"No love is greater than a mother's love for her son.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I am the mother of Strahd. Anyone who disputes this fact can rot.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I will not rest until the last of my son's enemies are destroyed.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CoS/Baba Lysaga.png"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
 			]
 		}
 	],
