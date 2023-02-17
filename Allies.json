@@ -11,7 +11,7 @@
 			}
 		],
 		"dateAdded": 1657405461,
-		"dateLastModified": 1670631227
+		"dateLastModified": 1676591492
 	},
 	"spell": [],
 	"monster": [
@@ -3835,6 +3835,258 @@
 				}
 			],
 			"alignment": null
+		},
+		{
+			"name": "Mordenkainen",
+			"shortName": "Mad Mage",
+			"isNpc": true,
+			"source": "Allies",
+			"level": 25,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 24",
+				"average": 132
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"wis": "+9",
+				"int": "+12"
+			},
+			"skill": {
+				"arcana": "+12",
+				"history": "+12",
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"passive": 19,
+			"resist": [
+				{
+					"special": "damage from spells"
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "(from stoneskin)",
+					"cond": true,
+					"preNote": "nonmagical"
+				}
+			],
+			"languages": [
+				"All"
+			],
+			"cr": "21",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mad mage is a 25th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks).",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"6th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"7th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"8th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"9th level: <input type=\"checkbox\"> <input type=\"checkbox\">"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell invisibility}",
+						"{@spell shield}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}: ({@damage 1d4+1})"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell web}"
+							],
+							"slots": 4
+						},
+						"3": {
+							"spells": [
+								"{@spell fly}",
+								"{@spell lightning bolt}: ({@damage 8d6})",
+								"{@spell thunder step|XGE}: ({@damage 3d10})"
+							],
+							"slots": 4
+						},
+						"4": {
+							"spells": [
+								"{@spell Mordenkainen's faithful hound}: ({@damage 4d8})",
+								"{@spell polymorph}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}: ({@hit 8};{@damage 1d4+4})",
+								"{@spell Bigby's hand}: ({@damage 4d8}/{@damage 2d6+5})",
+								"{@spell cone of cold}: ({@damage 8d8})"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Tenser's transformation|XGE}: ({@damage 2d12})",
+								"{@spell true seeing}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Mordenkainen's magnificent mansion}",
+								"{@spell Mordenkainen's sword}: ({@hit 12};{@damage 3d10})"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell maze}",
+								"{@spell mind blank}"
+							],
+							"slots": 2
+						},
+						"9": {
+							"spells": [
+								"{@spell time stop}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Mad Mage has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft.",
+						"{@h} ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Shocking Grasp",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, reach 5 ft.",
+						"{@h} ({@damage 4d8}) lightning damage, and the target cannot take reactions until the start of their next turn."
+					]
+				},
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, range 120 ft.",
+						"{@h} ({@damage 4d10}) fire damage."
+					]
+				},
+				{
+					"name": "Spellmaster {@recharge 5}",
+					"entries": [
+						"The Mad Mage can cast as many spells as he wishes, up to a combined level of 5. A cantrip counts as a 1st level spell. He cannot cast a spell more than once per turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spellbreak (<input type= \"checkbox\">/long rest)",
+					"entries": [
+						"If a creature casts a spell against the Mad Mage or includes him in its area of effect, he can force that creature to make a contested ability check with their spellcasting ability modifier against his. If he succeeds, the only creature affected by the spell is the caster."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"damageTags": [
+				"L"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"O",
+				"P",
+				"S",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"legendaryGroup": []
