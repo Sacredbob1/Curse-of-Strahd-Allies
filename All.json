@@ -53,7 +53,7 @@
 				"json": "SHDW",
 				"abbreviation": "SHDW",
 				"full": "Shadow",
-				"url": "",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
 				"authors": [],
 				"convertedBy": []
 			},
@@ -83,7 +83,7 @@
 			}
 		],
 		"dateAdded": 1657405461,
-		"dateLastModified": 1676418514
+		"dateLastModified": 1676591492
 	},
 	"spell": [
 		{
@@ -4892,11 +4892,9 @@
 						"6th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
 						"7th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
 						"8th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"9th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"He can cast {@spell disguise self} and {@spell invisibility} at will and has the following wizard spells prepared:"
+						"9th level: <input type=\"checkbox\"> <input type=\"checkbox\">"
 					],
 					"will": [
-						"{@spell counterspell}",
 						"{@spell disguise self}",
 						"{@spell invisibility}",
 						"{@spell shield}"
@@ -5003,7 +5001,7 @@
 				{
 					"name": "Spellmaster",
 					"entries": [
-						"The Mad Mage can cast as many spells as he wishes, up to a combined level of 7. A cantrip counts as a 1st level spell. He cannot cast a spell more than once per turn."
+						"The Mad Mage can cast as many spells as he wishes, up to a combined level of 5. A cantrip counts as a 1st level spell. He cannot cast a spell more than once per turn."
 					]
 				},
 				{
@@ -5017,11 +5015,11 @@
 				{
 					"name": "Reactive",
 					"entries": [
-						"The Mad Mage can take up to 3 reactions per round."
+						"The Mad Mage can take up to 3 reactions every round."
 					]
 				},
 				{
-					"name": "Spellbreak (1/turn)",
+					"name": "Spellbreak (1/tround)",
 					"entries": [
 						"If a creature casts a spell against the Mad Mage, he can force that creature to make a contested ability check with their spellcasting ability modifier against his. If he succeeds, the spell is redirected back at the caster."
 					]
@@ -5046,11 +5044,11 @@
 				"T"
 			],
 			"spellcastingTags": [
-				"CW"
+				"O"
 			],
 			"miscTags": [
-				"MW",
 				"RW",
+				"MW",
 				"THW"
 			]
 		},
@@ -18504,18 +18502,6 @@
 			"environment": [
 				"arctic"
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/JttRC/Soul Shaker.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/JttRC/Soul Shaker.png",
 			"traitTags": [
 				"Spider Climb",
 				"Unusual Nature"
@@ -18534,7 +18520,19 @@
 				"grappled"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowElisabethToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowElisabethToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Shadow Grakhunakra",
@@ -18632,51 +18630,17 @@
 				}
 			],
 			"fluff": {
-				"name": "Tree Blight",
-				"source": "CoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Blights (as described in the Monster Manual) are evil, ambulatory plant creatures, and a tree blight is a particularly enormous variety. It looks like a dead tree or treant, 30 feet tall, with spongy wooden flesh, thorny branches, and rubbery roots that trail behind it. It has blood for sap and is so saturated with blood that it doesn't catch fire easily.",
-											{
-												"name": "Vicious Carnivore",
-												"type": "entries",
-												"entries": [
-													"A tree blight feeds on warm-blooded prey and takes perverse delight in causing carnage. It strikes with its heavy branches and crushes prey to death with its roots. It can open its gaping, tooth-filled mouth and bite a creature caught in its roots. The roots of a tree blight can be severed, though cutting them causes the blight no harm."
-												]
-											},
-											{
-												"name": "Blight Animosity",
-												"type": "entries",
-												"entries": [
-													"A tree blight will often fight alongside other kinds of blights, but it hates other tree blights and will attack them given the chance. Tree blights also hate treants, and the feeling is mutual."
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Tree Blight.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowGrackhunackraToken.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://5e.tools/img/CoS/Tree Blight.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowGrackhunackraToken.png",
 			"traitTags": [
 				"Siege Monster"
 			],
@@ -18821,19 +18785,16 @@
 				}
 			],
 			"fluff": {
-				"name": "Kiril Stoyanovich",
-				"source": "CoS",
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Kiril Stoyanovich.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KirilShadow2Token.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://5e.tools/img/CoS/Kiril Stoyanovich.png",
 			"traitTags": [
 				"Keen Senses",
 				"Regeneration"
@@ -18863,7 +18824,8 @@
 				"poisoned",
 				"prone",
 				"restrained"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KirilShadow2Token.png"
 		},
 		{
 			"name": "Shadow Morgantha",
@@ -18999,87 +18961,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Dusk Hag",
-				"source": "ERLW",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Dusk hags resemble gnarled crones with shriveled orange skin, tangled gray hair, and eyes that burn like hot coals. They see visions of the future in their dreams, and their dark magic allows them to influence the dreams of others, sending messages or inflicting nightmares with a touch. Tales talk of ambitious wizards, frantic monarchs, and desperate heroes undertaking quests or making bargains with a dusk hag in exchange for its prophecies and visions of the future. But the information gained from a dusk hag often has a way of causing more pain than joy. Like all hags, dusk hags enjoy causing strife to those who bargain with them, and find ways to twist and turn promises to their own advantage. The Dusk Hag Prophecies table provides examples of the sort of dreams dusk hags might share with unsuspecting sleepers.",
-									{
-										"type": "table",
-										"caption": "Dusk Hag Prophecies",
-										"colLabels": [
-											"d10",
-											"Prophecy"
-										],
-										"colStyles": [
-											"col-2 text-center",
-											"col-10"
-										],
-										"rows": [
-											[
-												"1",
-												"\"A red hat approaches with ill intent. Be wary.\""
-											],
-											[
-												"2",
-												"\"A ship comes on a sea of bones, but treasure waits behind a silver skull.\""
-											],
-											[
-												"3",
-												"\"Three days, three deaths, three eyes, three breaths.\""
-											],
-											[
-												"4",
-												"\"Doom falls on the peacock and the sparrow alike. Best be a raven.\""
-											],
-											[
-												"5",
-												"\"A white hand on a black field holds the golden key.\""
-											],
-											[
-												"6",
-												"\"Beware the black horse.\""
-											],
-											[
-												"7",
-												"\"The fish is your friend.\""
-											],
-											[
-												"8",
-												"\"The stairs downward lead to that which you seek.\""
-											],
-											[
-												"9",
-												"\"Look for two crossed swords. There your goal lies.\""
-											],
-											[
-												"10",
-												"\"If you see two crows, turn back. Beyond is death.\""
-											]
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/ERLW/Dusk Hag.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/ERLW/Dusk Hag.png",
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -19111,7 +18992,19 @@
 				"unconscious"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowMorganthaToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowMorganthaToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Shadow Rahadin",
@@ -19276,96 +19169,16 @@
 				}
 			],
 			"fluff": {
-				"name": "Rahadin",
-				"source": "CoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Rahadin, the dusk elf chamberlain of Castle Ravenloft, has served Strahd's family faithfully for nearly five hundred years. He is Strahd's eternal servant, a longtime comrade-in-arms, and a ruthless warrior who has killed thousands in his lifetime.",
-											{
-												"name": "Exile",
-												"type": "entries",
-												"entries": [
-													"Rahadin was exiled for refusing to bow down to a dusk elf prince whom he considered weak and corrupt. When the dusk elves later declined to pay fealty to King Barov, Rahadin helped Barov conquer them. The elf kingdom's royal line was obliterated, the dusk elves hunted like rabbits. The few that survived were either subjugated or forced to live among the Vistani. So pleased was Barov with Rahadin that the king made the dusk elf an honorary member of his family."
-												]
-											},
-											{
-												"name": "Chamberlain",
-												"type": "entries",
-												"entries": [
-													"After Barov died, Rahadin continued to fight as one of Strahd's generals. When the wars ended and Strahd turned his attention to building Castle Ravenloft, Rahadin saw to it that wizards and artisans were brought to Barovia. Years later, Strahd appointed Rahadin his castle chamberlain. Rahadin was pleased to do whatever Strahd asked of him, and he instilled terror in the castle staff by routinely flogging those who didn't perform their duties to his exacting standards.",
-													"When a dusk elf named Patrina Velikovna came knocking on Strahd's door, Rahadin could see that she intrigued Strahd, but Rahadin was suspicious of her motives. Patrina tried to seduce Strahd with the prospect of immortality - something Strahd desired above all. She told him of a vault of forbidden lore called the Amber Temple, where the secret of gaining immortality was hidden. While Strahd was off exploring the temple, Rahadin handled all of his master's affairs and began searching for a woman who could tear Strahd away from Patrina Velikovna. In this task, he failed. His goal was fulfilled, however, when Sergei, Strahd's brother, found Tatyana.",
-													"Tatyana was Strahd's type - a woman of exquisite beauty and gentle manner. When Strahd returned to Ravenloft, the young woman instantly caught his eye, and Rahadin had the pleasure of informing Patrina that her presence at the castle was no longer desired.",
-													"Rahadin's loyalty didn't waver after Tatyana died and Strahd became a vampire. Rahadin continued to do his master's bidding. Eager to put Tatyana out of his mind, Strahd lured more women to the castle, taking several of them as brides before draining their lives and turning them into vampire spawn. Rahadin would see to it that these women were lavished with jewels and fine clothes, and made comfortable during their stay in Ravenloft."
-												]
-											},
-											{
-												"name": "Executioner",
-												"type": "entries",
-												"entries": [
-													"Patrina Velikovna and her people were living among the Vistani when they heard of Tatyana's death and Strahd's curse. The ageless Patrina returned to Ravenloft in the hope of winning Strahd's love. This time, it was clear that Patrina craved Strahd's power and that Strahd would never love her. Rahadin assumed that Patrina would suffer the same fate as those women who had come before her. He was proven wrong when Patrina's own people stoned her to death to keep Strahd from claiming her as his wife.",
-													"Strahd was upset that the dusk elves had taken Patrina from him. After securing her body and entombing it in the catacombs of Ravenloft, Strahd sent Rahadin to punish the dusk elves. Rahadin slew the female elves so that the males couldn't breed. He also sliced off the ears of Patrina's brother, Kasimir, who had orchestrated the stoning."
-												]
-											},
-											{
-												"name": "Screams of the Dead",
-												"type": "entries",
-												"entries": [
-													"So dreadful a creature is Rahadin that anyone who stands within 10 feet of him can hear the howling screams of the countless men and women he has killed in his lifetime. Rahadin can't hear them, nor would he be haunted by them if he could. The only thing he cares about is Strahd von Zarovich, for whom he would gladly give his life."
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Rahadin's Traits",
-										"entries": [
-											{
-												"name": "Ideal",
-												"type": "entries",
-												"entries": [
-													"\"Loyalty is everything.\""
-												]
-											},
-											{
-												"name": "Bond",
-												"type": "entries",
-												"entries": [
-													"\"I am a son of King Barov von Zarovich, and I will serve his son - my brother and lord - forever.\""
-												]
-											},
-											{
-												"name": "Flaw",
-												"type": "entries",
-												"entries": [
-													"\"I have slain thousands of men. I will slaughter thousands more to preserve the von Zarovich legacy.\""
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Rahadin.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowRahadinToken.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Rahadin1Token.png",
 			"senseTags": [
 				"D",
 				"B"
@@ -19401,7 +19214,8 @@
 				"poisoned",
 				"prone",
 				"restrained"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowRahadinToken.png"
 		},
 		{
 			"name": "Shadow Strahd",
@@ -19611,12 +19425,12 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/StrahdFR%20Token.png"
+							"url": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/ShadowStrahdToken.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/StrahdFR%20Token.png",
+			"tokenUrl": "https://raw.githubusercontent.com/Sacredbob1/Curse-of-Strahd-Allies/main/ShadowStrahdToken.png",
 			"traitTags": [
 				"Regeneration"
 			],
@@ -19803,7 +19617,19 @@
 				"poisoned",
 				"prone",
 				"restrained"
-			]
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowIzekToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowIzekToken.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Baba Lysaga",
@@ -20324,10 +20150,8 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"tokenUrl": "https://5etools-mirror-1.github.io/img/CoS/Baba Lysaga.png",
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowBabaLysaga.png",
 			"fluff": {
-				"name": "Baba Lysaga",
-				"source": "CoS",
 				"entries": [
 					{
 						"type": "entries",
@@ -20408,8 +20232,8 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/CoS/Baba Lysaga.png"
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowBabaLysaga.png"
 						}
 					}
 				]
@@ -20437,6 +20261,900 @@
 				"prone",
 				"restrained"
 			]
+		},
+		{
+			"name": "The Abbot",
+			"group": [
+				"Angels"
+			],
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+10",
+				"cha": "+10"
+			},
+			"skill": {
+				"insight": "+10",
+				"perception": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"necrotic",
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "<font size= 3>Innate Spellcasting</font>",
+					"headerEntries": [
+						"Spell save {@dc 18}, {@hit 10} to hit with spell attacks."
+					],
+					"will": [
+						"{@spell command}",
+						"{@spell detect evil and good}",
+						"{@spell guiding bolt}: ({@hit 10};{@damage 4d6})"
+					],
+					"daily": {
+						"3e": [
+							"{@spell bestow curse} (5th level)",
+							"{@spell hold person}"
+						],
+						"1e": [
+							"{@spell flame strike}: ({@damage 8d8})",
+							"{@spell raise dead}",
+							"{@spell true seeing}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "<font size= 3>Angelic Weapons</font>",
+					"entries": [
+						"The Abbot's weapon attacks are magical. When the Abbot hits with any weapon, the weapon deals an extra {@dice 4d8} radiant damage (included in the attack)."
+					]
+				},
+				{
+					"name": "<font size= 3>Magic Resistance</font>",
+					"entries": [
+						"The Abbot has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Abbot makes two melee attacks. He can replace one of these attacks with a use of Corrupted Healing or by casting a spell with a casting time of one action."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@hit 9} to hit, reach 5 ft.",
+						"{@h} ({@damage 1d6 + 4}) bludgeoning damage plus ({@damage 4d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Corrupted Healing (<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">/Day)",
+					"entries": [
+						"{@hit 10} to hit, reach 5 ft.",
+						"{@h} ({@damage 4d8+2}) healing.",
+						"<details>The Abbot touches another creature. The target magically regains 20 ({@dice 4d8 + 2}) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+						"If the creature is reduced to 0 hit points in the next hour, the creature is transformed into a Star Spawn of an equal or lower challenge rating to their level or existing CR.</details>"
+					]
+				},
+				{
+					"name": "Life Drain {@recharge 5}",
+					"entries": [
+						"{@hit +10} to hit, reach 5 ft.",
+						"{@h} ({@damage 4d8 + 2}) necrotic damage, regains equal hit points.",
+						"<details>The target must succeed on a {@dc 18} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+						"If the target fails the saving throw, the Abbot regains one use of Corrupted Healing.</details>"
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"<details>The Abbot magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than his own, or back into his true form. He reverts to its true form if he dies. Any equipment he is wearing or carrying is absorbed or borne by the new form (the Abbot's choice).",
+						"In a new form, the Abbot retains his game statistics and ability to speak, but his AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and he gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that he lacks.</details>"
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/deva.mp3"
+			},
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"damageTags": [
+				"N"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Deva.png",
+			"fluff": {
+				"name": "Deva",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"An angel is a celestial agent sent forth into the planes to further its god's agenda for weal or woe. Its sublime beauty and presence can drive awestruck onlookers to their knees. Yet angels are destroyers too, and their appearance portends doom as often as it signals hope.",
+									{
+										"name": "Shards of the Divine",
+										"type": "entries",
+										"entries": [
+											"Angels are formed from the astral essence of benevolent gods and are thus divine beings of great power and foresight.",
+											"Angels act out the will of their gods with tireless devotion. Even chaotic good deities command lawful good angels, knowing that the angels' dedication to order best allows them to fulfill divine commands. An angel follows a single driving purpose, as decreed by its deity. However, an angel is incapable of following commands that stray from the path of law and good.",
+											"An angel slays evil creatures without remorse. As the embodiment of law and good, an angel is almost never mistaken in its judgments. This quality can create a sense of superiority in an angel, a sense that comes to the fore when an angel's task conflicts with the goals of another creature. The angel never acquiesces or gives way. When an angel is sent to aid mortals, it is sent not to serve but to command. The gods of good therefore send their angels among mortals only in response to the most dire circumstances."
+										]
+									},
+									{
+										"name": "Fallen Angels",
+										"type": "entries",
+										"entries": [
+											"An angel's moral compass grants it a sense of infallibility that can sometimes spell its undoing. Angels are usually too wise to fall for a simple deception, but sometimes pride can lead one to commit an evil act. Whether intentional or accidental, such an act is a permanent stain that marks the angel as an outcast. Fallen angels retain their power but lose their connection to the deities from which they were made. Most fallen angels take their banishment personally, rebelling against the powers they served by seeking rulership over a section of the Abyss or a place among other fallen in the hierarchy of the Nine Hells. Zariel, the ruler of the first layer of the Nine Hells, is such a creature. Rather than rebel, some fallen angels resign themselves to an isolated existence on the Material Plane, living in disguise as simple hermits. If they are redeemed, they can become powerful allies dedicated to justice and compassionate service."
+										]
+									},
+									{
+										"name": "Immortal Nature",
+										"type": "entries",
+										"entries": [
+											"An angel doesn't require food, drink, or sleep."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Deva",
+										"entries": [
+											"Devas are angels that act as divine messengers or agents to the Material Plane, the Shadowfell, and the Feywild and that can assume a form appropriate to the realm they are sent to.",
+											"Legend tells of angels that take mortal form for years, lending aid, hope, and courage to goodhearted folk. A deva can take any shape, although it prefers to appear to mortals as an innocuous humanoid or animal. When circumstances require that it cast off its guise, a deva is a beautiful humanoid-like creature with silvery skin. Its hair and eyes gleam with an unearthly luster, and large feathery wings unfurl from its shoulder blades."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Deva.jpg"
+						}
+					}
+				]
+			},
+			"shortName": "Abbot",
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"R"
+			],
+			"miscTags": [
+				"HPR"
+			],
+			"legendaryHeader": [
+				"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">"
+			],
+			"legendary": [
+				{
+					"name": "<font size= 3>Mace</font>",
+					"entries": [
+						"The Abbot makes a mace attack."
+					]
+				},
+				{
+					"name": "<font size= 3>Life Drain</font>",
+					"entries": [
+						"The Abbot uses Life Drain if it is available."
+					]
+				},
+				{
+					"name": "<font size= 3>The Bill Comes Due</font>",
+					"entries": [
+						"The Abbot targets a creature who owes him. The target is reduced to 0 hit points and the Abbot gains temporary hit points equal to their maximum."
+					]
+				}
+			]
+		},
+		{
+			"name": "The Abbot (Corrupted)",
+			"group": [
+				"Angels"
+			],
+			"source": "CustomNPCs",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				{
+					"special": "Very Evil"
+				}
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d8 + 104",
+				"average": 221
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+10",
+				"cha": "+10"
+			},
+			"skill": {
+				"insight": "+10",
+				"perception": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "<font size= 3>Innate Spellcasting</font>",
+					"headerEntries": [
+						"Spell save {@dc 18}, {@hit 10} to hit with spell attacks."
+					],
+					"will": [
+						"{@spell command}",
+						"{@spell mind spike|XGE}: ({@damage 3d8})"
+					],
+					"daily": {
+						"3e": [
+							"{@spell bestow curse} (5th level)",
+							"{@spell spirit guardians}"
+						],
+						"1e": [
+							"{@spell antilife shell}",
+							"{@spell destructive wave}: ({@damage 5d6})",
+							"{@spell raise dead}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Abbot casts a spell and then uses either Devour or Bone Blade."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@hit 9} to hit, reach 5 ft.",
+						"{@h} ({@damage 1d8 + 4}) piercing damage plus ({@damage 4d6}) psychic damage.",
+						"{@dc 18} INT save. On failure, cannot take reactions and disadvantage on attacks until end of target's next turn."
+					]
+				},
+				{
+					"name": "Devour",
+					"entries": [
+						"Range 60 ft., {@dc 18} INT save.",
+						"Failure: {@damage 6d8} psychic damage, and the Abbot restores equal hit points to one creature within 5 feet of him.",
+						"Success: {@damage 3d8} psychic damage.",
+						"If target is healed to full, they become a Star Spawn under the Abbot's control. They return to their normal if the Abbot dies within 24 hours."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"<details>The Abbot magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than his own, or back into his true form. He reverts to its true form if he dies. Any equipment he is wearing or carrying is absorbed or borne by the new form (the Abbot's choice).",
+						"In a new form, the Abbot retains his game statistics and ability to speak, but his AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and he gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that he lacks.</details>"
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/deva.mp3"
+			},
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"damageTags": [
+				"R"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Deva.png",
+			"fluff": {
+				"name": "Deva",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"An angel is a celestial agent sent forth into the planes to further its god's agenda for weal or woe. Its sublime beauty and presence can drive awestruck onlookers to their knees. Yet angels are destroyers too, and their appearance portends doom as often as it signals hope.",
+									{
+										"name": "Shards of the Divine",
+										"type": "entries",
+										"entries": [
+											"Angels are formed from the astral essence of benevolent gods and are thus divine beings of great power and foresight.",
+											"Angels act out the will of their gods with tireless devotion. Even chaotic good deities command lawful good angels, knowing that the angels' dedication to order best allows them to fulfill divine commands. An angel follows a single driving purpose, as decreed by its deity. However, an angel is incapable of following commands that stray from the path of law and good.",
+											"An angel slays evil creatures without remorse. As the embodiment of law and good, an angel is almost never mistaken in its judgments. This quality can create a sense of superiority in an angel, a sense that comes to the fore when an angel's task conflicts with the goals of another creature. The angel never acquiesces or gives way. When an angel is sent to aid mortals, it is sent not to serve but to command. The gods of good therefore send their angels among mortals only in response to the most dire circumstances."
+										]
+									},
+									{
+										"name": "Fallen Angels",
+										"type": "entries",
+										"entries": [
+											"An angel's moral compass grants it a sense of infallibility that can sometimes spell its undoing. Angels are usually too wise to fall for a simple deception, but sometimes pride can lead one to commit an evil act. Whether intentional or accidental, such an act is a permanent stain that marks the angel as an outcast. Fallen angels retain their power but lose their connection to the deities from which they were made. Most fallen angels take their banishment personally, rebelling against the powers they served by seeking rulership over a section of the Abyss or a place among other fallen in the hierarchy of the Nine Hells. Zariel, the ruler of the first layer of the Nine Hells, is such a creature. Rather than rebel, some fallen angels resign themselves to an isolated existence on the Material Plane, living in disguise as simple hermits. If they are redeemed, they can become powerful allies dedicated to justice and compassionate service."
+										]
+									},
+									{
+										"name": "Immortal Nature",
+										"type": "entries",
+										"entries": [
+											"An angel doesn't require food, drink, or sleep."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Deva",
+										"entries": [
+											"Devas are angels that act as divine messengers or agents to the Material Plane, the Shadowfell, and the Feywild and that can assume a form appropriate to the realm they are sent to.",
+											"Legend tells of angels that take mortal form for years, lending aid, hope, and courage to goodhearted folk. A deva can take any shape, although it prefers to appear to mortals as an innocuous humanoid or animal. When circumstances require that it cast off its guise, a deva is a beautiful humanoid-like creature with silvery skin. Its hair and eyes gleam with an unearthly luster, and large feathery wings unfurl from its shoulder blades."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Deva.jpg"
+						}
+					}
+				]
+			},
+			"shortName": "The Abbot",
+			"damageTagsSpell": [
+				"N",
+				"R",
+				"T",
+				"Y"
+			],
+			"trait": [
+				{
+					"name": "<font size= 3>Magic Resistance</font>",
+					"entries": [
+						"The Abbot has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "<font size= 3>Owed</font>",
+					"entries": [
+						"When a creature of the Abbot's creation deals damage while within 30 feet if him, he regains hit points equal to the damage dealt."
+					]
+				},
+				{
+					"name": "<font size= 3>Lathandar's Judgement</font>",
+					"entries": [
+						"Once per round when a {@item Holy Symbol|PHB} of Lathandar touches the Abbot, he takes 20 radiant damage."
+					]
+				}
+			],
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "<font size= 3>Teleport</font>",
+					"entries": [
+						"Up to 60 feet to location he can see."
+					]
+				},
+				{
+					"name": "<font size= 3>Wing Grapple</font>",
+					"entries": [
+						"{@dc 18} Dexterity saving throw, {@dc 18} grapple check to escape."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">"
+			]
+		},
+		{
+			"name": "Shadow Abbot",
+			"group": [
+				"Angels"
+			],
+			"source": "SHDW",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "4d8 + 16",
+				"average": 34
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+10",
+				"cha": "+10"
+			},
+			"skill": {
+				"insight": "+10",
+				"perception": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "<font size= 3>Innate Spellcasting</font>",
+					"headerEntries": [
+						"Spell save {@dc 18}, {@hit 10} to hit with spell attacks."
+					],
+					"will": [
+						"{@spell command}",
+						"{@spell detect evil and good}",
+						"<br>{@spell guiding bolt}: ({@hit 10};{@damage 4d6})",
+						"<br>{@spell inflict wounds}: ({@hit 10};{@damage 3d10})"
+					],
+					"daily": {
+						"3e": [
+							"{@spell bestow curse} (5th level)",
+							"{@spell spirit guardians}: ({@damage 3d8 necrotic})"
+						],
+						"1e": [
+							"{@spell destructive wave}: ({@damage 5d6})",
+							"{@spell true seeing}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "<font size= 3>Magic Resistance</font>",
+					"entries": [
+						"The Abbot has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Abbot casts two spells."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"N"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"shortName": "Abbot",
+			"damageTagsSpell": [
+				"N",
+				"R",
+				"T"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"reaction": [
+				{
+					"name": "Corruption",
+					"entries": [
+						"When a creature within 30 feet of the Abbot takes radiant damage, he can grant the creature resistance to the instance.",
+						"He can then either deal an equal amount of damage to the creature or restore an equal amount of HP to Vampyr."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowAbbotToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/ShadowAbbotToken.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Mordenkainen",
+			"shortName": "Mad Mage",
+			"isNpc": true,
+			"source": "Allies",
+			"level": 25,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 24",
+				"average": 132
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"wis": "+9",
+				"int": "+12"
+			},
+			"skill": {
+				"arcana": "+12",
+				"history": "+12",
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"passive": 19,
+			"resist": [
+				{
+					"special": "damage from spells"
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "(from stoneskin)",
+					"cond": true,
+					"preNote": "nonmagical"
+				}
+			],
+			"languages": [
+				"All"
+			],
+			"cr": "21",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mad mage is a 25th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks).",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"6th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"7th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"8th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"9th level: <input type=\"checkbox\"> <input type=\"checkbox\">"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell invisibility}",
+						"{@spell shield}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}: ({@damage 1d4+1})"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell web}"
+							],
+							"slots": 4
+						},
+						"3": {
+							"spells": [
+								"{@spell fly}",
+								"{@spell lightning bolt}: ({@damage 8d6})",
+								"{@spell thunder step|XGE}: ({@damage 3d10})"
+							],
+							"slots": 4
+						},
+						"4": {
+							"spells": [
+								"{@spell Mordenkainen's faithful hound}: ({@damage 4d8})",
+								"{@spell polymorph}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}: ({@hit 8};{@damage 1d4+4})",
+								"{@spell Bigby's hand}: ({@damage 4d8}/{@damage 2d6+5})",
+								"{@spell cone of cold}: ({@damage 8d8})"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell Tenser's transformation|XGE}: ({@damage 2d12})",
+								"{@spell true seeing}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell Mordenkainen's magnificent mansion}",
+								"{@spell Mordenkainen's sword}: ({@hit 12};{@damage 3d10})"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell maze}",
+								"{@spell mind blank}"
+							],
+							"slots": 2
+						},
+						"9": {
+							"spells": [
+								"{@spell time stop}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Mad Mage has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft.",
+						"{@h} ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Shocking Grasp",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, reach 5 ft.",
+						"{@h} ({@damage 4d8}) lightning damage, and the target cannot take reactions until the start of their next turn."
+					]
+				},
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, range 120 ft.",
+						"{@h} ({@damage 4d10}) fire damage."
+					]
+				},
+				{
+					"name": "Spellmaster {@recharge 5}",
+					"entries": [
+						"The Mad Mage can cast as many spells as he wishes, up to a combined level of 5. A cantrip counts as a 1st level spell. He cannot cast a spell more than once per turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spellbreak (<input type= \"checkbox\">/long rest)",
+					"entries": [
+						"If a creature casts a spell against the Mad Mage or includes him in its area of effect, he can force that creature to make a contested ability check with their spellcasting ability modifier against his. If he succeeds, the only creature affected by the spell is the caster."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"damageTags": [
+				"L"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"O",
+				"P",
+				"S",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"legendaryGroup": [
