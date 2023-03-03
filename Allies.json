@@ -1,4 +1,5 @@
 {
+	"siteVersion": "1.177.0",
 	"_meta": {
 		"sources": [
 			{
@@ -10,609 +11,265 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1657405461,
-		"dateLastModified": 1677637442
+		"dateAdded": 1677805728,
+		"dateLastModified": 1677805728
 	},
-	"spell": [],
 	"monster": [
 		{
-			"name": "Victor Vallakovich",
-			"shortName": "Victor",
+			"name": "Armored Saber-Toothed Tiger",
 			"source": "Allies",
 			"size": [
-				"M"
+				"L"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
+			"type": "beast",
 			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item staff of power}",
-						"{@item cloak of protection}"
-					]
-				},
-				{
-					"ac": 18,
-					"condition": "with {@spell mage armor}"
-				}
-			],
-			"hp": {
-				"formula": "12d8",
-				"average": 54
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 9,
-			"dex": 14,
-			"con": 11,
-			"int": 17,
-			"wis": 12,
-			"cha": 11,
-			"save": {
-				"int": "+9",
-				"wis": "+7",
-				"str": "+2",
-				"dex": "+5",
-				"con": "+3",
-				"cha": "+3"
-			},
-			"skill": {
-				"arcana": "+6",
-				"history": "+6"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"spellcasting": [
-				{
-					"name": "1 Spellcasting",
-					"headerEntries": [
-						"Victor is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 9} to hit with spell attacks).",
-						"<b>Spell Slots</b>",
-						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"5th level: <input type=\"checkbox\">",
-						"Victor has the following wizard spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell fire bolt}: ({@hit 9};{@damage 2d10})",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}: ({@damage 1d4+1})",
-								"{@spell shield}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}: ({@damage 8d6})",
-								"{@spell fly}",
-								"{@spell haste}",
-								"{@spell remove curse}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell greater invisibility}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell passwall}"
-							],
-							"slots": 1
-						}
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				},
-				{
-					"name": "2 Spellbook",
-					"headerEntries": [
-						"Victor has additional spells he can prepare in his spellbook.<details>"
-					],
-					"footerEntries": [
-						"</details>"
-					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell identify}",
-								"{@spell thunderwave}: ({@damage 2d8})"
-							],
-							"slots": 0
-						},
-						"2": {
-							"spells": [
-								"{@spell darkvision}",
-								"{@spell invisibility}",
-								"{@spell levitate}"
-							],
-							"slots": 0
-						},
-						"3": {
-							"spells": [
-								"{@spell animate dead}",
-								"{@spell glyph of warding}",
-								"{@spell haste}"
-							],
-							"slots": 0
-						},
-						"4": {
-							"spells": [
-								"{@spell blight}: ({@damage 8d8})",
-								"{@spell ice storm}: ({@damage 2d8};{@damage 4d6})",
-								"{@spell Mordenkainen's faithful hound}: ({@hit 8};{@damage 4d8})",
-								"{@spell Mordenkainen's private sanctum}"
-							],
-							"slots": 0
-						},
-						"5": {
-							"spells": [
-								"{@spell cloudkill}: ({@damage 5d8})",
-								"{@spell cone of cold}: ({@damage 8d8})",
-								"{@spell passwall}"
-							],
-							"slots": 0
-						}
-					},
-					"type": "spellcasting"
-				},
-				{
-					"name": "3 Staff of Power (20 charges) <input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\">",
-					"spells": {
-						"1": {
-							"spells": [
-								"[1] {@spell magic missile}: ({@damage 1d4+1})"
-							],
-							"slots": 0
-						},
-						"2": {
-							"spells": [
-								"[1] {@spell ray of enfeeblement}: ({@hit 9})",
-								"[2] {@spell levitate}"
-							],
-							"slots": 0
-						},
-						"3": {
-							"spells": [
-								"[5] {@spell fireball}: ({@damage 10d6})",
-								"[5] {@spell lightning bolt}: ({@damage 10d6})"
-							],
-							"slots": 0
-						},
-						"5": {
-							"spells": [
-								"[5] {@spell cone of cold}: ({@damage 8d8})",
-								"[5] {@spell hold monster}",
-								"[5] {@spell wall of force}"
-							],
-							"slots": 0
-						},
-						"6": {
-							"spells": [
-								"[6] {@spell globe of invulnerability}"
-							],
-							"slots": 0
-						}
-					},
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Special Equipment",
-					"entries": [
-						"{@item cloak of protection}, {@item staff of power}"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
-					]
-				},
-				{
-					"name": "Staff of Power",
-					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with both hands."
-					]
-				}
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"damageTagsSpell": [
-				"A",
-				"B",
-				"C",
-				"F",
-				"I",
-				"L",
-				"N",
-				"O",
-				"P",
-				"T"
-			],
-			"spellcastingTags": [
-				"CW",
-				"O"
-			],
-			"miscTags": [
-				"RW",
-				"MW",
-				"THW"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorToken.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Ismark, Knight of the Silver Dragon",
-			"source": "Allies",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"L",
-				"G"
+				"U"
 			],
 			"ac": [
 				{
 					"ac": 17,
 					"from": [
-						"{@item splint armor|phb}"
+						"{@item half plate armor|phb}"
 					]
 				}
 			],
 			"hp": {
-				"average": 58,
-				"formula": "9d8 + 18"
+				"average": 84,
+				"formula": "7d10 + 14"
 			},
 			"speed": {
-				"walk": 30
+				"walk": 40
 			},
-			"str": 16,
-			"dex": 13,
-			"con": 14,
-			"int": 10,
-			"wis": 11,
-			"cha": 16,
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 8,
 			"skill": {
-				"athletics": "+6",
-				"perception": "+3"
+				"perception": "+4",
+				"stealth": "+8"
 			},
-			"passive": 13,
-			"languages": [
-				"Common"
-			],
+			"passive": 14,
 			"cr": "6",
-			"action": [
+			"trait": [
 				{
-					"name": "Multiattack",
+					"name": "Keen Smell",
 					"entries": [
-						"Ismark makes two longsword attacks. If he has a shortsword drawn, he can also make a shortsword attack."
+						"The tiger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 					]
 				},
 				{
-					"name": "Longsword",
+					"name": "Pounce",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+						"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
 					]
 				},
 				{
-					"name": "Shortsword",
+					"name": "Silvered Weapons",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+						"All of the tiger's damage is considered silvered for the purpose of overcoming resistances."
 					]
 				},
 				{
-					"name": "Heavy Crossbow",
+					"name": "Spiked Armor",
 					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+						"Any creature grappling the tiger takes {@damage 1d4} piercing damage at the start of each of its turns."
 					]
 				}
 			],
-			"environment": [
-				"arctic",
-				"coastal",
-				"forest",
-				"grassland",
-				"hill",
-				"mountain",
-				"underdark",
-				"urban"
+			"action": [
+				{
+					"name": "Bite (silvered)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw (silvered)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				}
 			],
-			"actionTags": [
-				"Multiattack"
+			"reaction": [
+				{
+					"name": "Spikes",
+					"entries": [
+						"When the tiger is hit by a melee attack from a creature within 5 feet of it, it can use its reaction to deal {@damage 1d4} piercing damage to that creature using its spiked armor."
+					]
+				}
 			],
-			"languageTags": [
-				"C"
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SaberToothedTigerToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SaberToothedTigerToken.png",
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
 			],
 			"damageTags": [
 				"P",
 				"S"
 			],
 			"miscTags": [
-				"MW",
-				"RW",
-				"RNG"
+				"MW"
 			],
-			"hasFluff": true,
-			"save": {
-				"wis": "+3",
-				"cha": "+6"
-			},
-			"spellcasting": [
-				{
-					"name": "1 Spellcasting",
-					"headerEntries": [
-						"Spell save {@dc 14}, {@hit 6} to hit with spell attacks."
-					],
-					"daily": {
-						"3": [
-							"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell branding smite}: ({@damage 2d6})"
-						],
-						"1e": [
-							"<input type= \"checkbox\"> {@spell command}",
-							"<input type= \"checkbox\"> {@spell compelled duel}",
-							"<input type= \"checkbox\"> {@spell cure wounds}: ({@damage 3d8+3)}",
-							"<input type= \"checkbox\"> {@spell detect evil and good}"
-						]
-					},
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"damageTagsSpell": [
-				"R"
-			],
-			"trait": [
-				{
-					"name": "<br>Channel Divinity ( <input type= \"checkbox\">/short rest)",
-					"entries": [
-						"Ismark can choose one of the following effects when he uses his Channel Divinity.",
-						"<br>",
-						"&emsp;<b><i>Champion Challenge.</i></b> As a bonus action, Ismark can issue a challenge that compels other creatures to do battle with him. Each creature of his choice within 30 feet of him must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from him. This effect ends if he is {@condition incapacitated} or dies, or if the creature is more than 30 feet away from him.</br>",
-						"<br>",
-						"&emsp;<b><i>Turn the Tide.</i></b> As a bonus action, Ismark can bolster injured creatures with his Channel Divinity. Each creature of his choice within 30 feet of him regains hit points equal to {@damage 1d6+3}."
-					]
-				}
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png"
-						}
-					}
-				]
-			}
+			"conditionInflict": [
+				"prone"
+			]
 		},
 		{
-			"name": "Magnus",
+			"name": "Aurelius",
+			"shortName": true,
+			"source": "Allies",
+			"level": 10,
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
-			"source": "Allies",
-			"alignment": [
-				"L",
-				"N"
-			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": null,
 			"ac": [
 				{
-					"ac": 20,
+					"ac": 16,
 					"from": [
-						"{@item plate armor|phb}",
-						"{@item shield|phb}"
+						"{@spell barkskin}"
 					]
 				}
 			],
 			"hp": {
-				"formula": "8d10 + 16",
-				"average": 68
+				"formula": "13d8 + 26",
+				"average": 100
 			},
 			"speed": {
 				"walk": 30
 			},
-			"str": 16,
-			"dex": 12,
+			"str": 10,
+			"dex": 14,
 			"con": 14,
-			"int": 8,
-			"wis": 8,
-			"cha": 20,
-			"passive": 9,
-			"cr": "6",
+			"int": 10,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"wis": "+8",
+				"int": "+4"
+			},
+			"skill": {
+				"animal handling": "+8",
+				"nature": "+4",
+				"stealth": "+6",
+				"survival": "+8"
+			},
 			"senses": [
 				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Primordial",
+				"Sylvan"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Aurelius's spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 8} to hit with spell attacks). He can innately cast the following spells with his druidic focus."
+					],
+					"will": [
+						"{@spell control flames|XGE}",
+						"{@spell druidcraft}",
+						"{@spell ray of frost}: ({@hit 8};{@damage 2d8})"
+					],
+					"daily": {
+						"3e": [
+							"<p></p><input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> {@spell healing word}: ({@damage 1d4+4})",
+							"<p></p><input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> {@spell ice knife|XGE}: ({@hit 8};{@damage 1d10}/{@damage 2d6})"
+						],
+						"1e": [
+							"<p></p><input type=\"checkbox\"> {@spell dispel magic}",
+							"<p></p><input type=\"checkbox\"> {@spell ice storm}: ({@damage 2d8};{@damage 4d6})",
+							"<p></p><input type=\"checkbox\"> {@spell lesser restoration}",
+							"<p></p><input type=\"checkbox\"> {@spell freedom of movement}",
+							"<p></p><b><em>Require Concentration</em></b>",
+							"<p></p><input type=\"checkbox\"> {@spell dominate beast}",
+							"<p></p><input type=\"checkbox\"> {@spell moonbeam}: ({@damage 2d10})",
+							"<p></p><input type=\"checkbox\"> {@spell pass without trace}",
+							"<p></p><input type=\"checkbox\"> {@spell summon beast|TCE} ({@creature Bestial Spirit|TCE}): ({@hit 8};{@damage 1d8+6})",
+							"<p></p><input type=\"checkbox\"> {@spell polymorph}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Wild Shape: (<input type = \"checkbox\"> <input type = \"checkbox\">/Short Rest)",
+					"entries": [
+						"You can use your action to transform into a {@creature Dire Wolf}, {@creature Giant Owl}, {@creature Fox|IDRotF}, {@creature Saber-Toothed Tiger}.",
+						"You gain the beast's hit points on top of your current hit points. When your beast form loses all of its hit points, the excess damage carries over to your humanoid form.",
+						"You can't cast spells while in your animal form. However, you can continue concentrating on spells you have already cast, and you can take spell actions (i.e. moving {@spell moonbeam})."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shillelagh",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6+4}) damage, or 8 ({@damage 1d8+4}) damage if used with both hands."
+					]
+				},
+				{
+					"name": "Ray of Frost",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60 ft., one target. {@h}9 ({@damage 2d8}) cold damage, and the target's movement speed is reduced by 10 feet until the start of your next turn."
+					]
+				}
 			],
 			"senseTags": [
 				"D"
 			],
-			"languages": [
-				"Abyssal",
-				"Celestial",
-				"Common",
-				"Draconic"
-			],
 			"languageTags": [
-				"AB",
-				"CE",
 				"C",
-				"DR"
+				"E",
+				"P",
+				"S"
 			],
-			"skill": {
-				"arcana": "+2",
-				"medicine": "+2",
-				"religion": "+2",
-				"survival": "+2"
-			},
-			"save": {
-				"wis": "+2",
-				"cha": "+8"
-			},
-			"resist": [
-				"necrotic",
-				"radiant"
+			"damageTags": [
+				"C"
 			],
-			"spellcasting": [
-				{
-					"name": "1 Spellcasting",
-					"headerEntries": [
-						"Spell save {@dc 16}, +8 to hit with spell attacks.",
-						"<br>",
-						"&emsp;<b><i>Spell slots</i></b>",
-						"&emsp;<i>1st level.</i> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
-						"&emsp;<i>2nd level.</i> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell command}",
-								"{@spell wrathful smite}: ({@damage 1d6})"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell chains of flame|CustomSpells}: ({@hit 8};{@damage 2d4+5})",
-								"{@spell see invisibility}"
-							],
-							"slots": 3
-						}
-					},
-					"type": "spellcasting"
-				}
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"P",
+				"R"
 			],
 			"spellcastingTags": [
 				"O"
 			],
-			"damageTagsSpell": [
-				"Y"
-			],
-			"trait": [
-				{
-					"name": "<br>Rebuke the Violent ( <input type= \"checkbox\">/short rest>)",
-					"entries": [
-						"Magnus can use his Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of him deals damage with an attack against a creature other than him, he can use his reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
-					]
-				},
-				{
-					"name": "<br>Necrotic Shroud ( <input type= \"checkbox\">/long rest)",
-					"entries": [
-						"As an action, Magnus can transform for up to one minute, causing all creatures within 10 ft. to make a CHA saving throw ({@dc 16}) or be {@condition frightened} of him until the end of his next turn."
-					]
-				},
-				{
-					"name": "<br>Lay on Hands",
-					"entries": [
-						"Magnus has a pool of healing power that can restore <b>50</b> HP per long rest. As an action, he can touch a creature to restore any number of HP remaining in the pool, or 5 HP to either cure a disease or neutralize a poison affecting the creature.<p><input>"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Magnus attacks twice on his turn."
-					]
-				},
-				{
-					"name": "Longsword",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
-					]
-				}
-			],
-			"damageTags": [
-				"S"
-			],
 			"miscTags": [
-				"MW"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MagnusCuredToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MagnusCuredToken.png"
-						}
-					}
-				]
-			}
+				"MW",
+				"RW"
+			]
 		},
 		{
-			"name": "Weretoad",
+			"name": "Danika Dorakovna",
 			"group": [
-				"Lycanthropes"
+				"Feranthropes"
 			],
 			"source": "Allies",
 			"size": [
@@ -625,173 +282,7 @@
 					"shapechanger"
 				]
 			},
-			"alignment": [
-				"C",
-				"N"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"formula": "5d8 + 20",
-				"average": 42
-			},
-			"speed": {
-				"walk": {
-					"number": 30,
-					"condition": "(40 ft. in tiger form)"
-				}
-			},
-			"str": 16,
-			"dex": 13,
-			"con": 18,
-			"int": 11,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 13,
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't silvered",
-					"cond": true
-				}
-			],
-			"languages": [
-				"Common (can't speak in toad form)"
-			],
-			"cr": "4",
-			"trait": [
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"</br>The weretoad can use its action to polymorph into a toad-humanoid hybrid or into a tiny or medium sized toad, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-					]
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"</br>The weretoad can breathe air and water."
-					]
-				},
-				{
-					"name": "Standing Leap",
-					"entries": [
-						"</br>The weretoad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
-					]
-				},
-				{
-					"name": "Swamp Camouflage",
-					"entries": [
-						"</br>The weretoad has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"</br>The weretoad regains <b>10</b> hit points at the start of its turn. If the weretoad takes damage from a silvered weapon, this trait doesn't function at the start of the weretoad's next turn. The weretoad dies only if it starts its turn with 0 hit points and doesn't regenerate."
-					]
-				},
-				{
-					"name": "Jeny's Blessing (<input type= \"checkbox\">/day)",
-					"entries": [
-						"</br>The weretoad can cast any first level evocation or transmutation druid spell (Spell Save {@dc 15}, {@hit 7} to hit with spell attacks)",
-						"<details>{@spell arctic breath|CS}, {@spell bad blood|CS}, {@spell create or destroy water}, {@spell cure wounds}, {@spell earth tremor|XGE}, {@spell faerie fire}, {@spell goodberry}, {@spell healing word}, {@spell jump}, {@spell lightning tendril|CS}, {@spell longstrider}, {@spell purify food and drink}, {@spell stone fist|CS}, {@spell thunderwave}</details>"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack (Humanoid or Hybrid Form Only)",
-					"entries": [
-						"The weretoad makes two attacks, only one of which can be a bite."
-					]
-				},
-				{
-					"name": "Bite (Toad or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d18 + 3}) piercing damage plus {@damage 1d4} poison damage, and the target is {@condition grappled}."
-					]
-				},
-				{
-					"name": "Spear (Humanoid or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft. or range 20/60, one target. {@h} ({@damage 1d8 + 3}) piercing damage."
-					]
-				}
-			],
-			"traitTags": [
-				"Amphibious",
-				"Regeneration",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"conditionInflict": [
-				"grappled"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Weretoad2Token.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Weretoad2Token.png"
-						}
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WeretoadToken.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Urwin Martikov",
-			"group": [
-				"Lycanthropes"
-			],
-			"source": "Allies",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human",
-					"shapechanger"
-				]
-			},
+			"alignment": null,
 			"ac": [
 				14
 			],
@@ -816,6 +307,16 @@
 				"perception": "+6"
 			},
 			"passive": 16,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
 			"languages": [
 				"Common (can't speak in raven form)"
 			],
@@ -824,25 +325,25 @@
 				{
 					"name": "Shapechanger",
 					"entries": [
-						"Urwin can use his action to polymorph into a raven-humanoid hybrid or into a raven, or back into his human form. His statistics, other than his size, are the same in each form. Any equipment He is wearing or carrying isn't transformed. He reverts to his human form if he dies."
+						"Danika can use her action to polymorph into a raven-humanoid hybrid or into a raven, or back into her human form. Her statistics, other than her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her human form if she dies."
 					]
 				},
 				{
 					"name": "Mimicry",
 					"entries": [
-						"Urwin can mimic simple sounds he has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+						"Danika can mimic simple sounds she has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
 					]
 				},
 				{
 					"name": "Regeneration",
 					"entries": [
-						"Urwin regains <b>5</b> hit points at the start of his turn. If he takes damage from a silvered weapon, this trait doesn't function at the start of his next turn. Urwin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+						"Danika regains <b>5</b> hit points at the start of her turn. If she takes damage from a silvered weapon, this trait doesn't function at the start of her next turn. Danika dies only if she starts her turn with 0 hit points and doesn't regenerate."
 					]
 				},
 				{
-					"name": "Raven's Foresight (<input type= \"checkbox\">/day)",
+					"name": "Raven's Eye ( <input type= \"checkbox\">/day)",
 					"entries": [
-						"Urwin peers into the near future and predicts a specific outcome. When any creature that he can see makes a {@dice d20} roll, he can choose to turn that roll into either a 1 or a 20 (no action required)"
+						"Danika opens her magical senses, granting herself {@sense truesight} out to a range of 120 feet for the next minute (no action required). While this ability is active, she can see into the ethereal plane to the same range."
 					]
 				}
 			],
@@ -850,7 +351,7 @@
 				{
 					"name": "Multiattack (Human or Hybrid Form Only)",
 					"entries": [
-						"Uwrin makes two weapon attacks."
+						"Danika makes two weapon attacks."
 					]
 				},
 				{
@@ -866,6 +367,25 @@
 					]
 				}
 			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Danika%20Dorakova%202%20Token.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Wereraven3Token.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Danika%20Dorakova%202%20Token.png",
 			"traitTags": [
 				"Regeneration",
 				"Shapechanger"
@@ -882,214 +402,16 @@
 			],
 			"miscTags": [
 				"MW",
-				"RW",
-				"RNG"
+				"RNG",
+				"RW"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Urwin%20Martikov%20Token.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Urwin%20Martikov%20Token.png"
-						}
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Wereraven3Token.png"
-						}
-					}
-				]
-			},
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't silvered"
-				}
-			],
-			"alignment": null
+			"hasFluffImages": true
 		},
 		{
-			"name": "Werewolf",
-			"group": [
-				"Lycanthropes"
-			],
+			"name": "Doru",
 			"source": "Allies",
 			"basicRules": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human",
-					"shapechanger"
-				]
-			},
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 12,
-					"condition": "in humanoid form"
-				},
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					],
-					"condition": "in wolf or hybrid form"
-				}
-			],
-			"hp": {
-				"average": 58,
-				"formula": "9d8 + 18"
-			},
-			"speed": {
-				"walk": {
-					"number": 30,
-					"condition": "(40 ft. in wolf form)"
-				}
-			},
-			"str": 18,
-			"dex": 14,
-			"con": 14,
-			"int": 10,
-			"wis": 11,
-			"cha": 10,
-			"passive": 16,
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't silvered",
-					"cond": true
-				}
-			],
-			"languages": [
-				"Common (can't speak in wolf form)"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-					]
-				},
-				{
-					"name": "Keen Hearing and Smell",
-					"entries": [
-						"The werewolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
-					]
-				},
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"The werewolf has advantage on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"The werewolf regains <b>5</b> hit points at the start of its turn. If the werewolf takes damage from a silvered weapon, this trait doesn't function at the start of the werewolf's next turn. The werewolf dies only if it starts its turn with 0 hit points and doesn't regenerate."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack (Humanoid or Hybrid Form Only)",
-					"entries": [
-						"The werewolf makes two attacks: two with its spear (humanoid form) or one with its bite and one with its claws (hybrid form)."
-					]
-				},
-				{
-					"name": "Bite (Wolf or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 4}) piercing damage."
-					]
-				},
-				{
-					"name": "Claws (Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}7 ({@damage 2d4 + 4}) slashing damage."
-					]
-				},
-				{
-					"name": "Spear (Humanoid Form Only)",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}5 ({@damage 1d6 + 4}) piercing damage, or 6 ({@damage 1d8 + 4}) piercing damage if used with two hands to make a melee attack."
-					]
-				}
-			],
-			"environment": [
-				"forest",
-				"hill"
-			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/werewolf.mp3"
-			},
-			"traitTags": [
-				"Keen Senses",
-				"Pack Tactics",
-				"Regeneration",
-				"Shapechanger"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"skill": {
-				"perception": "+6",
-				"stealth": "+5"
-			},
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WerewolfToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WerewolfToken.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Kasimir Velikov (Gifted)",
-			"source": "Allies",
-			"hasFluff": true,
-			"hasFluffImages": true,
 			"size": [
 				"M"
 			],
@@ -1097,116 +419,226 @@
 			"alignment": null,
 			"ac": [
 				{
-					"ac": 17,
+					"ac": 16,
 					"from": [
-						"natural armor"
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
 					]
 				}
 			],
 			"hp": {
-				"average": 97,
-				"formula": "13d8 + 39"
+				"formula": "3d8 + 3",
+				"average": 16
 			},
 			"speed": {
 				"walk": 30
 			},
-			"str": 18,
-			"dex": 14,
-			"con": 17,
-			"int": 20,
+			"str": 10,
+			"dex": 13,
+			"con": 12,
+			"int": 10,
 			"wis": 14,
-			"cha": 16,
-			"save": {
-				"int": "+10",
-				"wis": "+7",
-				"cha": "+8",
-				"con": "+8"
-			},
+			"cha": 11,
 			"skill": {
-				"history": "+10",
-				"arcana": "+10"
+				"religion": "+3",
+				"medicine": "+5"
 			},
-			"senses": [
-				"darkvision 60 ft."
-			],
 			"passive": 12,
-			"immune": [
-				"psychic"
+			"resist": [
+				"necrotic",
+				"radiant"
 			],
-			"conditionImmune": [
-				"charmed",
-				"frightened"
+			"languages": [
+				"Common"
 			],
+			"cr": "1/4",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks).",
+						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks.",
 						"<b>Spell Slots</b>",
-						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"5th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"6th level: <input type=\"checkbox\">",
-						"Kasimir has the following spells prepared:"
+						"1st level: <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
+						"Doru has following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}: ({@hit 9};{@damage 3d10})",
-								"{@spell mage hand}",
-								"{@spell sacred flame}: ({@damage 3d10})",
-								"{@spell thaumaturgy}"
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}: ({@damage 1d8})"
 							]
 						},
 						"1": {
 							"spells": [
+								"{@spell cure wounds}",
 								"{@spell detect magic}",
-								"{@spell guiding bolt}: ({@hit 9};{@damage 4d6})",
-								"{@spell shield}"
+								"{@spell shield of faith}"
 							],
 							"slots": 4
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Guiding Bolt ( <input type= \"checkbox\"><input type= \"checkbox\">/long rest)",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}15 ({@damage 4d6}) radiant damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Warding Flare ( <input type= \"checkbox\"><input type= \"checkbox\">/long rest)",
+					"entries": [
+						"When Doru is attacked by a creature within 30 feet of him that he can see, he can use his reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can’t be {@condition blinded} is immune to this feature."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DoruCuredToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DoruCuredToken.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ezmerelda d'Avenir",
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item +1 studded leather armor}"
+					]
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 19,
+			"con": 16,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"save": {
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"arcana": "+6",
+				"deception": "+9",
+				"insight": "+3",
+				"medicine": "+3",
+				"perception": "+6",
+				"performance": "+6",
+				"sleight of hand": "+7",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Ezmerelda is a 7th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Ezmerelda has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell protection from evil and good}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
 						},
 						"2": {
+							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell misty step}",
-								"{@spell silence}",
-								"{@spell spiritual weapon}: ({@hit 9};{@damage 1d8+5})"
-							],
-							"slots": 3
+								"{@spell darkvision}",
+								"{@spell knock}",
+								"{@spell mirror image}"
+							]
 						},
 						"3": {
+							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell fireball}: ({@damage 8d6})",
-								"{@spell fly}",
-								"{@spell revivify}"
-							],
-							"slots": 3
+								"{@spell clairvoyance}",
+								"{@spell lightning bolt}",
+								"{@spell magic circle}"
+							]
 						},
 						"4": {
+							"slots": 1,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell raulothim's psychic lance|FTD}: ({@damage 7d6})"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell cone of cold}: ({@damage 8d8})",
-								"{@spell raise dead}"
-							],
-							"slots": 2
-						},
-						"6": {
-							"spells": [
-								"{@spell harm}: ({@damage 14d6})",
-								"{@spell heal}"
-							],
-							"slots": 1
+								"{@spell greater invisibility}"
+							]
 						}
 					},
 					"ability": "int",
@@ -1215,15 +647,9 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance",
+					"name": "Special Equipment",
 					"entries": [
-						"Kasimir has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"Kasimir regains 10 hit points at the start of his turn if he has at least 1 hit point. If he takes fire damage, this trait doesn't function at the start of his next turn."
+						"In addition to her magic armor and weapons, Ezmerelda has two {@item potion of greater healing||potions of greater healing}, six {@item holy water (flask)|phb|vials of holy water}, and three wooden stakes."
 					]
 				}
 			],
@@ -1231,89 +657,313 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Kasimir can use his Dreadful Glare and makes one attack with cursed strike."
+						"Ezmerelda makes three attacks: two with her +1 rapier and one with her +1 handaxe or her silvered shortsword."
 					]
 				},
 				{
-					"name": "Cursed Strike",
+					"name": "Rapier +1",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h} ({@damage 2d6 + 4}) bludgeoning damage plus ({@damage 2d6}) necrotic damage."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
 					]
 				},
 				{
-					"name": "Dreadful Glare",
+					"name": "Handaxe +1",
 					"entries": [
-						"Kasimir targets one creature he can see within 60 feet of him. If the target can see Kasimir, it must succeed on a {@dc 16} Wisdom saving throw against this magic or become {@condition frightened} until the end of Kasimir's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare for the next 24 hours."
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Silvered Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Curse (Recharges after a Long Rest)",
+					"entries": [
+						"Ezmerelda targets one creature that she can see within 30 feet of her. The target must succeed on a {@dc 14} Wisdom saving throw or be cursed. While cursed, the target has vulnerability to one type of damage of Ezmerelda's choice. The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. When the curse ends, Ezmerelda takes {@dice 3d6} psychic damage."
+					]
+				},
+				{
+					"name": "Evil Eye (Recharges after a Short or Long Rest)",
+					"entries": [
+						"Ezmerelda targets one creature that she can see within 10 feet of her and casts one of the following spells on the target (save {@dc 14}), requiring neither somatic nor material components to do so: animal friendship, charm person, or hold person. If the target succeeds on the initial saving throw, Ezmerelda is {@condition blinded} until the end of her next turn. Once a target succeeds on a saving throw against this effect, it is immune to the Evil Eye power of all Vistani for 24 hours."
 					]
 				}
 			],
-			"traitTags": [
-				"Magic Resistance",
-				"Regeneration"
-			],
-			"senseTags": [
-				"D"
-			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Ezmerelda d'Avenir, a Vistana, is the protégé of Rudolph van Richten - despite the fact that her first encounter with the vampire hunter was anything but pleasant.",
+											{
+												"name": "Witness to Tragedy",
+												"type": "entries",
+												"entries": [
+													"When Ezmerelda was a little girl, her family kidnapped van Richten's teenage son, Erasmus, and delivered him into the clutches of a vampire. Even today, years later, she can still hear Erasmus's pleas for mercy. That event haunted her childhood.",
+													"Van Richten tracked down Ezmerelda's family soon after the kidnapping, but not before the Vistani had sold the boy. Though van Richten could have done them harm, he instead interrogated Ezmerelda's mother and father on the whereabouts of his missing son. Satisfied with their answers, he spared their lives before departing with the information they had given him. Ezmerelda witnessed van Richten's act of mercy and was deeply moved by it."
+												]
+											},
+											{
+												"name": "Van Richten's Tragic Tale",
+												"type": "entries",
+												"entries": [
+													"At the age of fifteen, Ezmerelda, still troubled by what her family had done to van Richten, ran away from home. After many harrowing adventures, she tracked down van Richten two years later. Thinking she was a Vistana assassin, he put a sword to her throat and threatened to spill her blood. Ezmerelda convinced him that she genuinely wanted to help him find his missing son, whereupon van Richten told her the saddest of tales. He had found his son, who had been transformed into a vampire spawn. When Erasmus pleaded to his father for salvation, van Richten granted his request by ending his existence."
+												]
+											},
+											{
+												"name": "Farewell",
+												"type": "entries",
+												"entries": [
+													"Ezmerelda remained by van Richten's side for two years, helping him track down and slay many creatures of the night. But because van Richten could never bring himself to fully trust a Vistana, he kept secrets from her. The two vampire hunters got on each other's nerves, and their arguments became more frequent. At last, Ezmerelda suggested that they part company with some shred of their friendship still intact, and van Richten agreed."
+												]
+											},
+											{
+												"name": "Ezmerelda's Secret",
+												"type": "entries",
+												"entries": [
+													"Since bidding farewell to van Richten, Ezmerelda has amassed a sizable personal fortune, some of which she used to buy a wagon to carry her vampire-slaying paraphernalia. On one of her less successful adventures, a werewolf bit off her right leg below the knee, and although she avoided being afflicted with lycanthropy, Ezmerelda was sidelined for months. She commissioned a master artisan to craft a prosthetic lower leg and foot. After several tries, he delivered a prosthesis that restored her mobility. She has since adapted well to the false appendage."
+												]
+											},
+											{
+												"name": "The Great Vampire Hunt",
+												"type": "entries",
+												"entries": [
+													"While in the company of a Vistani caravan, Ezmerelda heard a rumor that Rudolph van Richten had gone to Barovia to slay the most powerful vampire of them all. She decided that he might need help and traveled for months to reach Strahd's domain. She rode her wagon to Vallaki and learned about an old tower that seemed the sort of place van Richten would use as a base. When she arrived there, she found some of van Richten's belongings, but of the vampire hunter there was no sign. Although she is anxious to learn the whereabouts of her mentor, she is also eager to earn his trust and respect. To that end, she has been poring over van Richten's research and learning about Strahd and Castle Ravenloft, with every intention of dispatching the vampire herself."
+												]
+											},
+											{
+												"name": "Tarokka Deck",
+												"type": "entries",
+												"entries": [
+													"Ezmerelda keeps a deck of tarokka cards in her wagon (chapter 11, area V1). Although the cards aren't magical, Ezmerelda can use them to perform a card reading for the characters (see chapter 1), like the one that can be performed by Madam Eva."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Ezmerelda d'Avenir's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Evil that feeds on the innocent is the worst of all evils and must be destroyed.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"My mentor and teacher, Dr. Rudolph van Richten, is like a father to me.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I go where angels fear to tread.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/EzmereldaToken1.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/EzmereldaToken1.png",
 			"actionTags": [
 				"Multiattack"
 			],
-			"damageTags": [
-				"B",
-				"N"
-			],
-			"damageTagsSpell": [
-				"C",
-				"F",
-				"N",
-				"O",
-				"R",
-				"Y"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"frightened",
-				"paralyzed"
-			],
-			"conditionInflictSpell": [
-				"blinded",
-				"deafened",
-				"paralyzed",
-				"poisoned",
-				"prone",
-				"stunned"
-			],
-			"languages": [
-				"Common",
-				"Elvish",
-				"Deep Speech",
-				"Sylvan"
-			],
 			"languageTags": [
 				"C",
-				"E",
-				"DS",
+				"E"
+			],
+			"damageTags": [
+				"P",
 				"S"
 			],
-			"resist": [
-				"necrotic"
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"O"
 			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png",
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Father Donavich",
+			"source": "Allies",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"medicine": "+5",
+				"religion": "+3"
+			},
+			"passive": 12,
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks.",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"Donavich has following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame}: ({@damage 1d8})",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell cure wounds}: ({@damage 1d8+2})",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell gentle repose}",
+								"{@spell spiritual weapon}: ({@hit 5};{@damage 1d8+2})"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Channel Divinity: Radiance of the Dawn ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"As an action, Donavich presents his holy symbol, dispelling any magical darkness within 30 feet of him. Additionally, each hostile creature within 30 feet of him must make a Constitution saving throw ({@dc 13}). A creature takes radiant damage equal to {@damage 2d10 + 3} on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from Donavich is not affected."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+					]
+				},
+				{
+					"name": "Lathandar's Light",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 60 ft., one target. {@h}({@damage 1d6 + 2}) fire damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png"
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DonovichToken1.png"
 						}
 					}
 				]
-			}
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DonovichToken1.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true
 		},
 		{
 			"name": "Father Lucian",
@@ -1428,6 +1078,18 @@
 			"environment": [
 				"urban"
 			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LucianPetrovich.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LucianPetrovich.png",
 			"languageTags": [
 				"C",
 				"S"
@@ -1445,291 +1107,120 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasFluff": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LucianPetrovich.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/LucianPetrovich.png"
-						}
-					}
-				]
-			}
+			"hasFluff": true
 		},
 		{
-			"name": "Father Donavich",
+			"name": "Fintir Haurach",
+			"shortName": "Fintir",
+			"isNamedCreature": true,
 			"source": "Allies",
-			"basicRules": true,
 			"size": [
-				"M"
+				"L"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item chain shirt|phb}",
-						"{@item shield|phb}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "3d8",
-				"average": 13
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 10,
-			"con": 10,
-			"int": 10,
-			"wis": 14,
-			"cha": 11,
-			"skill": {
-				"medicine": "+5",
-				"religion": "+3"
-			},
-			"passive": 12,
-			"languages": [
-				"Common"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks.",
-						"<b>Spell Slots</b>",
-						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"Donavich has following cleric spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}: ({@damage 1d8})",
-								"{@spell thaumaturgy}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell bless}",
-								"{@spell cure wounds}: ({@damage 1d8+2})",
-								"{@spell sanctuary}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell gentle repose}",
-								"{@spell spiritual weapon}: ({@hit 5};{@damage 1d8+2})"
-							],
-							"slots": 2
-						}
-					},
-					"type": "spellcasting"
-				}
-			],
-			"action": [
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
-					]
-				},
-				{
-					"name": "Lathandar's Light",
-					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 60 ft., one target. {@h}({@damage 1d6 + 2}) fire damage."
-					]
-				}
-			],
-			"environment": [
-				"urban"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"damageTagsSpell": [
-				"O",
-				"R"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW"
-			],
-			"hasFluff": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DonovichToken1.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DonovichToken1.png"
-						}
-					}
-				]
-			},
-			"resist": [
-				"necrotic",
-				"radiant"
-			],
-			"trait": [
-				{
-					"name": "Channel Divinity: Radiance of the Dawn ( <input type= \"checkbox\">/short rest)",
-					"entries": [
-						"As an action, Donavich presents his holy symbol, dispelling any magical darkness within 30 feet of him. Additionally, each hostile creature within 30 feet of him must make a Constitution saving throw ({@dc 13}). A creature takes radiant damage equal to {@damage 2d10 + 3} on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from Donavich is not affected."
-					]
-				}
-			]
-		},
-		{
-			"name": "Doru",
-			"source": "Allies",
-			"basicRules": true,
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
+			"type": "fey",
 			"alignment": null,
 			"ac": [
 				{
 					"ac": 16,
 					"from": [
-						"{@item chain shirt|phb}",
-						"{@item shield|phb}"
+						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"formula": "3d8 + 3",
-				"average": 16
+				"formula": "7d10 + 7",
+				"average": 45
 			},
 			"speed": {
-				"walk": 30
+				"walk": 60,
+				"fly": 60,
+				"canHover": false
 			},
-			"str": 10,
-			"dex": 13,
-			"con": 12,
-			"int": 10,
-			"wis": 14,
-			"cha": 11,
+			"str": 12,
+			"dex": 18,
+			"con": 13,
+			"int": 7,
+			"wis": 16,
+			"cha": 8,
 			"skill": {
-				"religion": "+3",
-				"medicine": "+5"
+				"acrobatics": "+7"
 			},
-			"passive": 12,
-			"languages": [
-				"Common"
+			"senses": [
+				"darkvision 60 ft."
 			],
-			"cr": "1/4",
-			"spellcasting": [
+			"passive": 13,
+			"resist": [
+				"lightning",
+				"thunder"
+			],
+			"languages": [
+				"Understands Sylvan but can't speak"
+			],
+			"cr": "5",
+			"trait": [
 				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks.",
-						"<b>Spell Slots</b>",
-						"1st level: <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
-						"Doru has following cleric spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell sacred flame}: ({@damage 1d8})"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell cure wounds}",
-								"{@spell detect magic}",
-								"{@spell shield of faith}"
-							],
-							"slots": 4
-						}
-					},
-					"type": "spellcasting"
+					"name": "Lightning Form",
+					"entries": [
+						"If Fintir is reduced to 0 hit points, she disappears into a crackle of energy. She can be resummoned by performing a ritual that takes 1 hour, or by casting the spell Find Steed."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If Fintir moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, Fintir can make another attack with her hooves against it as a bonus action."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"Fintir doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
 				}
 			],
 			"action": [
 				{
-					"name": "Mace",
+					"name": "Thunderous Hooves",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) thunder damage."
 					]
 				},
 				{
-					"name": "Guiding Bolt ( <input type= \"checkbox\"><input type= \"checkbox\">/long rest)",
+					"name": "Lightning Dash ( <input type= \"checkbox\">/short rest)",
 					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}15 ({@damage 4d6}) radiant damage."
+						"Fintir transforms into a being of pure energy, causing her and her rider to become incorporeal, and can move 30 feet in addition to her normal movement. Every creature she passes through must make a {@dc 15} Dexterity saving throw, taking {@damage 8d6} lightning damage on a failure, or half as much on a success."
 					]
 				}
 			],
-			"environment": [
-				"urban"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"R"
-			],
-			"damageTagsSpell": [
-				"R"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW"
-			],
-			"hasFluff": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DoruCuredToken.png",
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DoruCuredToken.png"
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/FintirHaurach%20Token.png"
 						}
 					}
 				]
 			},
-			"resist": [
-				"necrotic",
-				"radiant"
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/FintirHaurach%20Token.png",
+			"traitTags": [
+				"Flyby"
 			],
-			"reaction": [
-				{
-					"name": "Warding Flare ( <input type= \"checkbox\"><input type= \"checkbox\">/long rest)",
-					"entries": [
-						"When Doru is attacked by a creature within 30 feet of him that he can see, he can use his reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can’t be {@condition blinded} is immune to this feature."
-					]
-				}
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"S"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
 			]
 		},
 		{
@@ -1771,9 +1262,13 @@
 				"darkvision 60 ft."
 			],
 			"passive": 11,
+			"resist": [
+				"poison"
+			],
 			"languages": [
 				"Common"
 			],
+			"cr": "3",
 			"spellcasting": [
 				{
 					"name": "1 Innate Spellcasting",
@@ -1792,43 +1287,16 @@
 					"headerEntries": [
 						"After dealing damage with his bite attack, for the next minute he can innately cast one of the following spells <b>as a bonus action</b>, requiring no material components:"
 					],
-					"footerEntries": [
-						"After being cast, the spell ends after one minute, regardless of its normal duration."
-					],
 					"will": [
 						"{@spell alter self}",
 						"{@spell false life}: ({@damage 1d4+2})",
 						"{@spell guidance}: ({@damage 1d4})"
 					],
+					"footerEntries": [
+						"After being cast, the spell ends after one minute, regardless of its normal duration."
+					],
 					"type": "spellcasting"
 				}
-			],
-			"environment": [
-				"underdark"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"spellcastingTags": [
-				"I",
-				"O"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"resist": [
-				"poison"
-			],
-			"damageTagsSpell": [
-				"B",
-				"N",
-				"P",
-				"S"
 			],
 			"trait": [
 				{
@@ -1864,14 +1332,9 @@
 					]
 				}
 			],
-			"miscTags": [
-				"MW"
+			"environment": [
+				"underdark"
 			],
-			"traitTags": [
-				"Spider Climb"
-			],
-			"cr": "3",
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/BlinskyToken.png",
 			"fluff": {
 				"images": [
 					{
@@ -1882,10 +1345,214 @@
 						}
 					}
 				]
-			}
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/BlinskyToken.png",
+			"traitTags": [
+				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
-			"name": "Oleg Nimirovic",
+			"name": "Helga Bolderath",
+			"source": "Allies",
+			"level": 10,
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 20",
+				"average": 101
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 14,
+			"int": 10,
+			"wis": 16,
+			"cha": 8,
+			"save": {
+				"str": "+4",
+				"dex": "+9"
+			},
+			"skill": {
+				"athletics": "+8",
+				"intimidation": "+3",
+				"performance": "+3",
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Celestial",
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Giant",
+				"Primordial"
+			],
+			"spellcasting": [
+				{
+					"name": "<font size= 3>Spellcasting</font>",
+					"headerEntries": [
+						"<p>1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"></p>"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}: ({@damage 1d6})",
+								"{@spell cure wounds}: ({@damage 1d8+3})",
+								"{@spell hunter's mark}: ({@damage 1d6})",
+								"{@spell protection from evil and good}",
+								"{@spell zephyr strike|XGE}: ({@damage 1d8})"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell haste}",
+								"{@spell revivify}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "<font size= 3>Horizon Walker Spellcasting</font>",
+					"rest": {
+						"1e": [
+							"{@spell etherealness}: (BA cast, 1 round duration)"
+						]
+					},
+					"daily": {
+						"1e": [
+							"{@spell speak with animals}",
+							"{@spell speak with plants}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "<font size= 3>Favored Foe</font> ( <input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\">/long rest)",
+					"entries": [
+						"When you hit a creature with an attack roll, you can mark the target as your favored enemy for 1 minute.",
+						"The first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you deal an additional {@damage 1d6} damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Extra Attack",
+					"entries": [
+						"You can attack twice with Treebane and once with a regular handaxe, or twice with any other weapons.",
+						"Once on each of your turns, you can deal an additional {@damage 1d8} force damage with one of your attacks."
+					]
+				},
+				{
+					"name": "Treebane (Handaxe)",
+					"entries": [
+						"{@hit 9} to hit, reach 5 ft.",
+						"{@h} ({@damage 1d6 + 5}) slashing damage.",
+						"Treebane deals an additional {@damage 1d8} slashing damage to plants."
+					]
+				},
+				{
+					"name": "Hand Crossbow (+1)",
+					"entries": [
+						"{@hit 10} to hit, range 30/120 ft.",
+						"{@h}8 ({@damage 1d6 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@hit 9} to hit, range 150/600 ft.",
+						"{@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/HelgaBolderathToken.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"D",
+				"DR",
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RNG"
+			]
+		},
+		{
+			"name": "Ismark, Knight of the Silver Dragon",
 			"source": "Allies",
 			"size": [
 				"M"
@@ -1893,12 +1560,12 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"human"
+					"any race"
 				]
 			},
 			"alignment": [
 				"L",
-				"N"
+				"G"
 			],
 			"ac": [
 				{
@@ -1909,8 +1576,8 @@
 				}
 			],
 			"hp": {
-				"formula": "6d8 + 12",
-				"average": 39
+				"average": 58,
+				"formula": "9d8 + 18"
 			},
 			"speed": {
 				"walk": 30
@@ -1919,33 +1586,76 @@
 			"dex": 13,
 			"con": 14,
 			"int": 10,
-			"wis": 16,
-			"cha": 10,
-			"skill": {
-				"athletics": "+5",
-				"perception": "+2"
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+6"
 			},
-			"passive": 12,
+			"skill": {
+				"athletics": "+6",
+				"perception": "+3"
+			},
+			"passive": 13,
 			"languages": [
 				"Common"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "1 Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 14}, {@hit 6} to hit with spell attacks."
+					],
+					"daily": {
+						"3": [
+							"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"> {@spell branding smite}: ({@damage 2d6})"
+						],
+						"1e": [
+							"<input type= \"checkbox\"> {@spell command}",
+							"<input type= \"checkbox\"> {@spell compelled duel}",
+							"<input type= \"checkbox\"> {@spell cure wounds}: ({@damage 3d8+3)}",
+							"<input type= \"checkbox\"> {@spell detect evil and good}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "<br>Channel Divinity ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"Ismark can choose one of the following effects when he uses his Channel Divinity.",
+						"<br>",
+						"&emsp;<b><i>Champion Challenge.</i></b> As a bonus action, Ismark can issue a challenge that compels other creatures to do battle with him. Each creature of his choice within 30 feet of him must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from him. This effect ends if he is {@condition incapacitated} or dies, or if the creature is more than 30 feet away from him.</br>",
+						"<br>",
+						"&emsp;<b><i>Turn the Tide.</i></b> As a bonus action, Ismark can bolster injured creatures with his Channel Divinity. Each creature of his choice within 30 feet of him regains hit points equal to {@damage 1d6+3}."
+					]
+				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Oleg makes two attacks. His pike has 10 feet of reach."
+						"Ismark makes two longsword attacks. If he has a shortsword drawn, he can also make a shortsword attack."
 					]
 				},
 				{
-					"name": "Pike",
+					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h} ({@damage 1d10 + 3}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
 					]
 				},
 				{
 					"name": "Heavy Crossbow",
 					"entries": [
-						"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+						"{@atk rw} {@hit 4} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
 					]
 				}
 			],
@@ -1959,6 +1669,18 @@
 				"underdark",
 				"urban"
 			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png",
 			"actionTags": [
 				"Multiattack"
 			],
@@ -1966,164 +1688,259 @@
 				"C"
 			],
 			"damageTags": [
-				"P"
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"O"
 			],
 			"miscTags": [
 				"MW",
-				"RCH",
-				"RW",
-				"RNG"
+				"RNG",
+				"RW"
 			],
-			"hasFluff": true,
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"Oleg has advantage on an attack roll against a creature if at least one of the Oleg's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
-					]
-				},
-				{
-					"name": "Battle Commander ( <input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">/short rest>",
-					"entries": [
-						"Oleg has access to the following Battle Master Maneuvers. His superiority die is {@dice 1d8}, and his save DC is 15.",
-						"<b>Bait and Switch</b>",
-						"<details>&emsp;When Oleg is within 5 feet of a willing ally on his turn, He can expend one superiority die and switch places with that ally. This movement doesn’t provoke opportunity attacks.",
-						"&emsp;Roll the superiority die. Until the start of his next turn, Oleg or the ally (Oleg's choice) gains a bonus to AC equal to the number rolled.</details>",
-						"<b>Brace</b>",
-						"<details>&emsp;When an enemy moves into his reach, Oleg can use his reaction to expend one superiority die and make one attack against the creature. If the attack hits, add the superiority die to the weapon’s damage roll.</details>",
-						"<b>Trip Attack</b>",
-						"<details>&emsp;When Oleg hits a creature with a weapon attack, he can expend one superiority die to attempt to knock the target down. He adds the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}</details>",
-						"<b>Lunging Attack</b>",
-						"<details>&emsp;When Oleg makes a melee attack, he can expend one superiority die to increase his reach for that attack by 5 feet. If he hits, he adds the superiority die to the attack’s damage roll."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
-			"cr": "4",
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/OlegNimirovicToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/OlegNimirovicToken.png"
-						}
-					}
-				]
-			},
-			"damageTagsSpell": [
-				"P"
-			],
-			"conditionInflict": [
-				"prone"
-			]
+			"hasFluff": true
 		},
 		{
-			"name": "Vallaki Guard",
+			"name": "Kasimir Velikov (Gifted)",
 			"source": "Allies",
-			"basicRules": true,
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
+			"type": "humanoid",
+			"alignment": null,
 			"ac": [
 				{
-					"ac": 16,
+					"ac": 17,
 					"from": [
-						"{@item chain shirt|phb}",
-						"{@item shield|phb}"
+						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"average": 11,
-				"formula": "2d8 + 2"
+				"average": 97,
+				"formula": "13d8 + 39"
 			},
 			"speed": {
 				"walk": 30
 			},
-			"str": 13,
-			"dex": 12,
-			"con": 12,
-			"int": 10,
-			"wis": 11,
-			"cha": 10,
-			"skill": {
-				"perception": "+2"
+			"str": 18,
+			"dex": 14,
+			"con": 17,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+10",
+				"wis": "+7",
+				"cha": "+8",
+				"con": "+8"
 			},
-			"passive": 12,
-			"languages": [
-				"any one language (usually Common)"
+			"skill": {
+				"history": "+10",
+				"arcana": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
 			],
-			"cr": "1/2",
-			"action": [
+			"passive": 12,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Deep Speech",
+				"Sylvan"
+			],
+			"spellcasting": [
 				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d8 + 1}) piercing damage."
-					]
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Kasimir is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"6th level: <input type=\"checkbox\">",
+						"Kasimir has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}: ({@hit 9};{@damage 3d10})",
+								"{@spell mage hand}",
+								"{@spell sacred flame}: ({@damage 3d10})",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell guiding bolt}: ({@hit 9};{@damage 4d6})",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell misty step}",
+								"{@spell silence}",
+								"{@spell spiritual weapon}: ({@hit 9};{@damage 1d8+5})"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}: ({@damage 8d6})",
+								"{@spell fly}",
+								"{@spell revivify}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell raulothim's psychic lance|FTD}: ({@damage 7d6})"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}: ({@damage 8d8})",
+								"{@spell raise dead}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell harm}: ({@damage 14d6})",
+								"{@spell heal}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
 				}
 			],
-			"environment": [
-				"coastal",
-				"desert",
-				"forest",
-				"grassland",
-				"hill",
-				"mountain",
-				"urban"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"RW",
-				"MW",
-				"THW"
-			],
-			"hasFluff": true,
 			"trait": [
 				{
-					"name": "Pack Tactics",
+					"name": "Magic Resistance",
 					"entries": [
-						"The guard has advantage on an attack roll against a creature if at least one of the guard's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"Kasimir has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Kasimir regains 10 hit points at the start of his turn if he has at least 1 hit point. If he takes fire damage, this trait doesn't function at the start of his next turn."
 					]
 				}
 			],
-			"traitTags": [
-				"Pack Tactics"
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kasimir can use his Dreadful Glare and makes one attack with cursed strike."
+					]
+				},
+				{
+					"name": "Cursed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h} ({@damage 2d6 + 4}) bludgeoning damage plus ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Dreadful Glare",
+					"entries": [
+						"Kasimir targets one creature he can see within 60 feet of him. If the target can see Kasimir, it must succeed on a {@dc 16} Wisdom saving throw against this magic or become {@condition frightened} until the end of Kasimir's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare for the next 24 hours."
+					]
+				}
 			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/TownGuardToken.png",
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/TownGuardToken.png"
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png"
 						}
 					}
 				]
-			}
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/KasimirToken.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"N",
+				"O",
+				"R",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Knight of the Silver Dragon",
 			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": "undead",
 			"alignment": [
 				"L",
 				"E"
@@ -2136,14 +1953,6 @@
 					]
 				}
 			],
-			"damageTags": [
-				"B",
-				"S"
-			],
-			"size": [
-				"M"
-			],
-			"type": "undead",
 			"hp": {
 				"average": 136,
 				"formula": "16d8 + 64"
@@ -2233,6 +2042,18 @@
 					]
 				}
 			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/RevenantToken8.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/RevenantToken8.png",
 			"traitTags": [
 				"Regeneration",
 				"Rejuvenation",
@@ -2247,617 +2068,123 @@
 			"languageTags": [
 				"LF"
 			],
+			"damageTags": [
+				"B",
+				"S"
+			],
 			"miscTags": [
 				"MW"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/RevenantToken8.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/RevenantToken8.png"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
-			"name": "Sofia Vernescu",
+			"name": "Magnus",
 			"source": "Allies",
 			"size": [
 				"M"
 			],
 			"type": "humanoid",
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item chain shirt|phb}"
-					]
-				}
-			],
-			"hp": {
-				"average": 26,
-				"formula": "4d8 + 8"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 15,
-			"dex": 15,
-			"con": 15,
-			"int": 10,
-			"wis": 12,
-			"cha": 9,
-			"save": {
-				"str": "+4",
-				"con": "+4"
-			},
-			"skill": {
-				"athletics": "+4",
-				"perception": "+3"
-			},
-			"passive": 13,
-			"languages": [
-				"Common"
-			],
-			"cr": "3",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Sofia makes two attacks with her hammer."
-					]
-				},
-				{
-					"name": "Blacksmith's Hammer",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage. If the attack roll is a crit or the damage roll is its maximum value, the enemy must make a {@dc 14} Constitution saving throw or be {@condition stunned} until the start of their next turn."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 4} to hit, range",
-						"100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"RNG"
-			],
-			"hasFluff": true,
-			"conditionInflict": [
-				"stunned"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SofiaVernescuToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SofiaVernescuToken.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Ragnar",
-			"source": "Allies",
-			"size": [
-				"L"
-			],
-			"type": "dragon",
-			"alignment": null,
-			"alignmentPrefix": "typically ",
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"special": "91"
-			},
-			"speed": {
-				"walk": 30,
-				"fly": 60
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 14,
-			"int": 7,
-			"wis": 13,
-			"cha": 16,
-			"senses": [
-				"blindsight 30 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 14,
-			"languages": [
-				"understands Draconic and Common but can't speak"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Ragnar can either make two bite/claw attacks, one frost bolt attack, or use his breath weapon."
-					]
-				},
-				{
-					"name": "Bite/Claw",
-					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h} ({@damage 1d8 + 3}) slashing damage."
-					]
-				},
-				{
-					"name": "Frost Bolt",
-					"entries": [
-						"{@atk rw} {@hit 8} to hit, range 60/60 ft., one target. {@h}9 ({@damage 2d6 + 2}) cold damage."
-					]
-				},
-				{
-					"name": "Breath Weapon ( <input type= \"checkbox\">/short rest)",
-					"entries": [
-						"When Ragnar uses his breath attack, he can choose from the following options.",
-						"<b>Cold Breath.</b> Ragnar exhales an icy blast in a 20-foot cone. Each creature in that area must make a {@dc 14} Constitution saving throw, taking {@damage 4d8} cold damage on a failed save, or half as much damage on a successful one.",
-						"<b>Freezing Breath</b> Ragnar exhales a freezing wind in a 20-foot cone. Each creature in that area must make a {@dc 14} Strength saving throw. On a failure, the creature's speed is reduced to 0 for one minute or until a creature uses their action to break the ice binding them. On a success, the creature's speed is reduced by half until the start of Ragnar's next turn."
-					]
-				}
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS",
-				"DR"
-			],
-			"damageTags": [
-				"C",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"AOE"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"save": {
-				"con": "+5",
-				"wis": "+4"
-			},
-			"skill": {
-				"stealth": "+5",
-				"perception": "+4"
-			},
-			"resist": [
-				"cold"
-			],
-			"trait": [
-				{
-					"name": "Variable Size",
-					"entries": [
-						"As a bonus action, Ragnar can change his size to tiny, becoming approximately 1 foot long. While in this form, his melee attacks deal 1 slashing damage on a hit and his frost bolt deals 1 cold damage on a hit."
-					]
-				}
-			],
-			"cr": "7",
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DragnarToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DragnarToken.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Fintir Haurach",
-			"size": [
-				"L"
-			],
-			"type": "fey",
-			"source": "Allies",
-			"alignment": null,
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "7d10 + 7",
-				"average": 45
-			},
-			"speed": {
-				"walk": 60,
-				"fly": 60,
-				"canHover": false
-			},
-			"str": 12,
-			"dex": 18,
-			"con": 13,
-			"int": 7,
-			"wis": 16,
-			"cha": 8,
-			"passive": 13,
-			"shortName": "Fintir",
-			"languages": [
-				"Understands Sylvan but can't speak"
-			],
-			"languageTags": [
-				"CS",
-				"S"
-			],
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"D"
-			],
-			"skill": {
-				"acrobatics": "+7"
-			},
-			"resist": [
-				"lightning",
-				"thunder"
-			],
-			"trait": [
-				{
-					"name": "Lightning Form",
-					"entries": [
-						"If Fintir is reduced to 0 hit points, she disappears into a crackle of energy. She can be resummoned by performing a ritual that takes 1 hour, or by casting the spell Find Steed."
-					]
-				},
-				{
-					"name": "Trampling Charge",
-					"entries": [
-						"If Fintir moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, Fintir can make another attack with her hooves against it as a bonus action."
-					]
-				},
-				{
-					"name": "Flyby",
-					"entries": [
-						"Fintir doesn't provoke opportunity attacks when it flies out of an enemy's reach."
-					]
-				}
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"traitTags": [
-				"Flyby"
-			],
-			"isNamedCreature": true,
-			"action": [
-				{
-					"name": "Thunderous Hooves",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) thunder damage."
-					]
-				},
-				{
-					"name": "Lightning Dash ( <input type= \"checkbox\">/short rest)",
-					"entries": [
-						"Fintir transforms into a being of pure energy, causing her and her rider to become incorporeal, and can move 30 feet in addition to her normal movement. Every creature she passes through must make a {@dc 15} Dexterity saving throw, taking {@damage 8d6} lightning damage on a failure, or half as much on a success."
-					]
-				}
-			],
-			"damageTags": [
-				"T"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"cr": "5",
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/FintirHaurach%20Token.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/FintirHaurach%20Token.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "The Martyr",
-			"size": [
-				"L"
-			],
-			"type": "fey",
-			"source": "Allies",
-			"alignment": null,
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "5d10 + 25",
-				"average": 52
-			},
-			"speed": {
-				"walk": 45
-			},
-			"str": 19,
-			"dex": 8,
-			"con": 21,
-			"int": 7,
-			"wis": 14,
-			"cha": 10,
-			"passive": 15,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"D"
-			],
-			"languages": [
-				"understands Sylvan but can't speak"
-			],
-			"languageTags": [
-				"CS",
-				"S"
-			],
-			"skill": {
-				"perception": "+5"
-			},
-			"save": {
-				"str": "+7"
-			},
-			"resist": [
-				{
-					"resist": [
-						"necrotic",
-						"psychic"
-					]
-				},
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from non-magical attacks"
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened"
-			],
-			"trait": [
-				{
-					"name": "Executioner's Ward.",
-					"entries": [
-						"When the Martyr dies, its spirit remains with the creature it serves. As an action, that creature can touch a four legged beast (living or dead) and impart the Martyr's spirit into it. The targeted beast ceases to exist, and its body is transformed into a new vessel for the Martyr. This action can only be performed once per day."
-					]
-				},
-				{
-					"name": "Can't be Bought.",
-					"entries": [
-						"The Martyr can't be compelled to act in a manner contrary to its nature or its instructions."
-					]
-				},
-				{
-					"name": "Fortitude.",
-					"entries": [
-						"If damage reduces the Martyr to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken. On a success, the Martyr drops to 1 hit point instead."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Antlers",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 4}) slashing damage.",
-						"</p>&emsp;If the damage rolled on this attack is 18 or higher, the target must succeed a {@dc 16} Strength saving throw or be knocked {@condition prone}.",
-						"</p>&emsp;On a critical hit, the target must succeed a {@dc 16} Constitution saving throw or be {@condition stunned} until the start of its next turn."
-					]
-				},
-				{
-					"name": "Death Ray ( <input type= \"checkbox\">/short rest)",
-					"entries": [
-						"The Martyr targets one creature within 30 feet of it. That creature must make a {@dc 16} Charisma saving throw, taking {@damage 8d8} force damage on a failed save, or half as much on a successful one. If a creature is reduced to 0 hit points by this attack, they cease to exist. Legendary and Mythic creatures are immune to this effect."
-					]
-				}
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"prone",
-				"stunned"
-			],
-			"cr": "5",
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MartyrToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MartyrToken.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Rudolph Van Richten",
-			"alias": [
-				"Rudolph van Richten"
-			],
-			"source": "Allies",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
 			"alignment": [
 				"L",
-				"G"
+				"N"
 			],
 			"ac": [
 				{
-					"ac": 12,
+					"ac": 20,
 					"from": [
-						"{@item leather armor|phb}"
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
 					]
 				}
 			],
 			"hp": {
-				"average": 77,
-				"formula": "14d8 + 14"
+				"formula": "8d10 + 16",
+				"average": 68
 			},
 			"speed": {
 				"walk": 30
 			},
-			"str": 9,
+			"str": 16,
 			"dex": 12,
-			"con": 13,
-			"int": 16,
-			"wis": 18,
-			"cha": 16,
+			"con": 14,
+			"int": 8,
+			"wis": 8,
+			"cha": 20,
 			"save": {
-				"con": "+4",
-				"wis": "+7"
+				"wis": "+2",
+				"cha": "+8"
 			},
 			"skill": {
-				"arcana": "+9",
-				"insight": "+7",
-				"medicine": "+7",
-				"perception": "+7",
-				"religion": "+6",
-				"sleight of hand": "+4"
+				"arcana": "+2",
+				"medicine": "+2",
+				"religion": "+2",
+				"survival": "+2"
 			},
-			"passive": 17,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
 			"languages": [
 				"Abyssal",
+				"Celestial",
 				"Common",
-				"Elvish",
-				"Infernal"
+				"Draconic"
 			],
+			"cr": "6",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "1 Spellcasting",
 					"headerEntries": [
-						"Rudolph is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks).",
-						"<b>Spell Slots</b>",
-						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"5th level: <input type=\"checkbox\">",
-						"Rudolph has the following cleric spells prepared:"
+						"Spell save {@dc 16}, +8 to hit with spell attacks.",
+						"<br>",
+						"&emsp;<b><i>Spell slots</i></b>",
+						"&emsp;<i>1st level.</i> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">",
+						"&emsp;<i>2nd level.</i> <input type= \"checkbox\"> <input type= \"checkbox\"> <input type= \"checkbox\">"
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell thaumaturgy}"
+								"{@spell light}"
 							]
 						},
 						"1": {
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell detect evil and good}",
-								"{@spell protection from evil and good}",
-								"{@spell sanctuary}"
+								"{@spell command}",
+								"{@spell wrathful smite}: ({@damage 1d6})"
 							],
 							"slots": 4
 						},
 						"2": {
 							"spells": [
-								"{@spell augury}",
-								"{@spell lesser restoration}",
-								"{@spell protection from poison}"
+								"{@spell chains of flame|CustomSpells}: ({@hit 8};{@damage 2d4+5})",
+								"{@spell see invisibility}"
 							],
 							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell magic circle}",
-								"{@spell remove curse}",
-								"{@spell speak with dead}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell death ward}",
-								"{@spell freedom of movement}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell dispel evil and good}"
-							],
-							"slots": 1
 						}
 					},
-					"ability": "wis",
 					"type": "spellcasting"
 				}
 			],
 			"trait": [
 				{
-					"name": "Special Equipment",
+					"name": "<br>Rebuke the Violent ( <input type= \"checkbox\">/short rest>)",
 					"entries": [
-						"In addition to his sword cane, Rictavio wears a {@item hat of disguise} and a {@item ring of mind shielding}."
+						"Magnus can use his Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of him deals damage with an attack against a creature other than him, he can use his reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
 					]
 				},
 				{
-					"name": "Undead Slayer",
+					"name": "<br>Necrotic Shroud ( <input type= \"checkbox\">/long rest)",
 					"entries": [
-						"When Rictavio hits an undead with a weapon attack, the undead takes an extra 10 ({@dice 3d6}) damage of the weapon's type."
+						"As an action, Magnus can transform for up to one minute, causing all creatures within 10 ft. to make a CHA saving throw ({@dc 16}) or be {@condition frightened} of him until the end of his next turn."
+					]
+				},
+				{
+					"name": "<br>Lay on Hands",
+					"entries": [
+						"Magnus has a pool of healing power that can restore <b>50</b> HP per long rest. As an action, he can touch a creature to restore any number of HP remaining in the pool, or 5 HP to either cure a disease or neutralize a poison affecting the creature.<p><input>"
 					]
 				}
 			],
@@ -2865,21 +2192,30 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Rictavio makes two attacks."
+						"Magnus attacks twice on his turn."
 					]
 				},
 				{
-					"name": "Sword Cane",
+					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage (wooden cane) or piercing damage (silvered sword)."
-					]
-				},
-				{
-					"name": "Hand Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
 					]
 				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MagnusCuredToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MagnusCuredToken.png",
+			"senseTags": [
+				"D"
 			],
 			"actionTags": [
 				"Multiattack"
@@ -2887,954 +2223,21 @@
 			"languageTags": [
 				"AB",
 				"C",
-				"E",
-				"I"
+				"CE",
+				"DR"
 			],
 			"damageTags": [
-				"B",
-				"P"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"RNG"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VanRichtenToken1.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VanRichtenToken1.png"
-						}
-					}
-				]
-			},
-			"cr": "7"
-		},
-		{
-			"name": "Ezmerelda d'Avenir",
-			"source": "Allies",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"C",
-				"G"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"{@item +1 studded leather armor}"
-					]
-				}
-			],
-			"hp": {
-				"average": 82,
-				"formula": "11d8 + 33"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 14,
-			"dex": 19,
-			"con": 16,
-			"int": 16,
-			"wis": 11,
-			"cha": 17,
-			"save": {
-				"wis": "+3"
-			},
-			"skill": {
-				"acrobatics": "+7",
-				"arcana": "+6",
-				"deception": "+9",
-				"insight": "+3",
-				"medicine": "+3",
-				"perception": "+6",
-				"performance": "+6",
-				"sleight of hand": "+7",
-				"stealth": "+7",
-				"survival": "+6"
-			},
-			"passive": 16,
-			"languages": [
-				"Common",
-				"Elvish"
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Ezmerelda is a 7th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Ezmerelda has the following wizard spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell protection from evil and good}",
-								"{@spell magic missile}",
-								"{@spell shield}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell darkvision}",
-								"{@spell knock}",
-								"{@spell mirror image}"
-							]
-						},
-						"3": {
-							"slots": 3,
-							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell lightning bolt}",
-								"{@spell magic circle}"
-							]
-						},
-						"4": {
-							"slots": 1,
-							"spells": [
-								"{@spell greater invisibility}"
-							]
-						}
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Special Equipment",
-					"entries": [
-						"In addition to her magic armor and weapons, Ezmerelda has two {@item potion of greater healing||potions of greater healing}, six {@item holy water (flask)|phb|vials of holy water}, and three wooden stakes."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Ezmerelda makes three attacks: two with her +1 rapier and one with her +1 handaxe or her silvered shortsword."
-					]
-				},
-				{
-					"name": "Rapier +1",
-					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
-					]
-				},
-				{
-					"name": "Handaxe +1",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
-					]
-				},
-				{
-					"name": "Silvered Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
-					]
-				},
-				{
-					"name": "Curse (Recharges after a Long Rest)",
-					"entries": [
-						"Ezmerelda targets one creature that she can see within 30 feet of her. The target must succeed on a {@dc 14} Wisdom saving throw or be cursed. While cursed, the target has vulnerability to one type of damage of Ezmerelda's choice. The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. When the curse ends, Ezmerelda takes {@dice 3d6} psychic damage."
-					]
-				},
-				{
-					"name": "Evil Eye (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Ezmerelda targets one creature that she can see within 10 feet of her and casts one of the following spells on the target (save {@dc 14}), requiring neither somatic nor material components to do so: animal friendship, charm person, or hold person. If the target succeeds on the initial saving throw, Ezmerelda is {@condition blinded} until the end of her next turn. Once a target succeeds on a saving throw against this effect, it is immune to the Evil Eye power of all Vistani for 24 hours."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"E"
-			],
-			"damageTags": [
-				"P",
 				"S"
 			],
 			"damageTagsSpell": [
-				"F",
-				"L",
-				"O"
+				"Y"
 			],
 			"spellcastingTags": [
-				"CW"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"invisible"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/EzmereldaToken1.png",
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Ezmerelda d'Avenir, a Vistana, is the protégé of Rudolph van Richten - despite the fact that her first encounter with the vampire hunter was anything but pleasant.",
-											{
-												"name": "Witness to Tragedy",
-												"type": "entries",
-												"entries": [
-													"When Ezmerelda was a little girl, her family kidnapped van Richten's teenage son, Erasmus, and delivered him into the clutches of a vampire. Even today, years later, she can still hear Erasmus's pleas for mercy. That event haunted her childhood.",
-													"Van Richten tracked down Ezmerelda's family soon after the kidnapping, but not before the Vistani had sold the boy. Though van Richten could have done them harm, he instead interrogated Ezmerelda's mother and father on the whereabouts of his missing son. Satisfied with their answers, he spared their lives before departing with the information they had given him. Ezmerelda witnessed van Richten's act of mercy and was deeply moved by it."
-												]
-											},
-											{
-												"name": "Van Richten's Tragic Tale",
-												"type": "entries",
-												"entries": [
-													"At the age of fifteen, Ezmerelda, still troubled by what her family had done to van Richten, ran away from home. After many harrowing adventures, she tracked down van Richten two years later. Thinking she was a Vistana assassin, he put a sword to her throat and threatened to spill her blood. Ezmerelda convinced him that she genuinely wanted to help him find his missing son, whereupon van Richten told her the saddest of tales. He had found his son, who had been transformed into a vampire spawn. When Erasmus pleaded to his father for salvation, van Richten granted his request by ending his existence."
-												]
-											},
-											{
-												"name": "Farewell",
-												"type": "entries",
-												"entries": [
-													"Ezmerelda remained by van Richten's side for two years, helping him track down and slay many creatures of the night. But because van Richten could never bring himself to fully trust a Vistana, he kept secrets from her. The two vampire hunters got on each other's nerves, and their arguments became more frequent. At last, Ezmerelda suggested that they part company with some shred of their friendship still intact, and van Richten agreed."
-												]
-											},
-											{
-												"name": "Ezmerelda's Secret",
-												"type": "entries",
-												"entries": [
-													"Since bidding farewell to van Richten, Ezmerelda has amassed a sizable personal fortune, some of which she used to buy a wagon to carry her vampire-slaying paraphernalia. On one of her less successful adventures, a werewolf bit off her right leg below the knee, and although she avoided being afflicted with lycanthropy, Ezmerelda was sidelined for months. She commissioned a master artisan to craft a prosthetic lower leg and foot. After several tries, he delivered a prosthesis that restored her mobility. She has since adapted well to the false appendage."
-												]
-											},
-											{
-												"name": "The Great Vampire Hunt",
-												"type": "entries",
-												"entries": [
-													"While in the company of a Vistani caravan, Ezmerelda heard a rumor that Rudolph van Richten had gone to Barovia to slay the most powerful vampire of them all. She decided that he might need help and traveled for months to reach Strahd's domain. She rode her wagon to Vallaki and learned about an old tower that seemed the sort of place van Richten would use as a base. When she arrived there, she found some of van Richten's belongings, but of the vampire hunter there was no sign. Although she is anxious to learn the whereabouts of her mentor, she is also eager to earn his trust and respect. To that end, she has been poring over van Richten's research and learning about Strahd and Castle Ravenloft, with every intention of dispatching the vampire herself."
-												]
-											},
-											{
-												"name": "Tarokka Deck",
-												"type": "entries",
-												"entries": [
-													"Ezmerelda keeps a deck of tarokka cards in her wagon (chapter 11, area V1). Although the cards aren't magical, Ezmerelda can use them to perform a card reading for the characters (see chapter 1), like the one that can be performed by Madam Eva."
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Ezmerelda d'Avenir's Traits",
-										"entries": [
-											{
-												"name": "Ideal",
-												"type": "entries",
-												"entries": [
-													"\"Evil that feeds on the innocent is the worst of all evils and must be destroyed.\""
-												]
-											},
-											{
-												"name": "Bond",
-												"type": "entries",
-												"entries": [
-													"\"My mentor and teacher, Dr. Rudolph van Richten, is like a father to me.\""
-												]
-											},
-											{
-												"name": "Flaw",
-												"type": "entries",
-												"entries": [
-													"\"I go where angels fear to tread.\""
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/EzmereldaToken1.png"
-						}
-					}
-				]
-			},
-			"cr": "7"
-		},
-		{
-			"name": "Vasilka",
-			"source": "Allies",
-			"size": [
-				"M"
-			],
-			"type": "construct",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				9
-			],
-			"hp": {
-				"average": 93,
-				"formula": "11d8 + 44"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 19,
-			"dex": 9,
-			"con": 18,
-			"int": 6,
-			"wis": 10,
-			"cha": 5,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"lightning",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't adamantine",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
-			"cr": "7",
-			"trait": [
-				{
-					"name": "Berserk",
-					"entries": [
-						"Whenever Vasilka starts its turn with 40 hit points or fewer, roll a {@dice d6}. On a 6, Vasilka goes berserk.",
-						"<details>On each of its turns while berserk, Vasilka attacks the nearest creature it can see. If no creature is near enough to move to and attack, Vasilka attacks an object, with preference for an object smaller than itself. Once Vasilka goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
-						"Vasilka's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. Vasilka must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, Vasilka ceases being berserk. If it takes damage while still at 40 hit points or fewer, Vasilka might go berserk again.</details>"
-					]
-				},
-				{
-					"name": "Aversion of Fire",
-					"entries": [
-						"If Vasilka takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"Vasilka is immune to any spell or effect that would alter its form."
-					]
-				},
-				{
-					"name": "Lightning Absorption",
-					"entries": [
-						"Whenever Vasilka is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Vasilka has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"Vasilka's weapon attacks are magical."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Vasilka makes two slam attacks."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B"
+				"O"
 			],
 			"miscTags": [
 				"MW"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VasilkaToken3.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VasilkaToken3.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Armored Saber-Toothed Tiger",
-			"source": "Allies",
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"{@item half plate armor|phb}"
-					]
-				}
-			],
-			"hp": {
-				"average": 84,
-				"formula": "7d10 + 14"
-			},
-			"cr": "6",
-			"size": [
-				"L"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"speed": {
-				"walk": 40
-			},
-			"str": 18,
-			"dex": 14,
-			"con": 15,
-			"int": 3,
-			"wis": 12,
-			"cha": 8,
-			"skill": {
-				"perception": "+4",
-				"stealth": "+8"
-			},
-			"passive": 14,
-			"trait": [
-				{
-					"name": "Keen Smell",
-					"entries": [
-						"The tiger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
-					]
-				},
-				{
-					"name": "Pounce",
-					"entries": [
-						"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
-					]
-				},
-				{
-					"name": "Silvered Weapons",
-					"entries": [
-						"All of the tiger's damage is considered silvered for the purpose of overcoming resistances."
-					]
-				},
-				{
-					"name": "Spiked Armor",
-					"entries": [
-						"Any creature grappling the tiger takes {@damage 1d4} piercing damage at the start of each of its turns."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Bite (silvered)",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
-					]
-				},
-				{
-					"name": "Claw (silvered)",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses",
-				"Pounce"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SaberToothedTigerToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SaberToothedTigerToken.png"
-						}
-					}
-				]
-			},
-			"reaction": [
-				{
-					"name": "Spikes",
-					"entries": [
-						"When the tiger is hit by a melee attack from a creature within 5 feet of it, it can use its reaction to deal {@damage 1d4} piercing damage to that creature using its spiked armor."
-					]
-				}
 			]
-		},
-		{
-			"name": "Pidlwick II",
-			"source": "Allies",
-			"page": 236,
-			"size": [
-				"S"
-			],
-			"type": "construct",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 10,
-				"formula": "3d6"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 14,
-			"con": 11,
-			"int": 8,
-			"wis": 13,
-			"cha": 10,
-			"skill": {
-				"performance": "+2"
-			},
-			"passive": 11,
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands Common but doesn't speak and can't read or write"
-			],
-			"cr": "1",
-			"trait": [
-				{
-					"name": "Ambusher",
-					"entries": [
-						"During the first round of combat, Pidlwick II has advantage on attack rolls against any creature that hasn't had a turn yet."
-					]
-				},
-				{
-					"name": "Sneak Attack",
-					"entries": [
-						"Pidlwick deals an extra {@dice 1d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Pidlwick that isn't {@condition incapacitated} and Pidlwick doesn't have disadvantage on the attack roll."
-					]
-				},
-				{
-					"name": "Construct",
-					"entries": [
-						"If Pidlwick has the mending spell cast on him, he regain {@dice 2d6} hit points."
-					]
-				},
-				{
-					"name": "Too Many Knives",
-					"entries": [
-						"Where did he get them all?"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Knife",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
-					]
-				}
-			],
-			"traitTags": [
-				"Ambusher",
-				"Sneak Attack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"RW",
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/PidlwickToken1.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/PidlwickToken1.png"
-						}
-					}
-				]
-			},
-			"bonus": [
-				{
-					"name": "Cunning Action",
-					"entries": [
-						"Pidlwick can take a bonus action on each of his turns to take the Dash, Disengage, or Hide action."
-					]
-				}
-			]
-		},
-		{
-			"name": "Szoldar Szoldarovich and Yevgeni Krushkin",
-			"source": "Allies",
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"N"
-			],
-			"size": [
-				"M"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|phb}"
-					]
-				}
-			],
-			"hp": {
-				"average": 16,
-				"formula": "3d8 + 3"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 11,
-			"wis": 13,
-			"cha": 11,
-			"skill": {
-				"nature": "+4",
-				"perception": "+5",
-				"stealth": "+6",
-				"survival": "+5"
-			},
-			"passive": 15,
-			"languages": [
-				"Common"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Keen Hearing and Sight",
-					"entries": [
-						"Szoldar and Yevgeni have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
-					]
-				},
-				{
-					"name": "Favored Foe ( <input type= \"checkbox\"><input type= \"checkbox\">/day)",
-					"entries": [
-						"As a bonus action, Szoldar and Yevgeni can mark a target. Once on their turn when either of them deals damage to that target, the target takes and additional {@damage 1d8} damage."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Each hunter makes two melee attacks or two ranged attacks."
-					]
-				},
-				{
-					"name": "Longbow",
-					"entries": [
-						"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
-					]
-				},
-				{
-					"name": "Silver Shortsword (Szoldar)",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
-					]
-				},
-				{
-					"name": "Silver Knitting Needle (Yevgeni)",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3}) piercing damage."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"RW",
-				"RNG",
-				"MW"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniAndSzoldarToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniAndSzoldarToken.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Danika Dorakovna",
-			"group": [
-				"Feranthropes"
-			],
-			"source": "Allies",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human",
-					"shapechanger"
-				]
-			},
-			"ac": [
-				14
-			],
-			"hp": {
-				"average": 31,
-				"formula": "7d8"
-			},
-			"speed": {
-				"walk": {
-					"number": 30,
-					"condition": "(fly 50 ft. in raven and hybrid forms)"
-				}
-			},
-			"str": 10,
-			"dex": 18,
-			"con": 11,
-			"int": 13,
-			"wis": 15,
-			"cha": 14,
-			"skill": {
-				"insight": "+4",
-				"perception": "+6"
-			},
-			"passive": 16,
-			"languages": [
-				"Common (can't speak in raven form)"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"Danika can use her action to polymorph into a raven-humanoid hybrid or into a raven, or back into her human form. Her statistics, other than her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her human form if she dies."
-					]
-				},
-				{
-					"name": "Mimicry",
-					"entries": [
-						"Danika can mimic simple sounds she has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"Danika regains <b>5</b> hit points at the start of her turn. If she takes damage from a silvered weapon, this trait doesn't function at the start of her next turn. Danika dies only if she starts her turn with 0 hit points and doesn't regenerate."
-					]
-				},
-				{
-					"name": "Raven's Eye ( <input type= \"checkbox\">/day)",
-					"entries": [
-						"Danika opens her magical senses, granting herself {@sense truesight} out to a range of 120 feet for the next minute (no action required). While this ability is active, she can see into the ethereal plane to the same range."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack (Human or Hybrid Form Only)",
-					"entries": [
-						"Danika makes two weapon attacks."
-					]
-				},
-				{
-					"name": "Shortsword (Human or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
-					]
-				},
-				{
-					"name": "Hand Crossbow (Human or Hybrid Form Only)",
-					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
-					]
-				}
-			],
-			"traitTags": [
-				"Regeneration",
-				"Shapechanger"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"RNG"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Danika%20Dorakova%202%20Token.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Danika%20Dorakova%202%20Token.png"
-						}
-					},
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Wereraven3Token.png"
-						}
-					}
-				]
-			},
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't silvered"
-				}
-			],
-			"alignment": null
 		},
 		{
 			"name": "Mordenkainen",
@@ -4051,6 +2454,18 @@
 					]
 				}
 			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png",
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -4071,71 +2486,1587 @@
 				"O"
 			],
 			"miscTags": [
-				"RW",
 				"MW",
+				"RW",
 				"THW"
-			],
-			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MordenkainenToken.png"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
-			"name": "Helga Bolderath",
+			"name": "Oleg Nimirovic",
+			"source": "Allies",
 			"size": [
 				"M"
 			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"dwarf"
+					"human"
 				]
 			},
-			"source": "Allies",
 			"alignment": [
-				"C",
-				"G"
+				"L",
+				"N"
 			],
 			"ac": [
 				{
-					"ac": 16,
+					"ac": 17,
 					"from": [
-						"{@item breastplate|phb}"
+						"{@item splint armor|phb}"
 					]
 				}
 			],
 			"hp": {
-				"formula": "10d8 + 20",
-				"average": 101
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"Oleg has advantage on an attack roll against a creature if at least one of the Oleg's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Battle Commander ( <input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">/short rest>",
+					"entries": [
+						"Oleg has access to the following Battle Master Maneuvers. His superiority die is {@dice 1d8}, and his save DC is 15.",
+						"<b>Bait and Switch</b>",
+						"<details>&emsp;When Oleg is within 5 feet of a willing ally on his turn, He can expend one superiority die and switch places with that ally. This movement doesn’t provoke opportunity attacks.",
+						"&emsp;Roll the superiority die. Until the start of his next turn, Oleg or the ally (Oleg's choice) gains a bonus to AC equal to the number rolled.</details>",
+						"<b>Brace</b>",
+						"<details>&emsp;When an enemy moves into his reach, Oleg can use his reaction to expend one superiority die and make one attack against the creature. If the attack hits, add the superiority die to the weapon’s damage roll.</details>",
+						"<b>Trip Attack</b>",
+						"<details>&emsp;When Oleg hits a creature with a weapon attack, he can expend one superiority die to attempt to knock the target down. He adds the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}</details>",
+						"<b>Lunging Attack</b>",
+						"<details>&emsp;When Oleg makes a melee attack, he can expend one superiority die to increase his reach for that attack by 5 feet. If he hits, he adds the superiority die to the attack’s damage roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Oleg makes two attacks. His pike has 10 feet of reach."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h} ({@damage 1d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/OlegNimirovicToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/OlegNimirovicToken.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Pidlwick II",
+			"source": "Allies",
+			"page": 236,
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 11,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"performance": "+2"
+			},
+			"passive": 11,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but doesn't speak and can't read or write"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"During the first round of combat, Pidlwick II has advantage on attack rolls against any creature that hasn't had a turn yet."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Pidlwick deals an extra {@dice 1d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Pidlwick that isn't {@condition incapacitated} and Pidlwick doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Construct",
+					"entries": [
+						"If Pidlwick has the mending spell cast on him, he regain {@dice 2d6} hit points."
+					]
+				},
+				{
+					"name": "Too Many Knives",
+					"entries": [
+						"Where did he get them all?"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Knife",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Pidlwick can take a bonus action on each of his turns to take the Dash, Disengage, or Hide action."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/PidlwickToken1.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/PidlwickToken1.png",
+			"traitTags": [
+				"Ambusher",
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Ragnar",
+			"source": "Allies",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"alignment": null,
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "91"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 14,
+			"int": 7,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"con": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"stealth": "+5",
+				"perception": "+4"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"understands Draconic and Common but can't speak"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Variable Size",
+					"entries": [
+						"As a bonus action, Ragnar can change his size to tiny, becoming approximately 1 foot long. While in this form, his melee attacks deal 1 slashing damage on a hit and his frost bolt deals 1 cold damage on a hit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ragnar can either make two bite/claw attacks, one frost bolt attack, or use his breath weapon."
+					]
+				},
+				{
+					"name": "Bite/Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h} ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Frost Bolt",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/60 ft., one target. {@h}9 ({@damage 2d6 + 2}) cold damage."
+					]
+				},
+				{
+					"name": "Breath Weapon ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"When Ragnar uses his breath attack, he can choose from the following options.",
+						"<b>Cold Breath.</b> Ragnar exhales an icy blast in a 20-foot cone. Each creature in that area must make a {@dc 14} Constitution saving throw, taking {@damage 4d8} cold damage on a failed save, or half as much damage on a successful one.",
+						"<b>Freezing Breath</b> Ragnar exhales a freezing wind in a 20-foot cone. Each creature in that area must make a {@dc 14} Strength saving throw. On a failure, the creature's speed is reduced to 0 for one minute or until a creature uses their action to break the ice binding them. On a success, the creature's speed is reduced by half until the start of Ragnar's next turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DragnarToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/DragnarToken.png",
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Rudolph Van Richten",
+			"alias": [
+				"Rudolph van Richten"
+			],
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 77,
+				"formula": "14d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 12,
+			"con": 13,
+			"int": 16,
+			"wis": 18,
+			"cha": 16,
+			"save": {
+				"con": "+4",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"insight": "+7",
+				"medicine": "+7",
+				"perception": "+7",
+				"religion": "+6",
+				"sleight of hand": "+4"
+			},
+			"passive": 17,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish",
+				"Infernal"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Rudolph is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\">",
+						"Rudolph has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell detect evil and good}",
+								"{@spell protection from evil and good}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell augury}",
+								"{@spell lesser restoration}",
+								"{@spell protection from poison}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell magic circle}",
+								"{@spell remove curse}",
+								"{@spell speak with dead}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell freedom of movement}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dispel evil and good}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"In addition to his sword cane, Rictavio wears a {@item hat of disguise} and a {@item ring of mind shielding}."
+					]
+				},
+				{
+					"name": "Undead Slayer",
+					"entries": [
+						"When Rictavio hits an undead with a weapon attack, the undead takes an extra 10 ({@dice 3d6}) damage of the weapon's type."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rictavio makes two attacks."
+					]
+				},
+				{
+					"name": "Sword Cane",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage (wooden cane) or piercing damage (silvered sword)."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VanRichtenToken1.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VanRichtenToken1.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sofia Vernescu",
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 15,
+			"con": 15,
+			"int": 10,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"str": "+4",
+				"con": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sofia makes two attacks with her hammer."
+					]
+				},
+				{
+					"name": "Blacksmith's Hammer",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage. If the attack roll is a crit or the damage roll is its maximum value, the enemy must make a {@dc 14} Constitution saving throw or be {@condition stunned} until the start of their next turn."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range",
+						"100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SofiaVernescuToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/SofiaVernescuToken.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Szoldar Szoldarovich and Yevgeni Krushkin",
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
 			},
 			"speed": {
 				"walk": 30
 			},
 			"str": 11,
-			"dex": 20,
-			"con": 14,
-			"int": 10,
-			"wis": 16,
-			"cha": 8,
-			"passive": 17,
-			"cr": "10",
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
 			"skill": {
-				"athletics": "+8",
-				"insight": "+7",
-				"intimidation": "+3",
-				"perception": "+7",
-				"performance": "+3"
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
 			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"Szoldar and Yevgeni have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+					]
+				},
+				{
+					"name": "Favored Foe ( <input type= \"checkbox\"><input type= \"checkbox\">/day)",
+					"entries": [
+						"As a bonus action, Szoldar and Yevgeni can mark a target. Once on their turn when either of them deals damage to that target, the target takes and additional {@damage 1d8} damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Each hunter makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Silver Shortsword (Szoldar)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Silver Knitting Needle (Yevgeni)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniAndSzoldarToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/YevgeniAndSzoldarToken.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "The Martyr",
+			"source": "Allies",
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 25",
+				"average": 52
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 19,
+			"dex": 8,
+			"con": 21,
+			"int": 7,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+7"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
 			"resist": [
-				"poison"
+				{
+					"resist": [
+						"necrotic",
+						"psychic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"understands Sylvan but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Executioner's Ward.",
+					"entries": [
+						"When the Martyr dies, its spirit remains with the creature it serves. As an action, that creature can touch a four legged beast (living or dead) and impart the Martyr's spirit into it. The targeted beast ceases to exist, and its body is transformed into a new vessel for the Martyr. This action can only be performed once per day."
+					]
+				},
+				{
+					"name": "Can't be Bought.",
+					"entries": [
+						"The Martyr can't be compelled to act in a manner contrary to its nature or its instructions."
+					]
+				},
+				{
+					"name": "Fortitude.",
+					"entries": [
+						"If damage reduces the Martyr to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken. On a success, the Martyr drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Antlers",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 4}) slashing damage.",
+						"</p>&emsp;If the damage rolled on this attack is 18 or higher, the target must succeed a {@dc 16} Strength saving throw or be knocked {@condition prone}.",
+						"</p>&emsp;On a critical hit, the target must succeed a {@dc 16} Constitution saving throw or be {@condition stunned} until the start of its next turn."
+					]
+				},
+				{
+					"name": "Death Ray ( <input type= \"checkbox\">/short rest)",
+					"entries": [
+						"The Martyr targets one creature within 30 feet of it. That creature must make a {@dc 16} Charisma saving throw, taking {@damage 8d8} force damage on a failed save, or half as much on a successful one. If a creature is reduced to 0 hit points by this attack, they cease to exist. Legendary and Mythic creatures are immune to this effect."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MartyrToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/MartyrToken.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			]
+		},
+		{
+			"name": "Urwin Martikov",
+			"group": [
+				"Lycanthropes"
+			],
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 31,
+				"formula": "7d8"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(fly 50 ft. in raven and hybrid forms)"
+				}
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 11,
+			"int": 13,
+			"wis": 15,
+			"cha": 14,
+			"skill": {
+				"insight": "+4",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"languages": [
+				"Common (can't speak in raven form)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Urwin can use his action to polymorph into a raven-humanoid hybrid or into a raven, or back into his human form. His statistics, other than his size, are the same in each form. Any equipment He is wearing or carrying isn't transformed. He reverts to his human form if he dies."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"Urwin can mimic simple sounds he has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Urwin regains <b>5</b> hit points at the start of his turn. If he takes damage from a silvered weapon, this trait doesn't function at the start of his next turn. Urwin dies only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Raven's Foresight (<input type= \"checkbox\">/day)",
+					"entries": [
+						"Urwin peers into the near future and predicts a specific outcome. When any creature that he can see makes a {@dice d20} roll, he can choose to turn that roll into either a 1 or a 20 (no action required)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Human or Hybrid Form Only)",
+					"entries": [
+						"Uwrin makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Shortsword (Human or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow (Human or Hybrid Form Only)",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h} ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Urwin%20Martikov%20Token.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Wereraven3Token.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Martikov%20Urwin%20Martikov%20Token.png",
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Vallaki Guard",
+			"source": "Allies",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The guard has advantage on an attack roll against a creature if at least one of the guard's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d8 + 1}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/TownGuardToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/TownGuardToken.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Vasilka",
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d8 + 44"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 9,
+			"con": 18,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"lightning",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever Vasilka starts its turn with 40 hit points or fewer, roll a {@dice d6}. On a 6, Vasilka goes berserk.",
+						"<details>On each of its turns while berserk, Vasilka attacks the nearest creature it can see. If no creature is near enough to move to and attack, Vasilka attacks an object, with preference for an object smaller than itself. Once Vasilka goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
+						"Vasilka's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. Vasilka must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, Vasilka ceases being berserk. If it takes damage while still at 40 hit points or fewer, Vasilka might go berserk again.</details>"
+					]
+				},
+				{
+					"name": "Aversion of Fire",
+					"entries": [
+						"If Vasilka takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Vasilka is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Whenever Vasilka is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Vasilka has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Vasilka's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vasilka makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VasilkaToken3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VasilkaToken3.png",
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Victor Vallakovich",
+			"shortName": "Victor",
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item staff of power}",
+						"{@item cloak of protection}"
+					]
+				},
+				{
+					"ac": 18,
+					"condition": "with {@spell mage armor}"
+				}
+			],
+			"hp": {
+				"formula": "12d8",
+				"average": 54
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+9",
+				"wis": "+7",
+				"str": "+2",
+				"dex": "+5",
+				"con": "+3",
+				"cha": "+3"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"spellcasting": [
+				{
+					"name": "1 Spellcasting",
+					"headerEntries": [
+						"Victor is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 9} to hit with spell attacks).",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"3rd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"4th level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"5th level: <input type=\"checkbox\">",
+						"Victor has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}: ({@hit 9};{@damage 2d10})",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}: ({@damage 1d4+1})",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}: ({@damage 8d6})",
+								"{@spell fly}",
+								"{@spell haste}",
+								"{@spell remove curse}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell passwall}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "2 Spellbook",
+					"headerEntries": [
+						"Victor has additional spells he can prepare in his spellbook.<details>"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell identify}",
+								"{@spell thunderwave}: ({@damage 2d8})"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell darkvision}",
+								"{@spell invisibility}",
+								"{@spell levitate}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell glyph of warding}",
+								"{@spell haste}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}: ({@damage 8d8})",
+								"{@spell ice storm}: ({@damage 2d8};{@damage 4d6})",
+								"{@spell Mordenkainen's faithful hound}: ({@hit 8};{@damage 4d8})",
+								"{@spell Mordenkainen's private sanctum}"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}: ({@damage 5d8})",
+								"{@spell cone of cold}: ({@damage 8d8})",
+								"{@spell passwall}"
+							],
+							"slots": 0
+						}
+					},
+					"footerEntries": [
+						"</details>"
+					],
+					"type": "spellcasting"
+				},
+				{
+					"name": "3 Staff of Power (20 charges) <input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\">",
+					"spells": {
+						"1": {
+							"spells": [
+								"[1] {@spell magic missile}: ({@damage 1d4+1})"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"[1] {@spell ray of enfeeblement}: ({@hit 9})",
+								"[2] {@spell levitate}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"[5] {@spell fireball}: ({@damage 10d6})",
+								"[5] {@spell lightning bolt}: ({@damage 10d6})"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"[5] {@spell cone of cold}: ({@damage 8d8})",
+								"[5] {@spell hold monster}",
+								"[5] {@spell wall of force}"
+							],
+							"slots": 0
+						},
+						"6": {
+							"spells": [
+								"[6] {@spell globe of invulnerability}"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"{@item cloak of protection}, {@item staff of power}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Staff of Power",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with both hands."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/VallakovichVictorToken.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"T"
+			],
+			"spellcastingTags": [
+				"CW",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
 			]
 		},
 		{
@@ -4177,6 +4108,10 @@
 				"wis": "+6",
 				"cha": "+7"
 			},
+			"skill": {
+				"intimidation": "+7",
+				"athletics": "+7"
+			},
 			"senses": [
 				"darkvision 60 ft."
 			],
@@ -4201,6 +4136,38 @@
 				"Draconic"
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell Save {@dc 14}, {@hit 6} to hit with spell attacks.",
+						"<b>Spell Slots</b>",
+						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
+						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell cure wounds}: ({@damage 1d8+4}) ",
+								"{@spell thunderous smite}: ({@damage 2d6})"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}: ({@damage 2d6})",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						}
+					},
+					"footerEntries": [
+						"Vladimir can use his spell slots to smite."
+					],
+					"type": "spellcasting"
+				}
+			],
 			"trait": [
 				{
 					"name": "Regeneration",
@@ -4259,31 +4226,6 @@
 					]
 				}
 			],
-			"traitTags": [
-				"Regeneration",
-				"Rejuvenation",
-				"Turn Immunity"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"B",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/CoS/Vladimir Horngaard.png",
 			"fluff": {
 				"name": "Vladimir Horngaard",
 				"source": "CoS",
@@ -4411,50 +4353,372 @@
 					}
 				]
 			},
-			"skill": {
-				"intimidation": "+7",
-				"athletics": "+7"
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Spell Save {@dc 14}, {@hit 6} to hit with spell attacks.",
-						"<b>Spell Slots</b>",
-						"1st level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">",
-						"2nd level: <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">"
-					],
-					"footerEntries": [
-						"Vladimir can use his spell slots to smite."
-					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell bane}",
-								"{@spell cure wounds}: ({@damage 1d8+4}) ",
-								"{@spell thunderous smite}: ({@damage 2d6})"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell branding smite}: ({@damage 2d6})",
-								"{@spell misty step}"
-							],
-							"slots": 3
-						}
-					},
-					"type": "spellcasting"
-				}
+			"tokenUrl": "https://5e.tools/img/CoS/Vladimir Horngaard.png",
+			"traitTags": [
+				"Regeneration",
+				"Rejuvenation",
+				"Turn Immunity"
 			],
-			"spellcastingTags": [
-				"O"
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"S"
 			],
 			"damageTagsSpell": [
 				"R",
 				"T"
-			]
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Weretoad",
+			"group": [
+				"Lycanthropes"
+			],
+			"source": "Allies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "5d8 + 20",
+				"average": 42
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. in tiger form)"
+				}
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 18,
+			"int": 11,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common (can't speak in toad form)"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"</br>The weretoad can use its action to polymorph into a toad-humanoid hybrid or into a tiny or medium sized toad, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"</br>The weretoad can breathe air and water."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"</br>The weretoad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Swamp Camouflage",
+					"entries": [
+						"</br>The weretoad has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"</br>The weretoad regains <b>10</b> hit points at the start of its turn. If the weretoad takes damage from a silvered weapon, this trait doesn't function at the start of the weretoad's next turn. The weretoad dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Jeny's Blessing (<input type= \"checkbox\">/day)",
+					"entries": [
+						"</br>The weretoad can cast any first level evocation or transmutation druid spell (Spell Save {@dc 15}, {@hit 7} to hit with spell attacks)",
+						"<details>{@spell arctic breath|CS}, {@spell bad blood|CS}, {@spell create or destroy water}, {@spell cure wounds}, {@spell earth tremor|XGE}, {@spell faerie fire}, {@spell goodberry}, {@spell healing word}, {@spell jump}, {@spell lightning tendril|CS}, {@spell longstrider}, {@spell purify food and drink}, {@spell stone fist|CS}, {@spell thunderwave}</details>"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"The weretoad makes two attacks, only one of which can be a bite."
+					]
+				},
+				{
+					"name": "Bite (Toad or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h} ({@damage 1d18 + 3}) piercing damage plus {@damage 1d4} poison damage, and the target is {@condition grappled}."
+					]
+				},
+				{
+					"name": "Spear (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft. or range 20/60, one target. {@h} ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Weretoad2Token.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WeretoadToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Weretoad2Token.png",
+			"traitTags": [
+				"Amphibious",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Werewolf",
+			"group": [
+				"Lycanthropes"
+			],
+			"source": "Allies",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "in humanoid form"
+				},
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					],
+					"condition": "in wolf or hybrid form"
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. in wolf form)"
+				}
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+5"
+			},
+			"passive": 16,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common (can't speak in wolf form)"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The werewolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The werewolf has advantage on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The werewolf regains <b>5</b> hit points at the start of its turn. If the werewolf takes damage from a silvered weapon, this trait doesn't function at the start of the werewolf's next turn. The werewolf dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"The werewolf makes two attacks: two with its spear (humanoid form) or one with its bite and one with its claws (hybrid form)."
+					]
+				},
+				{
+					"name": "Bite (Wolf or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws (Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}7 ({@damage 2d4 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear (Humanoid Form Only)",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}5 ({@damage 1d6 + 4}) piercing damage, or 6 ({@damage 1d8 + 4}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WerewolfToken.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/WerewolfToken.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/werewolf.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
-	],
-	"legendaryGroup": []
+	]
 }
