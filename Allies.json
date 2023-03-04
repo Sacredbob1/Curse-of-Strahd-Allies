@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.177.0",
+	"siteVersion": "1.177.1",
 	"_meta": {
 		"sources": [
 			{
@@ -11,8 +11,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1677807244,
-		"dateLastModified": 1677807244
+		"dateAdded": 1677891093,
+		"dateLastModified": 1677891093
 	},
 	"monster": [
 		{
@@ -2356,6 +2356,7 @@
 						},
 						"3": {
 							"spells": [
+								"{@spell counterspell}",
 								"{@spell fly}",
 								"{@spell lightning bolt}: ({@damage 8d6})",
 								"{@spell thunder step|XGE}: ({@damage 3d10})"
@@ -2449,9 +2450,9 @@
 			],
 			"reaction": [
 				{
-					"name": "Spellbreak (<input type= \"checkbox\">/long rest)",
+					"name": "Spellbreak",
 					"entries": [
-						"If a creature casts a spell against the Mad Mage or includes him in its area of effect, he can force that creature to make a contested ability check with their spellcasting ability modifier against his. If he succeeds, the only creature affected by the spell is the caster."
+						"When Mordenkainen counterspells a spell that would effect him, he can make an Arcana check against the Spell Save DC of the caster. On a success, the spell instead only affects them."
 					]
 				}
 			],
