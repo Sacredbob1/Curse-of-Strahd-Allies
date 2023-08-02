@@ -21155,6 +21155,163 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Desecration",
+			"source": "CustomNPCs",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 157
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 21,
+			"int": 19,
+			"wis": 17,
+			"cha": 16,
+			"save": {
+				"str": "+9",
+				"con": "+9",
+				"cha": "+7",
+				"wis": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Desecration's spellcasting ability is Intelligence (spell save {@dc 16})."
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell detect magic}",
+						"{@spell dispel magic}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell eyebite}",
+							"{@spell power word pain|XGE}",
+							"{@spell transmute rock|XGE}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Desecration has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Desecration makes four attacks: two with its tentacles and two with its fists. Alternatively, it makes two attacks with its tentacles and casts one spell."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@hit 9} to hit, reach 10 ft.",
+						"{@h} ({@damage 2d10 + 5}) bludgeoning damage.",
+						"Grapple Medium or smaller on hit ({@dc 15})"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@hit 9} to hit, reach 5 ft.",
+						"{@h} ({@damage 2d6 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"conditionInflictSpell": [
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"damageTagsSpell": [
+				"B"
+			]
 		}
 	],
 	"legendaryGroup": [
