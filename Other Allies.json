@@ -1,0 +1,381 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "OtherAllies",
+				"abbreviation": "ALY",
+				"full": "Other Allies",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
+				"json": "OtherAllies",
+				"abbreviation": "ALY",
+				"full": "Other Allies",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1657405461,
+		"dateLastModified": 1692313476
+	},
+	"spell": [],
+	"monster": [
+		{
+			"name": "Ireena Kolyana",
+			"isNpc": true,
+			"source": "OtherAllies",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 12,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"insight": "+4",
+				"persuasion": "+5",
+				"medicine": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/8",
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Ireena adds 2 to HER AC against one melee attack that would hit her. To do so, Ireena must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Spell Save {@dc 13}, {@hit 5} to hit with spell attacks."
+					],
+					"daily": {
+						"1": [
+							"{@spell healing word}: ({@damage 1d4+3})",
+							"{@spell heroism} (+3)"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Healer's Kit (10 uses)",
+					"entries": [
+						"Ireena uses her healer's kit on another creature. {@damage 1d6+4} if not dying, +1 if dying. A creature can benefit from this once per short rest."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"Ireena has advantage on saving throws against being {@condition frightened}."
+					]
+				}
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/IreenaKolyanaToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/IreenaKolyanaToken.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ismark Kolyanovich",
+			"isNpc": true,
+			"source": "OtherAllies",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ismark makes two longsword attacks. If he has a shortsword drawn, he can also make a shortsword attack."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/Ismark2Token.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ireena Kolyana",
+			"isNpc": true,
+			"source": "OtherAllies",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"insight": "+5",
+				"persuasion": "+6",
+				"medicine": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Rapier/Light Crossbow",
+					"entries": [
+						"{@hit 5} ({@hit +6}) to hit, reach 5 ft., range 80/320 ft.",
+						"{@h} {@damage 1d8+2} ({@damage 1d8+3}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Ireena adds 2 to HER AC against one melee attack that would hit her. To do so, Ireena must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RNG"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Spell Save {@dc 14}, {@hit 6} to hit with spell attacks.",
+						"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">"
+					],
+					"daily": {
+						"4": [
+							"{@spell bow of light|CustomSpells}: ({@hit +5};{@damage 2d8+2})",
+							"{@spell detect evil and good}",
+							"{@spell healing word}: ({@damage 1d4+3})",
+							"{@spell heroism} (+3)",
+							"{@spell magic weapon}",
+							"{@spell prayer of healing}: ({@damage 2d8+3})",
+							"{@spell sanctuary}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Healer's Kit (10 uses)",
+					"entries": [
+						"Ireena uses her healer's kit on another creature. {@damage 1d6+4} if not dying, +1 if dying. A creature can benefit from this once per short rest."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"Ireena has advantage on saving throws against being {@condition frightened}."
+					]
+				}
+			],
+			"tokenUrl": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/IreenaKolyanaToken.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/Sacredbob1/Curse-of-Strahd-Allies/raw/main/IreenaKolyanaToken.png"
+						}
+					}
+				]
+			}
+		}
+	],
+	"legendaryGroup": []
+}
