@@ -2,14 +2,6 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Allies",
-				"abbreviation": "ALLY",
-				"full": "Allies",
-				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
-				"authors": [],
-				"convertedBy": []
-			},
-			{
 				"json": "BTeam",
 				"abbreviation": "BTEAM",
 				"full": "B Team",
@@ -18,10 +10,18 @@
 				"convertedBy": []
 			},
 			{
+				"json": "Allies",
+				"abbreviation": "COSA",
+				"full": "COS Allies",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
 				"json": "COTR",
 				"abbreviation": "COTR",
 				"full": "Cult of the Remnant",
-				"url": "",
+				"url": "https://youtu.be/FJt7gNi3Nr4?t=16",
 				"authors": [],
 				"convertedBy": [],
 				"color": "#780000"
@@ -59,6 +59,23 @@
 				"convertedBy": []
 			},
 			{
+				"json": "OtherAllies",
+				"abbreviation": "ALY",
+				"full": "Other Allies",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
+				"authors": [],
+				"convertedBy": []
+			},
+			{
+				"json": "SFOTA",
+				"abbreviation": "SFOTA",
+				"full": "SFOT Allies",
+				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
+				"authors": [],
+				"convertedBy": [],
+				"color": "#005e75"
+			},
+			{
 				"json": "SHDW",
 				"abbreviation": "SHDW",
 				"full": "Shadow",
@@ -92,7 +109,7 @@
 			}
 		],
 		"dateAdded": 1657405461,
-		"dateLastModified": 1692831878
+		"dateLastModified": 1693611103
 	},
 	"spell": [
 		{
@@ -21398,215 +21415,6 @@
 			]
 		},
 		{
-			"name": "Antithesis",
-			"source": "COTR",
-			"size": [
-				"M"
-			],
-			"type": "aberration",
-			"alignment": [
-				"E"
-			],
-			"ac": [
-				18
-			],
-			"hp": {
-				"formula": "40d20 + 240",
-				"average": 660
-			},
-			"speed": {
-				"fly": {
-					"number": 50,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"str": 20,
-			"dex": 26,
-			"con": 22,
-			"int": 20,
-			"wis": 18,
-			"cha": 24,
-			"save": {
-				"con": "+15",
-				"cha": "+16",
-				"int": "+14"
-			},
-			"skill": {
-				"history": "+23",
-				"perception": "+13",
-				"intimidation": "+16"
-			},
-			"senses": [
-				"truesight 120 ft."
-			],
-			"passive": 23,
-			"resist": [
-				"acid",
-				"cold",
-				"fire",
-				"force",
-				"lightning",
-				"necrotic",
-				"poison",
-				"psychic",
-				"thunder"
-			],
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained",
-				"unconscious"
-			],
-			"languages": [
-				"All",
-				"telepathy 300 ft."
-			],
-			"cr": "30",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Spell save {@dc 24}, {@hit 14} to hit with spell attacks."
-					],
-					"will": [
-						"{@spell aether lance|CustomSpells}: ({@damage 8d4})",
-						"{@spell pulse wave|EGW}: ({@damage 6d6})",
-						"{@spell gravity sinkhole|EGW}: ({@damage 5d10})",
-						"{@spell magic missile}: 8x({@damage 1d4+1};{@damage 8d4+8})",
-						"{@spell magnify gravity|EGW}: ({@damage 4d8})"
-					],
-					"daily": {
-						"1e": [
-							"{@spell antilife shell}",
-							"{@spell antimagic field}",
-							"{@spell disintegrate}: ({@damage 10d6+30})",
-							"{@spell ravenous void|EGW}: ({@damage 5d10})",
-							"{@spell reality break|EGW}"
-						]
-					},
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If Antithesis fails a saving throw, he can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Rejuvenation",
-					"entries": [
-						"If destroyed, Antithesis reforms within 10 miles of the place he was destroyed with all of his hit points 1 day later."
-					]
-				},
-				{
-					"name": "Nothingness",
-					"entries": [
-						"Any creature or nonmagical object which touches Antithesis takes {@damage 3d10} force damage. Any creature he kills is completely erased from existance, and any nonmagical object he touches is utterly destroyed where he intersected with it."
-					]
-				},
-				{
-					"name": "Incorporeal Movement",
-					"entries": [
-						"Antithesis can move through other creatures and objects as if they were {@quickref difficult terrain||3}. Any creature he passes through must make a {@dc 15} Dexterity saving throw or take {@damage 5d10} force damage, and any nonmagical object he moves through is reduced to dust."
-					]
-				},
-				{
-					"name": "Voidsight",
-					"entries": [
-						"Antithesis can see through nonmagical objects out to a range of 120 feet. This vision is blocked by even transparent magical objects."
-					]
-				},
-				{
-					"name": "Limited Magic Immunity",
-					"entries": [
-						"Antithesis can't be affected or detected by spells of 5th level or lower unless he wishes to be."
-					]
-				}
-			],
-			"actionHeader": [
-				"Antithesis's attacks ignore nonmagical armor."
-			],
-			"action": [
-				{
-					"name": "Touch",
-					"entries": [
-						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}35 ({@damage 5d10 + 8}) force damage."
-					]
-				},
-				{
-					"name": "Thought",
-					"entries": [
-						"Antithesis thinks of a creature within 120 feet of him. The creature must make a {@dc 24} Charisma saving throw, taking {@damage 6d6} psychic damage on a failure or half as much on a success."
-					]
-				}
-			],
-			"traitTags": [
-				"Incorporeal Movement",
-				"Legendary Resistances",
-				"Rejuvenation"
-			],
-			"senseTags": [
-				"U"
-			],
-			"languageTags": [
-				"TP"
-			],
-			"damageTagsLegendary": [
-				"N"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"charmed",
-				"invisible",
-				"stunned"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"damageTags": [
-				"O"
-			],
-			"damageTagsSpell": [
-				"C",
-				"O",
-				"Y"
-			],
-			"savingThrowForced": [
-				"charisma",
-				"dexterity"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"dexterity",
-				"strength",
-				"wisdom"
-			]
-		},
-		{
 			"name": "Godsvessel of Iggrwth",
 			"shortName": "godsvessel",
 			"source": "COTR",
@@ -22079,125 +21887,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Relentless Juggernaut",
-				"source": "VRGR",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"Relentless juggernauts are massive brutes that thirst for carnage. Their presence twists the world around them, allowing them to create weapons with which they can slaughter prey. Sharp iron fences, crushing stalagmites and blades of glass all conveniently appear in order to aid a juggernaut's brutality. Every juggernaut considers a certain area its territory and visits destruction upon all trespassers.",
-							"Relentless killers are hateful, revenge-obsessed creatures that enter into pacts with fiends or other nefarious entities. Their bargains transform them into vicious butchers that exist only to indulge their endless bloodlust. While some who become relentless killers began life as innocents, any semblance of who they were is washed away in a tide of gore and rage. These killers' grisly work swiftly becomes the stuff of legends, striking fear into innocents across lands and over ages."
-						]
-					},
-					{
-						"type": "section",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Creating a Relentless Killer",
-								"entries": [
-									"Relentless killers come into being and undertake their terrifying sprees for a spectrum of reasons. When creating a relentless killer, consider what circumstances led to their transformation and signature methods. Roll or choose options from the Relentless Origins and Relentless Methods tables when creating your own, unique monstrous slayers.",
-									{
-										"type": "table",
-										"caption": "Relentless Origins",
-										"colLabels": [
-											"d6",
-											"Origin"
-										],
-										"colStyles": [
-											"col-2 text-center",
-											"col-10"
-										],
-										"rows": [
-											[
-												"1",
-												"It was left for dead and granted new life to seek revenge."
-											],
-											[
-												"2",
-												"It was turned into a weapon of vengeance by a family member's bargain with sinister forces."
-											],
-											[
-												"3",
-												"It was marked by a fiend before its birth, and its wicked nature emerged over time."
-											],
-											[
-												"4",
-												"A wicked place or magic relic seeped into its being, turning it into a monster."
-											],
-											[
-												"5",
-												"The killer used its body to contain an evil entity."
-											],
-											[
-												"6",
-												"The killer appears to be an ordinary person who doesn't realize it turns into a killer when enraged."
-											]
-										]
-									},
-									{
-										"type": "table",
-										"caption": "Relentless Methods",
-										"colLabels": [
-											"d8",
-											"Method"
-										],
-										"colStyles": [
-											"col-2 text-center",
-											"col-10"
-										],
-										"rows": [
-											[
-												"1",
-												"Artist. The killer turns its victims into works of art, perhaps creating grisly tableaus or using their blood in the forging of new weapons."
-											],
-											[
-												"2",
-												"Author. The killer leaves messages, poems, song lyrics, or parts of its creative masterpiece at the scenes of its crimes."
-											],
-											[
-												"3",
-												"Avatar. The killer sacrifices its victims, believing it's a manifestation of a deity or force beyond morality."
-											],
-											[
-												"4",
-												"Doctor. The killer dissects victims or harvests their organs for the sake of medical understanding."
-											],
-											[
-												"5",
-												"Mask. The killer wears a distinctive disguise, its visage becoming a symbol of its crimes."
-											],
-											[
-												"6",
-												"Penitent. The killer can't help itself from committing crimes and seeks help to thwart its own continuing violence."
-											],
-											[
-												"7",
-												"Ritualist. The killer always attacks the same type of person in the same type of place in the same way."
-											],
-											[
-												"8",
-												"Trophy Taker. The killer reliably collects something from its victims, hoarding them as trophies."
-											]
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/VRGR/Relentless Juggernaut.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/VRGR/Relentless Juggernaut.png",
 			"attachedItems": [
 				"greatsword|phb",
 				"javelin|phb"
@@ -22226,148 +21915,6 @@
 			"damageTags": [
 				"P",
 				"S"
-			]
-		},
-		{
-			"name": "Rawg Maur",
-			"source": "COTR",
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 19,
-					"from": [
-						"unarmored defense"
-					]
-				}
-			],
-			"hp": {
-				"formula": "20d12 + 100",
-				"average": 300
-			},
-			"speed": {
-				"walk": 50
-			},
-			"str": 25,
-			"dex": 18,
-			"con": 20,
-			"int": 21,
-			"wis": 12,
-			"cha": 20,
-			"save": {
-				"str": "+15",
-				"con": "+13"
-			},
-			"skill": {
-				"athletics": "+15",
-				"history": "+21",
-				"religion": "+21",
-				"stealth": "+12",
-				"perception": "+9"
-			},
-			"passive": 19,
-			"resist": [
-				{
-					"special": "All except psychic and poison"
-				}
-			],
-			"languages": [
-				"Common",
-				"Deep Speech",
-				"Elvish"
-			],
-			"cr": "25",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Spell save {@dc 21}, {@hit 13} to hit with spell attacks."
-					],
-					"will": [
-						"{@spell power word pain|XGE}",
-						"{@spell thorn whip}: ({@damage 4d6})"
-					],
-					"daily": {
-						"1e": [
-							"{@spell blade of disaster|TCE}: ({@damage 4d12},{@damage 12d12})",
-							"{@spell enemies abound|XGE}",
-							"{@spell mass cure wounds}: ({@damage 3d8+5})",
-							"{@spell revivify}",
-							"{@spell steel wind strike|XGE}: ({@damage 6d10})"
-						]
-					},
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "<details><summary>Bloodshed Greatsword",
-					"entries": [
-						"</summary>Rawg Maur can spend a hit die, adding the number rolled the the attack and damage roll for his sword ({@dice 1d12})."
-					]
-				},
-				{
-					"name": "<details><summary>Fey Ancestry",
-					"entries": [
-						"</summary>The rawg maur has advantage on saving throws against being {@condition charmed}, and magic can't put the rawg maur to sleep."
-					]
-				},
-				{
-					"name": "<details><summary>Juggernaut",
-					"entries": [
-						"</summary>Raug Maur can ignore any status effect. Each time he does this, he takes {@damage 2d8} damage per effect."
-					]
-				},
-				{
-					"name": "<details><summary>Pain",
-					"entries": [
-						"</summary>Upon taking damage, all weapon attacks have advantage until end of next turn."
-					]
-				}
-			],
-			"actionHeader": [
-				"Rawg Maur makes three weapon attacks. He can replace two of these weapon attacks by casting a spell."
-			],
-			"action": [
-				{
-					"name": "Bloodshed Greatsword",
-					"entries": [
-						"{@hit 15} to hit, reach 5 ft.",
-						"{@h}21 ({@damage 4d6 + 7}) slashing damage."
-					]
-				}
-			],
-			"attachedItems": [
-				"bloodshed greatsword|bgg"
-			],
-			"traitTags": [
-				"Fey Ancestry",
-				"Reckless"
-			],
-			"languageTags": [
-				"C",
-				"DS",
-				"E"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"damageTags": [
-				"S"
-			],
-			"damageTagsSpell": [
-				"O",
-				"P"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"intelligence"
 			]
 		},
 		{
@@ -22808,6 +22355,655 @@
 			],
 			"damageTags": [
 				"P"
+			]
+		},
+		{
+			"name": "Godsvessel of Sheamant",
+			"shortName": "godsvessel",
+			"source": "COTR",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "50d12 + 450",
+				"average": 1200
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 15,
+			"con": 28,
+			"int": 8,
+			"wis": 23,
+			"cha": 18,
+			"save": {
+				"cha": "+12",
+				"con": "+17",
+				"wis": "+10"
+			},
+			"skill": {
+				"deception": "+20",
+				"survival": "+22",
+				"perception": "+22"
+			},
+			"senses": [
+				"Lifesense 200 ft."
+			],
+			"passive": 32,
+			"languages": [
+				"All"
+			],
+			"cr": "26",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"20 hit points at start of turn.",
+						"Doesn't function if it hasn't eaten anything since last turn."
+					]
+				},
+				{
+					"name": "New forms",
+					"entries": [
+						"<details>When any external effect would alter its form, the new form instead grows from the godsvessel, spawning a new creature that acts independently.</details>"
+					]
+				},
+				{
+					"name": "Impossible hunger",
+					"entries": [
+						"The godsvessel can eat anything.",
+						"Depending on the object consumed, it gains one of the following benefits until it eats a different type of material or one minute has elapsed.",
+						"<details><i><b>Flesh -</b> Regenerates twice as many hit points.",
+						"<b>Plants -</b> Attacks apply {@condition restrained} on hit.",
+						"<b>Earth -</b> Attacks apply slowed (1/2 move speed) to target.",
+						"<b>Stone -</b> Gains resistance (15) to all damage.",
+						"<b>Water -</b> Form becomes malleable, gains amorphous trait.",
+						"<b>Metal -</b> AC increases to 20.",
+						"<b>Magical object or summon -</b> Gains magic resistance.</i></details>",
+						"If the godsvessel eats something with multiple materials, it gains the trait associated with the primary material."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell Save {@dc 20}, {@hit 12} to hit with spell attacks.",
+						"<i>At will:</i> {@spell Plant Growth}",
+						"{@spell Acid Splash}: ({@damage 6d6})",
+						"{@spell Aura of Life}",
+						"<i>5/day:</i> {@spell Counterspell} (3rd level)",
+						"{@spell Absorb Elements}: ({@damage 3d6})",
+						"{@spell Erode|CustomSpells}: ({@damage 8d4};{@damage 2d4})",
+						"<i>1/day:</i> {@spell Abi-Dalzim's Horrid Wilting|XGE}",
+						"{@spell Antipathy/Sympathy}",
+						"{@spell Cloudkill}: ({@damage 5d8})",
+						"{@spell Mass Cure Wounds}: ({@damage 3d8+4})"
+					]
+				},
+				{
+					"name": "Desparate hunger",
+					"entries": [
+						"Movement speed doubles while bloody."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Eat",
+					"entries": [
+						"{@hit 12} to hit, reach 5 ft.",
+						"{@h}39 ({@damage 10d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Rawg Maur",
+			"source": "COTR",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 100",
+				"average": 450
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 25,
+			"dex": 18,
+			"con": 20,
+			"int": 21,
+			"wis": 12,
+			"cha": 20,
+			"save": {
+				"str": "+15",
+				"con": "+13"
+			},
+			"skill": {
+				"athletics": "+15",
+				"history": "+21",
+				"religion": "+21",
+				"stealth": "+12",
+				"perception": "+9"
+			},
+			"passive": 19,
+			"resist": [
+				{
+					"special": "All except psychic and poison"
+				}
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"cr": "25",
+			"trait": [
+				{
+					"name": "Bloodshed Greatsword",
+					"entries": [
+						"<details>Rawg Maur can spend a hit die, adding the number rolled the the attack and damage roll for his sword ({@dice 1d12}).</details>"
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"<details>Rawg Maur has advantage on saving throws against being {@condition charmed}, and magic can't put Rawg Maur to sleep.</details>"
+					]
+				},
+				{
+					"name": "Juggernaut",
+					"entries": [
+						"<details>Raug Maur can ignore any status effect. Each time he does this, he takes {@damage 2d8} damage per effect.</details>"
+					]
+				},
+				{
+					"name": "Pain",
+					"entries": [
+						"<details>Upon taking damage, all weapon attacks have advantage until end of next turn.</details>"
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell save {@dc 21}, {@hit 13} to hit with spell attacks.",
+						"<details><summary><i>At will:</i></summary>",
+						"- {@spell eldritch blast}: 4x({@damage 1d10+5})",
+						"- {@spell thorn whip}: ({@damage 4d6})",
+						"- {@spell detect magic}",
+						"- {@spell detect thoughts}",
+						"- {@spell power word pain|XGE}</details>",
+						"<details><summary><i>1/day each:</i></summary>- {@spell blade of disaster|TCE}: ({@damage 4d12};{@damage 12d12})",
+						"- {@spell steel wind strike|XGE}: ({@damage 6d10})",
+						"- {@spell psychic scream|XGE}: ({@damage 14d6})",
+						"- {@spell dark star|EGW}: ({@damage 8d10})",
+						"- {@spell ravenous void|EGW}: ({@damage 5d10})",
+						"- {@spell mass cure wounds}: ({@damage 3d8+5})",
+						"- {@spell enemies abound|XGE}",
+						"- {@spell mass suggestion}",
+						"- {@spell plane shift}",
+						"- {@spell revivify}",
+						"- {@spell teleport}</details>"
+					]
+				}
+			],
+			"actionHeader": [
+				"Rawg Maur makes three weapon attacks. He can replace two of these weapon attacks by casting a spell."
+			],
+			"action": [
+				{
+					"name": "Bloodshed Greatsword",
+					"entries": [
+						"{@hit 15} to hit, reach 5 ft.",
+						"{@h}21 ({@damage 4d6 + 7}) slashing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"bloodshed greatsword|bgg"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Reckless"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E"
+			],
+			"damageTagsSpell": [
+				"O",
+				"P",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"intelligence",
+				"strength",
+				"wisdom"
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Godsvessel of Moloth",
+			"size": [
+				"V"
+			],
+			"type": "Humanoid in light, aberration while in darkness",
+			"source": "COTR",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "15d8 + 45",
+				"average": 650
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 30,
+			"con": 17,
+			"int": 13,
+			"wis": 21,
+			"cha": 30,
+			"passive": 23,
+			"cr": "26",
+			"shortName": "godsvessel",
+			"senses": [
+				"blindsight 300 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"All"
+			],
+			"save": {
+				"cha": "+18",
+				"wis": "+13"
+			},
+			"skill": {
+				"intimidation": "+26",
+				"perception": "+13",
+				"deception": "+18",
+				"stealth": "+26"
+			},
+			"immune": [
+				"cold",
+				{
+					"special": "all while in darkness"
+				}
+			],
+			"resist": [
+				{
+					"special": "All while in dim light"
+				}
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"charmed",
+						"frightened",
+						"grappled",
+						"paralyzed",
+						"petrified",
+						"poisoned",
+						"prone",
+						"restrained"
+					],
+					"preNote": "while in dim light or darkness"
+				}
+			],
+			"vulnerable": [
+				{
+					"special": "Radiant while in magical light"
+				},
+				{
+					"vulnerable": [
+						{
+							"special": "radiant (5) while in bright light"
+						}
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell Save {@dc 24}, {@hit 16} to hit with spell attacks.",
+						"<i>At will:</i> {@spell ray of frost}: ({@damage 6d6})",
+						"{@spell blackout|CustomSpells}",
+						"{@spell darkness}",
+						"{@spell silence}",
+						"{@spell blindness/deafness}",
+						"{@spell chilling darkness|CustomSpells}: ({@damage 4d6})",
+						"<i>3/day each:</i> {@spell maddening darkness|XGE}: ({@damage 8d8})",
+						"{@spell dark star|EGW}: ({@damage 8d10})",
+						"{@spell hunger of Hadar}: ({@damage 4d6})",
+						"{@spell blindness/deafness} (5 targets)"
+					]
+				},
+				{
+					"name": "<details><summary>Incorporeal Movement",
+					"entries": [
+						"</summary>",
+						"No restriction while in darkness.",
+						"Difficult terrain while illuminated."
+					]
+				},
+				{
+					"name": "<details><summary>Light Snack",
+					"entries": [
+						"</summary>The godsvessel can consume non-magical light sources, regaining 30 hit points for each one devoured."
+					]
+				},
+				{
+					"name": "1. Incarnation of Darkness.",
+					"entries": [
+						"The godsvessel can grow in size to completely fill any area of complete darkness that it is within, making it magical, up to a maximum size of 200 feet in any dimension. The darkness can only be dispelled by magical light.",
+						"Exposing any area of that darkness to magical light allows that area to be damaged."
+					]
+				},
+				{
+					"name": "Formless",
+					"entries": [
+						"The godsvessel is immune to any spell or effect that would alter its form."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Incorporeal Movement"
+			],
+			"action": [
+				{
+					"name": "Absence",
+					"entries": [
+						"Reach 5ft, one target, basic CON saving throw ({@dc 20}): {@damage 5d10} cold damage."
+					]
+				},
+				{
+					"name": "Numbness",
+					"entries": [
+						"Reach 5ft, one target, {@hit 18} to hit.",
+						"{@h}{@damage 5d6} psychic damage. Target makes a Charisma saving throw.",
+						"<11: {@condition blinded}, {@condition deafened}, muted, {@condition restrained}.",
+						"11-15: {@condition blinded}, {@condition deafened}.",
+						"16-20: {@condition blinded}.",
+						">20: no effect.",
+						"Effect lasts until end of target's next turn."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The godsvessel moves up to its movement speed."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The godsvessel makes an attack."
+					]
+				},
+				{
+					"name": "Spell (1 action per spell level)",
+					"entries": [
+						"The godsvessel casts a spell."
+					]
+				}
+			],
+			"actionHeader": [
+				"The godsvessel can make up to 5 attacks, targeting a different creature with each."
+			],
+			"legendaryHeader": [
+				"<input type= \"checkbox\"><input type= \"checkbox\"><input type= \"checkbox\">"
+			]
+		},
+		{
+			"name": "Antithesis",
+			"source": "COTR",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "40d20 + 240",
+				"average": 2500
+			},
+			"speed": {
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 26,
+			"con": 22,
+			"int": 20,
+			"wis": 18,
+			"cha": 30,
+			"save": {
+				"con": "+15",
+				"cha": "+19",
+				"int": "+14"
+			},
+			"skill": {
+				"history": "+14",
+				"perception": "+13",
+				"intimidation": "+19"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 23,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"All",
+				"telepathy 300 ft."
+			],
+			"cr": "30",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell save {@dc 24}, {@hit 14} to hit with spell attacks."
+					],
+					"will": [
+						"{@spell aether lance|CustomSpells}: ({@damage 8d4})",
+						"{@spell dimension door}",
+						"{@spell gravity sinkhole|EGW}: ({@damage 5d10})",
+						"{@spell magic missile}: 8x({@damage 1d4+1};{@damage 8d4+8})",
+						"{@spell magnify gravity|EGW}: ({@damage 4d8})",
+						"{@spell pulse wave|EGW}: ({@damage 6d6})",
+						"{@spell vortex warp|SCC}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell antilife shell}",
+							"{@spell antimagic field}",
+							"{@spell dark star|EGW}: ({@damage 8d10})",
+							"{@spell disintegrate}: ({@damage 10d6+30})",
+							"{@spell ravenous void|EGW}: ({@damage 5d10})",
+							"{@spell reality break|EGW}",
+							"{@spell teleport}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Antithesis fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If destroyed, Antithesis reforms within 10 miles of the place he was destroyed with all of his hit points 1 day later."
+					]
+				},
+				{
+					"name": "Nothingness",
+					"entries": [
+						"Any creature or nonmagical object which touches Antithesis takes {@damage 3d10} force damage. Any creature he kills is completely erased from existance, and any nonmagical object he touches is utterly destroyed where he intersected with it."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"Antithesis can move through other creatures and objects as if they were {@quickref difficult terrain||3}. Any creature he passes through must make a {@dc 15} Dexterity saving throw or take {@damage 5d10} force damage, and any nonmagical object he moves through is reduced to dust."
+					]
+				},
+				{
+					"name": "Voidsight",
+					"entries": [
+						"Antithesis can see through nonmagical objects out to a range of 120 feet. This vision is blocked by even transparent magical objects."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"Antithesis can't be affected or detected by spells of 5th level or lower unless he wishes to be."
+					]
+				}
+			],
+			"actionHeader": [
+				"Antithesis's attacks ignore nonmagical armor."
+			],
+			"action": [
+				{
+					"name": "Touch",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}35 ({@damage 5d10 + 8}) force damage."
+					]
+				},
+				{
+					"name": "Thought",
+					"entries": [
+						"Antithesis thinks of a creature within 120 feet of him. The creature must make a {@dc 24} Charisma saving throw, taking {@damage 6d6} psychic damage on a failure or half as much on a success."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTagsLegendary": [
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"resist": [
+				{
+					"special": "All except force"
+				}
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"O",
+				"Y"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
 			]
 		}
 	],
