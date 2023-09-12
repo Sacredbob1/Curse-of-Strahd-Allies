@@ -109,7 +109,7 @@
 			}
 		],
 		"dateAdded": 1657405461,
-		"dateLastModified": 1693611103
+		"dateLastModified": 1694559567
 	},
 	"spell": [
 		{
@@ -21415,7 +21415,7 @@
 			]
 		},
 		{
-			"name": "Godsvessel of Iggrwth",
+			"name": "Godsvessel of Iggruuth",
 			"shortName": "godsvessel",
 			"source": "COTR",
 			"size": [
@@ -21476,7 +21476,7 @@
 			"cr": "26",
 			"trait": [
 				{
-					"name": "<details><summary>Teeth of Iggrwth",
+					"name": "<details><summary>Teeth of Iggruuth",
 					"entries": [
 						"</summary>A creature that grapples godsvessel while within 5 feet of him or is {@condition grappled} by him takes 13 ({@damage 3d8}) slashing damage. A creature takes 13 ({@damage 3d8}) slashing damage if it starts its turn grappling or being {@condition grappled} by the godsvessel."
 					]
@@ -21539,8 +21539,16 @@
 					"name": "Greatsword of Slaughter",
 					"entries": [
 						"{@hit 15} to hit, reach 5 ft.",
-						"{@h}23 ({@damage 2d12 + 10}) slashing damage.",
+						"{@h}23 ({@damage 4d6 + 10}) slashing damage.",
 						"Once per round, deals additional damage equal to missing hit points of target."
+					]
+				},
+				{
+					"name": "Spine",
+					"entries": [
+						"{@hit 18} to hit, reach 20 ft.",
+						"{@h}17 ({@damage 2d6 + 10}) piercing damage.",
+						"{@dc 20} STR save, {@condition grappled} on failure."
 					]
 				}
 			],
@@ -21597,7 +21605,17 @@
 			"savingThrowForcedSpell": [
 				"constitution"
 			],
+			"vulnerable": [
+				{
+					"special": "force (5)"
+				}
+			],
+			"miscTags": [
+				"MLW",
+				"RCH"
+			],
 			"damageTags": [
+				"P",
 				"S"
 			],
 			"savingThrowForced": [
@@ -21860,7 +21878,7 @@
 						"{@spell searing smite}: ({@damage 2d6})",
 						"{@spell staggering smite}: ({@damage 3d6})",
 						"{@spell thunderous smite}: ({@damage 2d6})",
-						"{@spell force cleave|CustomSpells}: ({@damage 2d6})",
+						"{@spell force cleave|CustomSpells}: ({@damage 2d6},{@damage 4d6})",
 						"{@spell venomous sting|CustomSpells}: ({@damage 2d4}):({@damage 3d6})"
 					]
 				}
@@ -21915,6 +21933,9 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"miscTags": [
+				"MLW"
 			]
 		},
 		{
@@ -22084,164 +22105,6 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"dexterity"
-			]
-		},
-		{
-			"name": "Thyr the handless",
-			"shortName": "Tyr",
-			"source": "COTR",
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 19,
-					"from": [
-						"unarmored defense"
-					]
-				}
-			],
-			"hp": {
-				"formula": "20d10 + 120",
-				"average": 290
-			},
-			"speed": {
-				"walk": 50
-			},
-			"str": 25,
-			"dex": 17,
-			"con": 22,
-			"int": 13,
-			"wis": 12,
-			"cha": 18,
-			"save": {
-				"str": "+13",
-				"con": "+12"
-			},
-			"skill": {
-				"perception": "+7",
-				"stealth": "+9",
-				"athletics": "+13",
-				"intimidation": "+10",
-				"religion": "+13"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 17,
-			"resist": [
-				"bludgeoning",
-				"piercing",
-				"slashing"
-			],
-			"languages": [
-				"Common",
-				"Deep Speech",
-				"Elvish"
-			],
-			"cr": "19",
-			"trait": [
-				{
-					"name": "<details><summary>Blood for the Blood god",
-					"entries": [
-						"</summary>If Tyr fails an ability check, attack roll, or saving throw, he can take {@damage 1d8} damage and add it to the total."
-					]
-				},
-				{
-					"name": "<details><summary>Fey Ancestry",
-					"entries": [
-						"</summary>Tyr has advantage on saving throws against being {@condition charmed}, and magic can't put Tyr to sleep."
-					]
-				},
-				{
-					"name": "<details><summary>Pain",
-					"entries": [
-						"</summary>Upon taking damage, all weapon attacks have advantage until end of next turn."
-					]
-				},
-				{
-					"name": "<details><summary>Juggernaut",
-					"entries": [
-						"</summary>Tyr can ignore any status effect. Each time he does this, he takes {@damage 2d8} damage per effect."
-					]
-				},
-				{
-					"name": "<details><summary>Fortitude",
-					"entries": [
-						"</summary>If damage reduces Tyr to 0 hit points, he must make a Constitution saving throw with a DC equal to the damage taken unless the damage is from a critical hit. On a success, Tyr drops to 1 hit point instead."
-					]
-				},
-				{
-					"name": "Spellcasting",
-					"entries": [
-						"Spell Save {@dc 19}, {@hit 11} to hit with spell attacks.",
-						"</p><i>At will:</i> {@spell hunter's mark}, {@spell misty step},",
-						"{@spell power word pain|XGE}: (CON save, {@status concentration})",
-						"</p><i>1/day each</i>",
-						"{@spell blade barrier}: ({@damage 6d10})",
-						"{@spell conjure barrage}: ({@damage 6d8})",
-						"{@spell earthquake}: ({@damage 5d6})",
-						"{@spell fissure|CustomSpells}: ({@damage 6d10})",
-						"{@spell spike growth}: ({@damage 2d6})",
-						"{@spell warding wind|XGE}"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Tyr makes four attacks."
-					]
-				},
-				{
-					"name": "Greatsword",
-					"entries": [
-						"{@hit 13} to hit, reach 5 ft.",
-						"{@h}17 ({@damage 3d6 + 7}) slashing damage. ({@damage 1d6} hunter's mark)"
-					]
-				}
-			],
-			"attachedItems": [
-				"greatsword|phb"
-			],
-			"traitTags": [
-				"Fey Ancestry",
-				"Legendary Resistances",
-				"Reckless",
-				"Regeneration",
-				"Undead Fortitude",
-				"Unusual Nature"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"DS",
-				"E"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"damageTagsSpell": [
-				"B",
-				"P",
-				"S"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"dexterity"
-			],
-			"damageTags": [
-				"S"
 			]
 		},
 		{
@@ -22466,6 +22329,11 @@
 			],
 			"traitTags": [
 				"Regeneration"
+			],
+			"vulnerable": [
+				{
+					"special": "force (5)"
+				}
 			],
 			"damageTags": [
 				"P"
@@ -22692,12 +22560,23 @@
 			],
 			"vulnerable": [
 				{
-					"special": "Radiant while in magical light"
+					"vulnerable": [
+						{
+							"special": "Radiant while in magical light"
+						},
+						{
+							"vulnerable": [
+								{
+									"special": "radiant (5) while in bright light"
+								}
+							]
+						}
+					]
 				},
 				{
 					"vulnerable": [
 						{
-							"special": "radiant (5) while in bright light"
+							"special": "force (5)"
 						}
 					]
 				}
@@ -23004,6 +22883,1143 @@
 				"dexterity",
 				"strength",
 				"wisdom"
+			]
+		},
+		{
+			"name": "Thyr the handless",
+			"shortName": "Tyr",
+			"source": "COTR",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 120",
+				"average": 290
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 25,
+			"dex": 17,
+			"con": 22,
+			"int": 13,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"str": "+13",
+				"con": "+12"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+9",
+				"athletics": "+13",
+				"intimidation": "+10",
+				"religion": "+13"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"cr": "19",
+			"trait": [
+				{
+					"name": "<details><summary>Blood for the Blood god",
+					"entries": [
+						"</summary>If Thyr fails an ability check, attack roll, or saving throw, he can take {@damage 1d8} damage and add it to the total."
+					]
+				},
+				{
+					"name": "<details><summary>Fey Ancestry",
+					"entries": [
+						"</summary>Thyr has advantage on saving throws against being {@condition charmed}, and magic can't put Tyr to sleep."
+					]
+				},
+				{
+					"name": "<details><summary>Pain",
+					"entries": [
+						"</summary>Upon taking damage, all weapon attacks have advantage until end of next turn."
+					]
+				},
+				{
+					"name": "<details><summary>Juggernaut",
+					"entries": [
+						"</summary>Thyr can ignore any status effect. Each time he does this, he takes {@damage 2d8} damage per effect."
+					]
+				},
+				{
+					"name": "<details><summary>Fortitude",
+					"entries": [
+						"</summary>If damage reduces Thyr to 0 hit points, he must make a Constitution saving throw with a DC equal to the damage taken unless the damage is from a critical hit. On a success, Thyr drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell Save {@dc 19}, {@hit 11} to hit with spell attacks.",
+						"</p><i>At will:</i> {@spell hunter's mark}, {@spell misty step},",
+						"{@spell power word pain|XGE}: (CON save, {@status concentration})",
+						"</p><i>1/day each</i>",
+						"{@spell blade barrier}: ({@damage 6d10})",
+						"{@spell conjure barrage}: ({@damage 6d8})",
+						"{@spell earthquake}: ({@damage 5d6})",
+						"{@spell fissure|CustomSpells}: ({@damage 6d10})",
+						"{@spell spike growth}: ({@damage 2d6})",
+						"{@spell warding wind|XGE}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Thyr makes four attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@hit 13} to hit, reach 5 ft.",
+						"{@h} ({@damage 2d8 + 7}) slashing damage. ({@damage 2d8 + 1d6 + 7} hunter's mark)",
+						"On hit, gains temp HP equal to half damage dealt."
+					]
+				}
+			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Legendary Resistances",
+				"Reckless",
+				"Regeneration",
+				"Undead Fortitude",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"damageTagsSpell": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
+			"miscTags": [
+				"MLW"
+			]
+		},
+		{
+			"name": "Godsvessel of Tol",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "COTR",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "40d20 + 120",
+				"average": 700
+			},
+			"speed": {
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"walk": 0
+			},
+			"str": 16,
+			"dex": 24,
+			"con": 17,
+			"int": 30,
+			"wis": 26,
+			"cha": 22,
+			"passive": 18,
+			"cr": "26",
+			"shortName": "godsvessel",
+			"senses": [
+				"truesight 300 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"All",
+				"telepathy 300 ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"int": "+18",
+				"wis": "+16"
+			},
+			"skill": {
+				"insight": "+24",
+				"history": "+18",
+				"nature": "+26",
+				"stealth": "+15",
+				"investigation": "+26"
+			},
+			"immune": [
+				"necrotic",
+				"psychic"
+			],
+			"resist": [
+				"cold"
+			],
+			"conditionImmune": [
+				{
+					"special": "All except grappled, restrained, and prone"
+				}
+			],
+			"vulnerable": [
+				{
+					"special": "healing, force (3)"
+				}
+			],
+			"trait": [
+				{
+					"name": "Unseen",
+					"entries": [
+						"<details>The godsvessel is permanently {@condition invisible} to any creature of his choice. If he affects a creature with any spell or ability, he is visible to them until the start of their next turn.</details>"
+					]
+				},
+				{
+					"name": "Foresight",
+					"entries": [
+						"The godsvessel is permanently under the effects of the {@spell foresight} spell."
+					]
+				},
+				{
+					"name": "Negative Energy Aura",
+					"entries": [
+						"<details>Creatures within 30 feet of the godsvessel can't regain hit points, and any creature that starts its turn within 30 ft. takes 10 ({@damage 3d6}) necrotic damage.</details>"
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell Save {@dc 24}, {@hit 16} to hit with spell attacks.",
+						"<i>At will:</i> {@spell Blight}: ({@damage 8d8})",
+						"{@spell Toll the Dead|XGE}: ({@damage 5d12})",
+						"{@spell Bigby's Hand}: ({@damage 4d8};{@damage 2d6+10})",
+						"{@spell Bestow Curse}: ({@damage 1d8})",
+						"<i>1/day each:</i> {@spell Power Word Kill}",
+						"{@spell Finger of Death}: ({@damage 7d8+30})",
+						"{@spell Abi-Dalzim's Horrid Wilting|XGE}: ({@damage 12d8})",
+						"{@spell Antilife Shell}",
+						"<a href=\"https://2e.aonprd.com/Spells.aspx?ID=1228\">Undertaker</a> (CON save)",
+						"{@spell Time Ravage|EGW}: ({@damage 10d12})",
+						"{@spell Bestow Curse} (5th level): ({@damage 1d8})"
+					]
+				},
+				{
+					"name": "Negative Healing",
+					"entries": [
+						"<details>The godsvessel heals for half as much necrotic damage as it deals. Casting a healing spell on it instead deals twice as much damage as it would have healed. All touch healing spells are an attack roll, and all ranged healing spells are a basic Charisma save.</details>",
+						"<details><summary><i>Pathfinder</i></summary>A creature with negative healing draws health from negative energy rather than positive energy. It is damaged by positive damage and is not healed by positive healing effects. It does not take negative damage, and it is healed by negative effects that heal undead.</details>"
+					]
+				},
+				{
+					"name": "Fated",
+					"entries": [
+						"At the beginning of each round of initiative, the godsvessel chooses his place in initiative."
+					]
+				}
+			],
+			"actionHeader": [
+				"The godsvessel makes four attacks. A target cannot be hit more than once."
+			],
+			"action": [
+				{
+					"name": "Overwhelming Visions",
+					"entries": [
+						"{@hit 11} to hit, reach 15 ft.",
+						"{@h}10 psychic damage and {@dc 19} INT saving throw.",
+						"Failure: target is overwhelmed by visions of the future and is {@condition stunned} until beginning of next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"damageTags": [
+				"N",
+				"Y"
+			]
+		},
+		{
+			"name": "Godsvessel of Horek'ai",
+			"size": [
+				"H"
+			],
+			"type": "humanoid",
+			"source": "COTR",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				21
+			],
+			"hp": {
+				"formula": "30d10 + 120",
+				"average": 650
+			},
+			"speed": {
+				"walk": 90
+			},
+			"str": 25,
+			"dex": 30,
+			"con": 18,
+			"int": 12,
+			"wis": 21,
+			"cha": 18,
+			"passive": 15,
+			"cr": "26",
+			"shortName": "godsvessel",
+			"languages": [
+				"irrelevant"
+			],
+			"senses": [
+				"bloodsense 120 ft."
+			],
+			"save": {
+				"dex": "+18",
+				"str": "+15"
+			},
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"<details>If the godsvessel is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the godsvessel instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</details>"
+					]
+				},
+				{
+					"name": "Inflict Fury",
+					"entries": [
+						"<details>When the godsvessel hits a creature with a melee attack, that creature must make a Wisdom saving throw ({@dc 20}). On a failure, the creature will do its best to remain within melee reach of the godsvessel (traveling in the most direct route regardless of hazards) and will use its actions to make melee attacks against it. At the end of each of its turns, the target can make an additional Wisdom saving throw against this effect.</details>"
+					]
+				},
+				{
+					"name": "Heated Body",
+					"entries": [
+						"<details>A creature that touches the godsvessel or hits it with a melee attack while within 5 feet of it takes 10 ({@dice 3d6}) fire damage.</details>"
+					]
+				},
+				{
+					"name": "Aura of Bloodlust",
+					"entries": [
+						"<details>When any other creature starts its turn within 30 feet of the master, that creature must succeed on a {@dc 17} Wisdom saving throw, or it must immediately take the Attack action, making one melee attack against a random creature within reach. If no creatures are within reach, it makes a ranged attack against a random creature within range, throwing its weapon if necessary.</details>"
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell save {@dc 22}, {@hit 14} to hit with spell attacks.",
+						"<i>2/day each:</i> {@spell Immolation|XGE}: ({@damage 8d6};{@damage 4d6})",
+						"{@spell Fire Storm}: ({@damage 7d10})",
+						"{@spell Wall of Fire}: ({@damage 5d8})"
+					]
+				}
+			],
+			"actionHeader": [
+				"The godsvessel makes 6 attacks. It can replace 2 of these attacks with a use of its breath weapon."
+			],
+			"action": [
+				{
+					"name": "Bladed Claw",
+					"entries": [
+						"{@hit 15} to hit, reach 10 ft.",
+						"{@h}14 ({@damage 2d6 + 7}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Immolation Breath",
+					"entries": [
+						"60 foot cone, basic Dexterity saving throw ({@dc 20}), {@damage 8d6} fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				{
+					"special": "force (5)"
+				}
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Kassim",
+			"source": "COTR",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 70",
+				"average": 250
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"str": "+12",
+				"con": "+10"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8",
+				"athletics": "+12",
+				"intimidation": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "<details><summary>Blood for the Blood god",
+					"entries": [
+						"</summary>If the elite fails an ability check, attack roll, or saving throw, it can take {@damage 1d4} damage and add it to the total."
+					]
+				},
+				{
+					"name": "<details><summary>Fey Ancestry",
+					"entries": [
+						"</summary>The elite has advantage on saving throws against being {@condition charmed}, and magic can't put the elite to sleep."
+					]
+				},
+				{
+					"name": "<details><summary>Pain",
+					"entries": [
+						"</summary>Upon taking damage, all weapon attacks have advantage until end of next turn."
+					]
+				},
+				{
+					"name": "<details><summary>Juggernaut",
+					"entries": [
+						"</summary>The elite can ignore any status effect. Each time it does this, it takes {@damage 2d8} damage per effect."
+					]
+				},
+				{
+					"name": "<details><summary>Fortitude",
+					"entries": [
+						"</summary>If damage reduces the elite to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken unless the damage is from a critical hit. On a success, the elite drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "<details><summary>Dismember",
+					"entries": [
+						"</summary>On a critical hit, the elite reduces the target's move speed by half and gives it disadvantage on all weapon attacks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell save {@dc 16}, {@hit 8} to hit with spell attacks",
+						"<i>At will:</i> {@spell hunter's mark}",
+						"<i>1/day:</i> {@spell zephyr strike|XGE}: ({@damage 1d8})",
+						"{@spell cloud of daggers}: ({@damage 4d4})",
+						"{@spell erupting earth|XGE}: ({@damage 3d12})",
+						"{@spell earth tremor|XGE}: ({@damage 6d6})",
+						"{@spell elemental weapon}: ({@damage 2d4})"
+					]
+				},
+				{
+					"name": "Smite {@recharge 6}",
+					"entries": [
+						"The elite uses the magic in his sword to cast a spell.",
+						"<details>",
+						"{@spell booming blade|TCE}: ({@damage 2d8});({@damage 3d8})",
+						"{@spell green-flame blade|TCE}: ({@damage 2d8});({@damage 2d8+3})",
+						"{@spell blinding smite}: ({@damage 3d8})",
+						"{@spell branding smite}: ({@damage 2d6})",
+						"{@spell searing smite}: ({@damage 2d6})",
+						"{@spell staggering smite}: ({@damage 3d6})",
+						"{@spell thunderous smite}: ({@damage 2d6})",
+						"{@spell force cleave|CustomSpells}: ({@damage 2d6},{@damage 4d6})",
+						"{@spell venomous sting|CustomSpells}: ({@damage 2d4}):({@damage 3d6})"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elite makes two attacks."
+					]
+				},
+				{
+					"name": "Wyrwood Greatsword of Pain",
+					"entries": [
+						"{@hit 12} to hit, reach 5 ft.",
+						"{@h}17 ({@damage 3d6 + 7}) slashing damage.",
+						"On hit, target must make CON save ({@dc 16}). On failure, move speed halved, disadvantage on all {@dice d20} rolls until end of next turn."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@hit 12} to hit, range 30/60 ft.",
+						"{@h}10 ({@damage 1d6 + 7}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"javelin|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Legendary Resistances",
+				"Reckless",
+				"Regeneration",
+				"Undead Fortitude",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"miscTags": [
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Lamine",
+			"source": "COTR",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 70",
+				"average": 250
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"str": "+12",
+				"con": "+10"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8",
+				"athletics": "+12",
+				"intimidation": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "<details><summary>Blood for the Blood god",
+					"entries": [
+						"</summary>If the elite fails an ability check, attack roll, or saving throw, it can take {@damage 1d4} damage and add it to the total."
+					]
+				},
+				{
+					"name": "<details><summary>Fey Ancestry",
+					"entries": [
+						"</summary>The elite has advantage on saving throws against being {@condition charmed}, and magic can't put the elite to sleep."
+					]
+				},
+				{
+					"name": "<details><summary>Pain",
+					"entries": [
+						"</summary>Upon taking damage, all weapon attacks have advantage until end of next turn."
+					]
+				},
+				{
+					"name": "<details><summary>Juggernaut",
+					"entries": [
+						"</summary>The elite can ignore any status effect. Each time it does this, it takes {@damage 2d8} damage per effect."
+					]
+				},
+				{
+					"name": "<details><summary>Fortitude",
+					"entries": [
+						"</summary>If damage reduces the elite to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken unless the damage is from a critical hit. On a success, the elite drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "<details><summary>Dismember",
+					"entries": [
+						"</summary>On a critical hit, the elite reduces the target's move speed by half and gives it disadvantage on all weapon attacks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell save {@dc 16}, {@hit 8} to hit with spell attacks",
+						"<i>At will:</i> {@spell hunter's mark}",
+						"<i>1/day:</i> {@spell zephyr strike|XGE}: ({@damage 1d8})",
+						"{@spell cloud of daggers}: ({@damage 4d4})",
+						"{@spell erupting earth|XGE}: ({@damage 3d12})",
+						"{@spell earth tremor|XGE}: ({@damage 6d6})",
+						"{@spell elemental weapon}: ({@damage 2d4})"
+					]
+				},
+				{
+					"name": "Smite {@recharge 6}",
+					"entries": [
+						"The elite uses the magic in his sword to cast a spell.",
+						"<details>",
+						"{@spell booming blade|TCE}: ({@damage 2d8});({@damage 3d8})",
+						"{@spell green-flame blade|TCE}: ({@damage 2d8});({@damage 2d8+3})",
+						"{@spell blinding smite}: ({@damage 3d8})",
+						"{@spell branding smite}: ({@damage 2d6})",
+						"{@spell searing smite}: ({@damage 2d6})",
+						"{@spell staggering smite}: ({@damage 3d6})",
+						"{@spell thunderous smite}: ({@damage 2d6})",
+						"{@spell force cleave|CustomSpells}: ({@damage 2d6},{@damage 4d6})",
+						"{@spell venomous sting|CustomSpells}: ({@damage 2d4}):({@damage 3d6})"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elite makes two attacks."
+					]
+				},
+				{
+					"name": "Wyrwood Greatsword of Draining",
+					"entries": [
+						"{@hit 12} to hit, reach 5 ft.",
+						"{@h}17 ({@damage 3d6 + 7}) slashing damage.",
+						"On hit, CON save ({@dc 15}). On failure, target gains level of {@condition exhaustion}."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@hit 12} to hit, range 30/60 ft.",
+						"{@h}10 ({@damage 1d6 + 7}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"javelin|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Legendary Resistances",
+				"Reckless",
+				"Regeneration",
+				"Undead Fortitude",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"miscTags": [
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Idrissa",
+			"source": "COTR",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 70",
+				"average": 250
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"str": "+12",
+				"con": "+10"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8",
+				"athletics": "+12",
+				"intimidation": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "<details><summary>Blood for the Blood god",
+					"entries": [
+						"</summary>If the elite fails an ability check, attack roll, or saving throw, it can take {@damage 1d4} damage and add it to the total."
+					]
+				},
+				{
+					"name": "<details><summary>Fey Ancestry",
+					"entries": [
+						"</summary>The elite has advantage on saving throws against being {@condition charmed}, and magic can't put the elite to sleep."
+					]
+				},
+				{
+					"name": "<details><summary>Pain",
+					"entries": [
+						"</summary>Upon taking damage, all weapon attacks have advantage until end of next turn."
+					]
+				},
+				{
+					"name": "<details><summary>Juggernaut",
+					"entries": [
+						"</summary>The elite can ignore any status effect. Each time it does this, it takes {@damage 2d8} damage per effect."
+					]
+				},
+				{
+					"name": "<details><summary>Fortitude",
+					"entries": [
+						"</summary>If damage reduces the elite to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken unless the damage is from a critical hit. On a success, the elite drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "<details><summary>Dismember",
+					"entries": [
+						"</summary>On a critical hit, the elite reduces the target's move speed by half and gives it disadvantage on all weapon attacks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell save {@dc 16}, {@hit 8} to hit with spell attacks",
+						"<i>At will:</i> {@spell hunter's mark}",
+						"<i>1/day:</i> {@spell zephyr strike|XGE}: ({@damage 1d8})",
+						"{@spell cloud of daggers}: ({@damage 4d4})",
+						"{@spell erupting earth|XGE}: ({@damage 3d12})",
+						"{@spell earth tremor|XGE}: ({@damage 6d6})",
+						"{@spell elemental weapon}: ({@damage 2d4})"
+					]
+				},
+				{
+					"name": "Smite {@recharge 6}",
+					"entries": [
+						"The elite uses the magic in his sword to cast a spell.",
+						"<details>",
+						"{@spell booming blade|TCE}: ({@damage 2d8});({@damage 3d8})",
+						"{@spell green-flame blade|TCE}: ({@damage 2d8});({@damage 2d8+3})",
+						"{@spell blinding smite}: ({@damage 3d8})",
+						"{@spell branding smite}: ({@damage 2d6})",
+						"{@spell searing smite}: ({@damage 2d6})",
+						"{@spell staggering smite}: ({@damage 3d6})",
+						"{@spell thunderous smite}: ({@damage 2d6})",
+						"{@spell force cleave|CustomSpells}: ({@damage 2d6},{@damage 4d6})",
+						"{@spell venomous sting|CustomSpells}: ({@damage 2d4}):({@damage 3d6})"
+					]
+				},
+				{
+					"name": "Worship with me",
+					"entries": [
+						"<p>When Idrissa receives a critical hit, he stores the damage the crit dealt in his sword. On his next turn, he can inflict the same amount of damage when he hits with a melee attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elite makes two attacks."
+					]
+				},
+				{
+					"name": "Wyrwood Greatsword of Vengeance",
+					"entries": [
+						"{@hit 12} to hit, reach 5 ft.",
+						"{@h}17 ({@damage 3d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@hit 12} to hit, range 30/60 ft.",
+						"{@h}10 ({@damage 1d6 + 7}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"javelin|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Legendary Resistances",
+				"Reckless",
+				"Regeneration",
+				"Undead Fortitude",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"miscTags": [
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Moulaye",
+			"source": "COTR",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 70",
+				"average": 250
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"str": "+12",
+				"con": "+10"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8",
+				"athletics": "+12",
+				"intimidation": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "<details><summary>Blood for the Blood god",
+					"entries": [
+						"</summary>If the elite fails an ability check, attack roll, or saving throw, it can take {@damage 1d4} damage and add it to the total."
+					]
+				},
+				{
+					"name": "<details><summary>Fey Ancestry",
+					"entries": [
+						"</summary>The elite has advantage on saving throws against being {@condition charmed}, and magic can't put the elite to sleep."
+					]
+				},
+				{
+					"name": "<details><summary>Pain",
+					"entries": [
+						"</summary>Upon taking damage, all weapon attacks have advantage until end of next turn."
+					]
+				},
+				{
+					"name": "<details><summary>Juggernaut",
+					"entries": [
+						"</summary>The elite can ignore any status effect. Each time it does this, it takes {@damage 2d8} damage per effect."
+					]
+				},
+				{
+					"name": "<details><summary>Fortitude",
+					"entries": [
+						"</summary>If damage reduces the elite to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken unless the damage is from a critical hit. On a success, the elite drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "<details><summary>Dismember",
+					"entries": [
+						"</summary>On a critical hit, the elite reduces the target's move speed by half and gives it disadvantage on all weapon attacks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell save {@dc 16}, {@hit 8} to hit with spell attacks",
+						"<i>At will:</i> {@spell hunter's mark}",
+						"<i>1/day:</i> {@spell zephyr strike|XGE}: ({@damage 1d8})",
+						"{@spell cloud of daggers}: ({@damage 4d4})",
+						"{@spell erupting earth|XGE}: ({@damage 3d12})",
+						"{@spell earth tremor|XGE}: ({@damage 6d6})",
+						"{@spell elemental weapon}: ({@damage 2d4})"
+					]
+				},
+				{
+					"name": "Smite {@recharge 6}",
+					"entries": [
+						"The elite uses the magic in his sword to cast a spell.",
+						"<details>",
+						"{@spell booming blade|TCE}: ({@damage 2d8});({@damage 3d8})",
+						"{@spell green-flame blade|TCE}: ({@damage 2d8});({@damage 2d8+3})",
+						"{@spell blinding smite}: ({@damage 3d8})",
+						"{@spell branding smite}: ({@damage 2d6})",
+						"{@spell searing smite}: ({@damage 2d6})",
+						"{@spell staggering smite}: ({@damage 3d6})",
+						"{@spell thunderous smite}: ({@damage 2d6})",
+						"{@spell force cleave|CustomSpells}: ({@damage 2d6},{@damage 4d6})",
+						"{@spell venomous sting|CustomSpells}: ({@damage 2d4}):({@damage 3d6})"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elite makes two attacks."
+					]
+				},
+				{
+					"name": "Wyrwood Greatsword of Slaughter",
+					"entries": [
+						"{@hit 12} to hit, reach 5 ft.",
+						"{@h}17 ({@damage 3d6 + 7}) slashing damage.",
+						"Once per round, deals additional damage equal to missing hit points of target."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@hit 12} to hit, range 30/60 ft.",
+						"{@h}10 ({@damage 1d6 + 7}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"javelin|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Legendary Resistances",
+				"Reckless",
+				"Regeneration",
+				"Undead Fortitude",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"E"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"miscTags": [
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"S"
 			]
 		}
 	],
