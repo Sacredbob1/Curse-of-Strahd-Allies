@@ -24021,6 +24021,135 @@
 				"P",
 				"S"
 			]
+		},
+		{
+			"name": "Rhegat",
+			"source": "SFOTA",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"wood elf"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 127
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 17,
+			"con": 18,
+			"int": 13,
+			"wis": 20,
+			"cha": 14,
+			"save": {
+				"con": "+10",
+				"dex": "+9",
+				"str": "+10",
+				"cha": "+8",
+				"wis": "+11",
+				"int": "+7"
+			},
+			"passive": 15,
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"level": 14,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Deep Speech"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"DS"
+			],
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 10 ft."
+			],
+			"senseTags": [
+				"SD",
+				"B"
+			],
+			"skill": {
+				"acrobatics": "+9",
+				"athletics": "+10",
+				"religion": "+13",
+				"survival": "+17",
+				"stealth": "+15"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"actionHeader": [
+				"Rhegat makes six astral attacks."
+			],
+			"action": [
+				{
+					"name": "Astral Fist",
+					"entries": [
+						"{@hit +11} to hit, reach 10 ft.",
+						"{@h} ({@damage 1d8 + 5}) force damage."
+					]
+				},
+				{
+					"name": "Astral Missile",
+					"entries": [
+						"{@hit 10} to hit, range 120 ft.",
+						"{@h} ({@damage 1d6 + 4}) force damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"trait": [
+				{
+					"name": "Psionics",
+					"entries": [
+						"Spell save {@dc 19}, {@hit 11} to hit with spell attacks",
+						"<i>At will:</i> {@spell mage hand} (the hand is {@condition invisible})",
+						"{@spell feather fall} (self only)",
+						"<i>3/day:</i> {@spell jump}",
+						"{@spell misty step}",
+						"{@spell nondetection} (self only)",
+						"<i>1/day:</i> {@spell telekinesis}",
+						"{@spell Rary's telepathic bond} (as ritual)",
+						"{@spell color spray}: ({@damage 60d10})"
+					]
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"bonus": [
+				{
+					"name": "Astral Self",
+					"entries": [
+						"Rhegat can use his bonus action to {@action dodge}, {@action dash}, or {@action disengage}."
+					]
+				}
+			]
 		}
 	],
 	"legendaryGroup": [
