@@ -59,14 +59,6 @@
 				"convertedBy": []
 			},
 			{
-				"json": "OtherAllies",
-				"abbreviation": "ALY",
-				"full": "Other Allies",
-				"url": "https://www.youtube.com/watch?v=iOVbAmknKUk",
-				"authors": [],
-				"convertedBy": []
-			},
-			{
 				"json": "SFOTA",
 				"abbreviation": "SFOTA",
 				"full": "SFOT Allies",
@@ -24149,6 +24141,246 @@
 						"Rhegat can use his bonus action to {@action dodge}, {@action dash}, or {@action disengage}."
 					]
 				}
+			]
+		},
+		{
+			"name": "Undead Titan",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"source": "CustomNPCs",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "14d10 + 84",
+				"average": 161
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 22,
+			"int": 6,
+			"wis": 8,
+			"cha": 12,
+			"passive": 9,
+			"cr": "10",
+			"shortName": "Titan",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"str": "+9"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the titan to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the titan drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Necrotic Absorption",
+					"entries": [
+						"Whenever the titan is subjected to necrotic damage, it takes no damage and instead regains a number of hit points equal to the necrotic damage dealt."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Undead Fortitude"
+			],
+			"actionHeader": [
+				"The titan makes two attacks."
+			],
+			"action": [
+				{
+					"name": "Colossal Sword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, 10 ft. cube.",
+						"{@h}14 ({@damage 2d8+5}) slashing damage."
+					]
+				},
+				{
+					"name": "Grab",
+					"entries": [
+						"Reach: 10 ft.",
+						"{@dc 18} Strength saving throw, {@condition grappled} on failure."
+					]
+				},
+				{
+					"name": "Consume",
+					"entries": [
+						"Stuffs {@condition grappled} creature into belly. {@damage 2d8} bludgeoning damage at the start of each turn.",
+						"{@dc 18} Acrobatics or Athletics check to free self."
+					]
+				},
+				{
+					"name": "Hurl Zombie",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 60/240 ft.",
+						"{@h}6 ({@damage 2d6+2}) bludgeoning damage.",
+						"The projectile becomes a {@condition prone} zombie with 1 hp near target."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Undead Swarm",
+			"size": [
+				"H"
+			],
+			"type": "undead",
+			"source": "CustomNPCs",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				7
+			],
+			"hp": {
+				"formula": "11d12 + 44",
+				"average": 115
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 18,
+			"dex": 4,
+			"con": 18,
+			"int": 2,
+			"wis": 6,
+			"cha": 5,
+			"passive": 8,
+			"cr": "4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"con": "+6"
+			},
+			"vulnerable": [
+				{
+					"special": "radiant (5), area of effect"
+				}
+			],
+			"resist": [
+				"bludgeoning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"<details>If damage reduces the undead swarm to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead swarm drops to 1 hit point instead.</details>"
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"<details>The undead swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a medium creature.",
+						"The swarm can't regain hit points or gain temporary hit points, and is vulnerable to area of effect damage if it is the <b><i>only target</i></b>.</details>"
+					]
+				},
+				{
+					"name": "Destroy Undead",
+					"entries": [
+						"<details>If the swarm fails its saving throw against Destroy Undead (CR 1/4), it is either reduced to half its maximum hit points or destroyed if it is already below half.</details>"
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The undead swarm can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"actionHeader": [
+				"The undead swarm makes two Slam attacks or one Skeletal Archers attacks."
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft.",
+						"{@h}14 ({@damage 4d4 + 4}) bludgeoning damage.",
+						"{@h}9 ({@damage 2d4 + 4}) bludgeoning damage (bloodied).",
+						"On hit, {@dc 14} STR or DEX save, {@condition grappled} and {@condition restrained} on failure, or {@condition grappled} on failure (bloodied).",
+						"Miss deals half damage if grapppled."
+					]
+				},
+				{
+					"name": "Skeletal Archers",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/90 ft., one target. {@h}10 ({@damage 2d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"reaction": [
+				{
+					"name": "Lunge (1/round)",
+					"entries": [
+						"When a creature moves within 10 feet of the undead swarm, it can move up to 5 feet towards that creature and make a single slam attack with disadvantage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
 			]
 		}
 	],
